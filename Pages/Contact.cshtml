@@ -1,0 +1,27 @@
+@page
+@model FotoShop.Pages.Contact
+
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<div class="container">
+    <h1>@ViewData["Title"]</h1>
+    <div class="row">
+        <div class="col-12">
+            <p>Bent u geïntereseerd en heeft u eventueel nog vragen? Vul dan het onderstaande formulier in.</p>
+            <form>
+                <label for="Voornaam">Voornaam*</label> <br>
+                <input id="Voornaam" type="text"> <br>
+                <label for="Achternaam">Achternaam*</label> <br>
+                <input id="Achternaam" type="text"> <br>
+                <label for="Email">E-mailadres*</label> <br>
+                <input id="Email" type="text"> <br>
+                <label for="Onderwerp">Onderwerp*</label> <br>
+                <input id="Onderwerp" type="text"> <br>
+                <label for="Bericht">Bericht*</label> <br>
+                <input id="Bericht" type="text">
+            </form>
+        </div>
+    </div>
+</div>
