@@ -1375,25 +1375,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nickn\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\jelme\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nickn\\Documents\\NHLStenden\\Webdevelopment\\Fotoshop\\FotoShop.csproj",
+      "projectUniqueName": "C:\\Users\\jelme\\RiderProjects\\FotoShop\\FotoShop.csproj",
       "projectName": "FotoShop",
-      "projectPath": "C:\\Users\\nickn\\Documents\\NHLStenden\\Webdevelopment\\Fotoshop\\FotoShop.csproj",
-      "packagesPath": "C:\\Users\\nickn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nickn\\Documents\\NHLStenden\\Webdevelopment\\Fotoshop\\obj\\",
+      "projectPath": "C:\\Users\\jelme\\RiderProjects\\FotoShop\\FotoShop.csproj",
+      "packagesPath": "C:\\Users\\jelme\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jelme\\RiderProjects\\FotoShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet"
       ],
       "configFilePaths": [
-        "C:\\Users\\nickn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jelme\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1451,7 +1449,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
