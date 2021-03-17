@@ -7,6 +7,10 @@
     border-bottom: 2px solid black;
 }
 
+body {
+    background-color: red;
+}
+
 footer {
     background: #6EECAC;
 }
@@ -55,8 +59,3 @@ footer {
     padding-left: 5%;
     padding-right: 5%;
 }
-
-
-
- 
- 
