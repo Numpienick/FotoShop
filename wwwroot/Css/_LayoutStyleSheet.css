@@ -7,6 +7,10 @@
     border-bottom: 2px solid black;
 }
 
+footer {
+    background: #6EECAC;
+}
+
 .div-style {
     font-size: 10px;
     padding-right: 2%;
