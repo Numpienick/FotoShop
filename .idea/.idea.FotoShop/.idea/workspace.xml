@@ -4,16 +4,8 @@
     <projectFile>FotoShop.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7d6491f-1459-4ea8-8c7d-0208d62f363c" name="Default Changelist" comment="ContactPage is toegevoegt.">
+    <list default="true" id="b7d6491f-1459-4ea8-8c7d-0208d62f363c" name="Default Changelist" comment="Contact pagina">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FotoShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FotoShop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Contact.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Contact.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/Contact.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/Contact.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/_Layout.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wwwroot/css/CustomStylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/CustomStylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +26,8 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Pages/_Layout.cshtml" />
-      <option value="$PROJECT_DIR$/wwwroot/css/CustomStylesheet.css" />
       <option value="$PROJECT_DIR$/Pages/Contact.cshtml" />
+      <option value="$PROJECT_DIR$/wwwroot/css/CustomStylesheet.css" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ppr6MG45OpE0vRdbXLGFrshMgv" />
@@ -99,7 +91,8 @@
       <option name="presentableId" value="Default" />
       <updated>1615890705702</updated>
       <workItem from="1615890738663" duration="8037000" />
-      <workItem from="1615904801071" duration="14585000" />
+      <workItem from="1615904801071" duration="15278000" />
+      <workItem from="1616007072298" duration="128000" />
     </task>
     <task id="LOCAL-00001" summary="ContactPage is toegevoegt.">
       <created>1615902311635</created>
@@ -108,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615902311635</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Contact pagina">
+      <created>1616006446860</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616006446860</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +132,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="ContactPage is toegevoegt." />
-    <option name="LAST_COMMIT_MESSAGE" value="ContactPage is toegevoegt." />
+    <MESSAGE value="Contact pagina" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contact pagina" />
   </component>
 </project>
