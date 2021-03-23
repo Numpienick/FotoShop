@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.FotoShop.iml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\.idea\.idea.FotoShop\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
