@@ -1,0 +1,54 @@
+﻿.body{
+    display: grid;
+    background-color: #f2f2f2;
+}
+
+.linker{
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+}
+
+.container{
+width: 100%;
+}
+
+.NormaleT{
+    font-family: 'Poppins', sans-serif;
+}
+
+.LI{
+    margin-right: 25%;
+}
+
+.logo-size{
+    max-width: 70%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    text-align: right;
+    margin-right: 20%;
+}
+
+.logo-size1{
+    max-width: 70%;
+    max-height: 50%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+.rechter{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Rechterkant{
+    background-color: #E2FBFE; 
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: -10%;
+}
+
+.titel{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
