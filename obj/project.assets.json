@@ -1375,25 +1375,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nickn\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\thimo\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nickn\\Documents\\NHLStenden\\Webdevelopment\\Fotoshop\\FotoShop.csproj",
+      "projectUniqueName": "C:\\Users\\thimo\\RiderProjects\\FotoShop\\FotoShop.csproj",
       "projectName": "FotoShop",
-      "projectPath": "C:\\Users\\nickn\\Documents\\NHLStenden\\Webdevelopment\\Fotoshop\\FotoShop.csproj",
-      "packagesPath": "C:\\Users\\nickn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nickn\\Documents\\NHLStenden\\Webdevelopment\\Fotoshop\\obj\\",
+      "projectPath": "C:\\Users\\thimo\\RiderProjects\\FotoShop\\FotoShop.csproj",
+      "packagesPath": "C:\\Users\\thimo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thimo\\RiderProjects\\FotoShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet"
       ],
       "configFilePaths": [
-        "C:\\Users\\nickn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thimo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1443,6 +1441,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.1.12, 3.1.12]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -1451,7 +1455,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
