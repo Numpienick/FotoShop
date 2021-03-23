@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hoekstra Foto's</title>
+    <title>@ViewData["Title"] - Hoekstra Foto's</title>
     <script src="~/js/jquery-3.5.1.js"></script>
     <script src="~/js/popper.min.js"></script>
     <script src="~/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
     <link href="~/bootstrap-4.5.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="~/css/CustomStylesheet.css" />
+
     @RenderSection("Styles", false)
     @RenderSection("JavaScript", false)
 </head>
+
 <body>
-    <div>
-        @RenderBody()
-    </div>
+<div class="container">
+    @RenderBody()
+</div>
 </body>
+
 </html>
