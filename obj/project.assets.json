@@ -1375,23 +1375,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\Remco\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\eelco_b0keash\\.nuget\\packages\\": {},
+>>>>>>> Shoppagina-EJ
     "C:\\Microsoft\\Xamarin\\NuGet": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "D:\\1 School\\HBO-ICT\\FotoShop\\FotoShop.csproj",
       "projectName": "FotoShop",
       "projectPath": "D:\\1 School\\HBO-ICT\\FotoShop\\FotoShop.csproj",
       "packagesPath": "C:\\Users\\Remco\\.nuget\\packages\\",
       "outputPath": "D:\\1 School\\HBO-ICT\\FotoShop\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\FotoShop.csproj",
+      "projectName": "FotoShop",
+      "projectPath": "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\FotoShop.csproj",
+      "packagesPath": "C:\\Users\\eelco_b0keash\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\obj\\",
+>>>>>>> Shoppagina-EJ
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\Remco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\eelco_b0keash\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Shoppagina-EJ
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1443,6 +1459,13 @@
         "warn": true,
         "downloadDependencies": [
           {
+<<<<<<< HEAD
+=======
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+>>>>>>> Shoppagina-EJ
             "name": "Microsoft.NETCore.App.Host.win-x64",
             "version": "[3.1.12, 3.1.12]"
           }

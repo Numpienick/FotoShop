@@ -1,8 +1,13 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
+<<<<<<< HEAD
       "C:\\Users\\Remco\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\Remco\\.nuget\\packages",
+=======
+      "C:\\Users\\eelco_b0keash\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\eelco_b0keash\\.nuget\\packages",
+>>>>>>> Shoppagina-EJ
       "C:\\Microsoft\\Xamarin\\NuGet"
     ]
   }
