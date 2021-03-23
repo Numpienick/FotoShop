@@ -1,41 +1,24 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "D:\\1 School\\HBO-ICT\\FotoShop\\FotoShop.csproj": {}
+    "C:\\Users\\nickn\\Documents\\NHLStenden\\Webdevelopment\\Fotoshop\\FotoShop.csproj": {}
   },
   "projects": {
-    "D:\\1 School\\HBO-ICT\\FotoShop\\FotoShop.csproj": {
+    "C:\\Users\\nickn\\Documents\\NHLStenden\\Webdevelopment\\Fotoshop\\FotoShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\1 School\\HBO-ICT\\FotoShop\\FotoShop.csproj",
+        "projectUniqueName": "C:\\Users\\nickn\\Documents\\NHLStenden\\Webdevelopment\\Fotoshop\\FotoShop.csproj",
         "projectName": "FotoShop",
-        "projectPath": "D:\\1 School\\HBO-ICT\\FotoShop\\FotoShop.csproj",
-        "packagesPath": "C:\\Users\\Remco\\.nuget\\packages\\",
-        "outputPath": "D:\\1 School\\HBO-ICT\\FotoShop\\obj\\",
-=======
-    "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\FotoShop.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\FotoShop.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\FotoShop.csproj",
-        "projectName": "FotoShop",
-        "projectPath": "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\FotoShop.csproj",
-        "packagesPath": "C:\\Users\\eelco_b0keash\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\obj\\",
->>>>>>> Shoppagina-EJ
+        "projectPath": "C:\\Users\\nickn\\Documents\\NHLStenden\\Webdevelopment\\Fotoshop\\FotoShop.csproj",
+        "packagesPath": "C:\\Users\\nickn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nickn\\Documents\\NHLStenden\\Webdevelopment\\Fotoshop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
-          "C:\\Users\\Remco\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\eelco_b0keash\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> Shoppagina-EJ
+          "C:\\Users\\nickn\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -85,19 +68,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-<<<<<<< HEAD
-=======
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
->>>>>>> Shoppagina-EJ
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.12, 3.1.12]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
