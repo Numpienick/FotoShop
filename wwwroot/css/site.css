@@ -52,3 +52,15 @@ width: 100%;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
+
+h1,
+h2,
+h3 {
+    color: #1e2c2e;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    color: #1e2c2e;
+    font-family: 'Poppins', sans-serif;
+}
