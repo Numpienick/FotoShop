@@ -21,14 +21,6 @@ namespace FotoShop.Classes.Repositories
             _connection?.Dispose();
         }
 
-        //public string GetUserName(string wishlistCode)
-        //{
-        //    using var connection = _connection;
-        //    string user = connection.QuerySingleOrDefault<string>(@"SELECT Name FROM user 
-        //    WHERE Wishlist_code = @WishlistCode", new { WishlistCode = wishlistCode });
-        //    return user;
-        //}
-
         public bool Create(User user)
         {
             int numRowsAffected = 0;
@@ -54,22 +46,5 @@ namespace FotoShop.Classes.Repositories
                 new { Email = email, Password = password });
             return id;
         }
-
-        //private bool IsThereAUserWithCode(int code)
-        //{
-        //    using var connection = DbUtils.GetDbConnection();
-        //    var user = connection.QuerySingleOrDefault(@"
-        //        SELECT * FROM user WHERE Wishlist_code = @WishlistCode", new { WishlistCode = code });
-        //    return user != null;
-        //}
-
-        //public string GetWishlistCode(string email, string password)
-        //{
-        //    using var connection = _connection;
-        //    string code = connection.QuerySingleOrDefault<string>(@"SELECT Wishlist_code FROM user 
-        //        WHERE Email = @Email AND Password = @Password",
-        //        new { Email = email, Password = password });
-        //    return code;
-        //}
     }
 }
