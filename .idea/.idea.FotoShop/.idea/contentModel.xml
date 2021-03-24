@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Remco\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Remco\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FotoShop.-1740476221.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Remco\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\Remco\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
-    <e p="D:\1 School\HBO-ICT\FotoShop" t="IncludeRecursive">
+    <e p="C:\Users\jelme\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\jelme\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FotoShop.1485108578.00" t="ExcludeRecursive" />
+    <e p="C:\Users\jelme\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\jelme\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\jelme\RiderProjects\FotoShop" t="IncludeRecursive">
+      <e p=".gitignore" t="Include" />
       <e p="_ViewImports.cshtml" t="Include" />
       <e p="appsettings.Development.json" t="Include" />
       <e p="appsettings.json" t="Include" />
@@ -19,14 +20,19 @@
             <e p="FotoShop.RazorAssemblyInfo.cs" t="Include" />
           </e>
         </e>
+        <e p="rider.project.restore.info" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
       <e p="Pages" t="Include">
         <e p="_Layout.cshtml" t="Include" />
         <e p="Contact.cshtml" t="Include" />
         <e p="Contact.cshtml.cs" t="Include" />
+        <e p="HomePagina.cshtml" t="Include" />
+        <e p="HomePagina.cshtml.cs" t="Include" />
         <e p="Index.cshtml" t="Include" />
         <e p="Index.cshtml.cs" t="Include" />
+        <e p="Shoppagina.cshtml" t="Include" />
+        <e p="Shoppagina.cshtml.cs" t="Include" />
       </e>
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
@@ -60,8 +66,29 @@
             <e p="bootstrap.min.js.map" t="Include" />
           </e>
         </e>
+        <e p="Classes" t="Include">
+          <e p="Photo.cs" t="Include" />
+          <e p="Repositories" t="Include">
+            <e p="PhotoRepository.cs" t="Include" />
+          </e>
+        </e>
         <e p="css" t="Include">
-          <e p="CustomStylesheet.css" t="Include" />
+          <e p="contact.css" t="Include" />
+          <e p="shop.css" t="Include" />
+          <e p="site.css" t="Include" />
+          <e p="stylesheet-layout.css" t="Include" />
+        </e>
+        <e p="images" t="Include">
+          <e p="BannerV1.jpg" t="Include" />
+          <e p="Foto.jpg" t="Include" />
+          <e p="HomeCollage.png" t="Include" />
+          <e p="kok.jpg" t="Include" />
+          <e p="LogoV3.png" t="Include" />
+          <e p="Modern-Afbeelding-Shop.jpg" t="Include" />
+          <e p="outline_person_black_24dp.png" t="Include" />
+          <e p="outline_shopping_cart_black_24dp.png" t="Include" />
+          <e p="Pop-Afbeelding-Shop.jpg" t="Include" />
+          <e p="Urbex-Afbeelding-Shop.jpg" t="Include" />
         </e>
         <e p="js" t="Include">
           <e p="jquery-3.5.1.js" t="Include" />
