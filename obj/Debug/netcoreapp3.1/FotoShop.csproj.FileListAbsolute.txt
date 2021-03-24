@@ -9,6 +9,10 @@ C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\FotoShop.Views.dll
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\FotoShop.Views.pdb
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+<<<<<<< HEAD
+=======
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\Dapper.dll
+>>>>>>> origin/master
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
@@ -36,8 +40,16 @@ C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.TagHelpers.input.cache
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.TagHelpers.output.cache
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.RazorCoreGenerate.cache
+<<<<<<< HEAD
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\_Layout.cshtml.g.cs
+=======
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Contact.cshtml.g.cs
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\HomePagina.cshtml.g.cs
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Shoppagina.cshtml.g.cs
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\_Layout.cshtml.g.cs
+>>>>>>> origin/master
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\_ViewImports.cshtml.g.cs
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.RazorTargetAssemblyInfo.cache
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.RazorTargetAssemblyInfo.cs
