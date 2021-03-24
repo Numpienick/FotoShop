@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,10 @@
                         <a class="notLoggedIn"
                            role="button"
                            data-toggle="ajax-modal"
-                           data-url="@Url.Page("HomePagina", "LogInModalPartial")">
+                           data-url="@Url.Page("Index", "LogInModalPartial")">
+                            <img src="images/outline_person_black_24dp.png" />
+                        </a>
+                        <a class="loggedIn" asp-page=""> @*Use this for openining admin page*@
                             <img src="images/outline_person_black_24dp.png" />
                         </a>
                     </li>

@@ -1,10 +1,10 @@
 ﻿$(document).ready(function () {
-	//var user = GetCookie('UserLoggedIn');
-	//if (user == "") {
-	//	$(".loggedIn").hide();
-	//} else {
-	//	$(".notLoggedIn").hide();
-	//}
+	var user = GetCookie('UserLoggedIn');
+	if (user == "") {
+		$(".loggedIn").hide();
+	} else {
+		$(".notLoggedIn").hide();
+	}
 
 	var placeholderElement = $('#modal-placeholder');
 	$(document).on('click', '[data-toggle="ajax-modal"]', function () {
