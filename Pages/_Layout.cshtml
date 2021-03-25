@@ -24,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-style">
             <a class="navbar-brand contain-logo">
-                <img class="logo-size " src="images/LogoV3.png" alt="logo">
+                <img class="logo-size " src="images/LogoV4.png" alt="logo">
             </a>
             <div class="collapse navbar-collapse justify-content-start">
                 <ul class="navbar-nav">
@@ -34,7 +34,7 @@
                     <li class="nav-item dropdown padding">
                         <a class="nav-link text-dark dropdown-toggle caret" asp-page="Shoppagina">Shop</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown_target">
-                            <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="">Modern Urban</a>
+                            <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="ShopModernUrban">Modern Urban</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="">Urbex</a>
                             <div class="dropdown-divider "></div>
@@ -73,18 +73,11 @@
         <div class="container-fluid m-0">
             <div class="row">
                 <div class="col-12">
-                    <img class="banner" src="images/BannerV1.jpg" />
+                    <img class="banner" src="images/BannerV3.png" />
                 </div>
             </div>
         </div>
     </header>
     @RenderBody()
-    <footer class="border-top footer text-muted fixed-bottom">
-        <div clas="container">
-            <p class="footer-text">
-                &copy; 2021 Hoekstra's Fotografie <a asp-area="" asp-page="">Contact</a>
-            </p>
-        </div>
-    </footer>
 </body>
 </html>

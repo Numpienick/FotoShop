@@ -1,16 +1,19 @@
 ﻿.navbar-style{
-    background-color: #6EECAC;
+    background-color: #87E5B3;
     font-family: 'Source Sans Pro', sans-serif !important;
-    font-size: 48px !important;
+    font-size: 32px !important;
     font-palette: dark;
     color: black;
     border-bottom: 2px solid black;
 }
 
 .div-style {
-    font-size: 10px;
+    font-size: 8px;
     padding-right: 2%;
     padding-left: 2%;
+}
+.text-dark{
+    
 }
 
 .banner {
@@ -23,7 +26,7 @@
 }
 
 .contain-logo {
-    width: 8%;
+    width: 15%;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
@@ -58,5 +61,5 @@
     bottom: 0;
     width: 100%;
     white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
+    line-height: 20px; /* Vertically center the text there */
 }
