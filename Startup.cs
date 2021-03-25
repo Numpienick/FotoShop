@@ -1,3 +1,5 @@
+using Dapper;
+using FotoShop.Classes;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -5,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -17,6 +20,9 @@ namespace FotoShop
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+#if DEBUG
+            SetupDatabase();
+#endif
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +45,15 @@ namespace FotoShop
             {
                 endpoints.MapRazorPages();
             });
+        }
+
+        private void SetupDatabase()
+        {
+            using var connection = DbUtils.GetDbConnection();
+            var dbSetupPath = Path.Combine(new DirectoryInfo(Directory.GetCurrentDirectory()).FullName, "SetupDatabase.sql");
+
+            string dbSetupScript = File.ReadAllText(dbSetupPath);
+            connection.Execute(dbSetupScript);
         }
     }
 }
