@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using FotoShop.Classes;
+using FotoShop.Classes.Repositories;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace FotoShop.Pages
@@ -8,6 +10,15 @@ namespace FotoShop.Pages
         public void OnGet()
         {
 
+        }
+
+        public IEnumerable<Photo> AllPhotos
+        {
+            get
+            {
+                using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
+                return repo.GetList("ModernUrban");
+            }
         }
 
     }
