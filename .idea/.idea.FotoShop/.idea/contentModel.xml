@@ -6,10 +6,19 @@
     <e p="C:\Users\eelco_b0keash\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\eelco_b0keash\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
     <e p="C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop" t="IncludeRecursive">
+      <e p=".gitignore" t="Include" />
       <e p="_ViewImports.cshtml" t="Include" />
       <e p="appsettings.Development.json" t="Include" />
       <e p="appsettings.json" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
+      <e p="Classes" t="Include">
+        <e p="DbUtils.cs" t="Include" />
+        <e p="LogIn.cs" t="Include" />
+        <e p="Repositories" t="Include">
+          <e p="UserRepository.cs" t="Include" />
+        </e>
+        <e p="User.cs" t="Include" />
+      </e>
       <e p="FotoShop.csproj" t="IncludeRecursive" />
       <e p="FotoShop.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive">
@@ -26,10 +35,12 @@
         <e p="_Layout.cshtml" t="Include" />
         <e p="Contact.cshtml" t="Include" />
         <e p="Contact.cshtml.cs" t="Include" />
-        <e p="HomePagina.cshtml" t="Include" />
-        <e p="HomePagina.cshtml.cs" t="Include" />
         <e p="Index.cshtml" t="Include" />
         <e p="Index.cshtml.cs" t="Include" />
+        <e p="Partials" t="Include">
+          <e p="_LogInModalPartial.cshtml" t="Include" />
+          <e p="_RegisterModalPartial.cshtml" t="Include" />
+        </e>
         <e p="Shop.cshtml" t="Include" />
         <e p="Shop.cshtml.cs" t="Include" />
         <e p="ShopModernUrban.cshtml" t="Include" />
@@ -67,8 +78,15 @@
             <e p="bootstrap.min.js.map" t="Include" />
           </e>
         </e>
+        <e p="Classes" t="Include">
+          <e p="Photo.cs" t="Include" />
+          <e p="Repositories" t="Include">
+            <e p="PhotoRepository.cs" t="Include" />
+          </e>
+        </e>
         <e p="css" t="Include">
           <e p="contact.css" t="Include" />
+          <e p="index.css" t="Include" />
           <e p="Modern.css" t="Include" />
           <e p="shop.css" t="Include" />
           <e p="site.css" t="Include" />
@@ -76,13 +94,18 @@
         </e>
         <e p="Images" t="Include">
           <e p="BannerV3.png" t="Include" />
+          <e p="build_black_24dp.svg" t="Include" />
+          <e p="delete_black_24dp.svg" t="Include" />
           <e p="Foto.jpg" t="Include" />
           <e p="HomeCollage.png" t="Include" />
           <e p="kok.jpg" t="Include" />
           <e p="LogoV4.png" t="Include" />
+          <e p="mail.svg" t="Include" />
           <e p="Modern-Afbeelding-Shop.jpg" t="Include" />
+          <e p="nameIcon.svg" t="Include" />
           <e p="outline_person_black_24dp.png" t="Include" />
           <e p="outline_shopping_cart_black_24dp.png" t="Include" />
+          <e p="passwordIcon.svg" t="Include" />
           <e p="Pop-Afbeelding-Shop.jpg" t="Include" />
           <e p="ProductImages" t="Include">
             <e p="Modern Urban Foto's" t="Include">
@@ -274,9 +297,11 @@
               <e p="Urbex9.jpg" t="Include" />
             </e>
           </e>
+          <e p="Urbex Foto's" t="Include" />
           <e p="Urbex-Afbeelding-Shop.jpg" t="Include" />
         </e>
         <e p="js" t="Include">
+          <e p="home.js" t="Include" />
           <e p="jquery-3.5.1.js" t="Include" />
           <e p="popper.min.js" t="Include" />
         </e>

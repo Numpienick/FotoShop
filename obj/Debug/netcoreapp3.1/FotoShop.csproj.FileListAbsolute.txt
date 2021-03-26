@@ -90,7 +90,6 @@ C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3
 C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.TagHelpers.output.cache
 C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.RazorCoreGenerate.cache
 C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Contact.cshtml.g.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\HomePagina.cshtml.g.cs
 C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
 C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\_Layout.cshtml.g.cs
 C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\_ViewImports.cshtml.g.cs
@@ -103,3 +102,5 @@ C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3
 C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.genruntimeconfig.cache
 C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Shop.cshtml.g.cs
 C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopModernUrban.cshtml.g.cs
+C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Partials\_LogInModalPartial.cshtml.g.cs
+C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Partials\_RegisterModalPartial.cshtml.g.cs
