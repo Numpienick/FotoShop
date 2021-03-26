@@ -6,12 +6,19 @@
 
 <body>
     <div class="container">
-        <div class="col-7">
-            <div class="py-4">
-                <img class="img-fluid border" src="@Model.GetPhotoPath()" />
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="py-4">
+                    <img class="img-fluid border" src="@Model.GetPhotoPath()" />
+                </div>
+                <h2>Dikke fiat 500</h2>
+                <p id="imgDescription">Lorem justo stet magna ipsum iriure volutpat vel labore dolores lorem nostrud diam justo dolor dolore dolore consetetur accusam nibh</p>
             </div>
-            <h2>Dikke fiat 500</h2>
-            <p id="imgDescription">Lorem justo stet magna ipsum iriure volutpat vel labore dolores lorem nostrud diam justo dolor dolore dolore consetetur accusam nibh</p>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-3">
+                <h4 class="pt-4">€12.99</h4>
+                <button class="btn-sm btn-success text-nowrap"><img class="mr-2" src="~/images/addToShoppingCartIcon.svg" />Voeg toe aan winkelwagen</button>
+            </div>
         </div>
 
     </div>

@@ -1,4 +1,19 @@
-﻿.navbar-style{
+﻿body {
+    background-color: #f2f2f2;
+    color: #1e2c2e;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar-style {
     background-color: #87E5B3;
     font-family: 'Source Sans Pro', sans-serif !important;
     font-size: 32px !important;
@@ -12,8 +27,8 @@
     padding-right: 2%;
     padding-left: 2%;
 }
-.text-dark{
-    
+
+.text-dark {
 }
 
 .banner {
@@ -41,18 +56,22 @@
     margin: 0 0 0 0;
 }
 
-.dropdown-menu a:hover {
-    background-color: grey;
-}
+    .dropdown-menu a:hover {
+        background-color: grey;
+    }
 
 .dropdown:hover .dropdown-menu {
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
 .padding {
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.background {
+    background-color: #80E4F0;
 }
 
 .footer {
