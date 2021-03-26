@@ -20,7 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="wwwroot\Classes\Category.cs" />
     <Compile Include="wwwroot\Classes\Photo.cs" />
+    <Compile Include="wwwroot\Classes\Repositories\CategoryRepository.cs" />
     <Compile Include="wwwroot\Classes\Repositories\PhotoRepository.cs" />
   </ItemGroup>
 

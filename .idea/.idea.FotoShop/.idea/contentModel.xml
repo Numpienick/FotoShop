@@ -33,6 +33,8 @@
         <e p="Index.cshtml.cs" t="Include" />
         <e p="Shoppagina.cshtml" t="Include" />
         <e p="Shoppagina.cshtml.cs" t="Include" />
+        <e p="UploadImage.cshtml" t="Include" />
+        <e p="UploadImage.cshtml.cs" t="Include" />
       </e>
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
@@ -67,8 +69,10 @@
           </e>
         </e>
         <e p="Classes" t="Include">
+          <e p="Category.cs" t="Include" />
           <e p="Photo.cs" t="Include" />
           <e p="Repositories" t="Include">
+            <e p="CategoryRepository.cs" t="Include" />
             <e p="PhotoRepository.cs" t="Include" />
           </e>
         </e>

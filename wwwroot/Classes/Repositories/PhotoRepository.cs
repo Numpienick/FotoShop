@@ -29,8 +29,8 @@ namespace FotoShop.wwwroot.Classes.Repositories
         {
             using var connection = Connect();
             int numRowsAffected = connection.Execute(
-            "INSERT INTO fotoshop.photo(Photo_id, Photo_path, Price, Description, Category_name) VALUES(@Photo_Path, @Price, @Description, @Category_name)",
-            new{Photo_Path = photo.Photo_path, Price = photo.Price, Description = photo.Description, Category_name = photo.Category_name}
+            "INSERT INTO fotoshop.photo(Photo_path, Price, Description, Category_name) VALUES(@Photo_Path, @Price, @Description, @CategoryName)",
+            new{Photo_Path = photo.Photo_path, Price = photo.Price, Description = photo.Description, CategoryName = photo.Category_name}
             );
             
             if (numRowsAffected == 1)
