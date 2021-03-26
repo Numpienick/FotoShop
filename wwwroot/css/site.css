@@ -1,26 +1,26 @@
-﻿.body{
+﻿.body {
     display: grid;
     background-color: #f2f2f2;
 }
 
-.linker{
+.linker {
     font-family: 'Poppins', sans-serif;
     text-align: right;
 }
 
-.container{
+.container {
     width: 100%;
 }
 
-.NormaleT{
+.NormaleT {
     font-family: 'Poppins', sans-serif;
 }
 
-.LI{
+.LI {
     margin-right: 25%;
 }
 
-.logo-size{
+.logo-size {
     max-width: 70%;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
@@ -28,7 +28,7 @@
     margin-right: 20%;
 }
 
-.logo-size1{
+.logo-size1 {
     max-width: 70%;
     max-height: 50%;
     padding: 0 0 0 0;
@@ -36,26 +36,29 @@
     text-align: center;
 }
 
-.rechter{
+.rechter {
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
 
-.Rechterkant{
-    background-color: #E2FBFE; 
+.Rechterkant {
+    background-color: #E2FBFE;
     margin-right: 20%;
     margin-left: 20%;
     margin-bottom: -10%;
 }
 
-.titel{
+.titel {
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
     color: #1e2c2e;
     font-family: 'Source Sans Pro', sans-serif;
 }

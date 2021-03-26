@@ -7,8 +7,6 @@
   <ItemGroup>
     <Folder Include="wwwroot\Images\ProductImages" />
     <Folder Include="wwwroot\Images\Urbex Foto's" />
-    <Folder Include="wwwroot\js\" />
-    <Folder Include="Classes\" />
   </ItemGroup>
 
   <ItemGroup>

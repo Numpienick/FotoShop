@@ -49,11 +49,23 @@ namespace FotoShop
 
         private void SetupDatabase()
         {
-            using var connection = DbUtils.GetDbConnection();
             var dbSetupPath = Path.Combine(new DirectoryInfo(Directory.GetCurrentDirectory()).FullName, "SetupDatabase.sql");
-
+            using var connection = DbUtils.GetDbConnection();
             string dbSetupScript = File.ReadAllText(dbSetupPath);
-            connection.Execute(dbSetupScript);
+
+            string sql = "";
+            DirectoryInfo pathToProducts = new DirectoryInfo(Path.Combine(new DirectoryInfo(Directory.GetCurrentDirectory()).FullName,
+                "wwwroot", "Images", "ProductImages"));
+            var files = pathToProducts.GetFiles("*.jpg", SearchOption.AllDirectories);
+            foreach (var photo in files)
+            {
+                string path = Path.Combine(photo.Directory.Name, photo.Name);
+                path = path.Replace("\\", @"/");
+                sql += String.Format(@" INSERT INTO photo (Photo_path, Price, Description, Category_name)
+                    VALUES('{0}', '12.99', 'Dit is een mooie foto', '{1}');",
+                    path, photo.Directory.Name);
+            }
+            connection.Execute(dbSetupScript + sql);
         }
     }
 }
