@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+<<<<<<< HEAD
     <e p="C:\Users\Remco\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Remco\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FotoShop.-1740476221.00" t="ExcludeRecursive" />
     <e p="C:\Users\Remco\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\Remco\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
     <e p="D:\1 School\HBO-ICT\FotoShop" t="IncludeRecursive">
+=======
+    <e p="C:\Users\eelco_b0keash\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\eelco_b0keash\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FotoShop.1792216265.00" t="ExcludeRecursive" />
+    <e p="C:\Users\eelco_b0keash\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\eelco_b0keash\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop" t="IncludeRecursive">
+>>>>>>> NickN
       <e p=".gitignore" t="Include" />
       <e p="_ViewImports.cshtml" t="Include" />
       <e p="appsettings.Development.json" t="Include" />
       <e p="appsettings.json" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
+      <e p="Classes" t="Include">
+        <e p="DbUtils.cs" t="Include" />
+        <e p="LogIn.cs" t="Include" />
+        <e p="Repositories" t="Include">
+          <e p="UserRepository.cs" t="Include" />
+        </e>
+        <e p="User.cs" t="Include" />
+      </e>
       <e p="FotoShop.csproj" t="IncludeRecursive" />
       <e p="FotoShop.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive">
@@ -31,8 +47,19 @@
         <e p="HomePagina.cshtml.cs" t="Include" />
         <e p="Index.cshtml" t="Include" />
         <e p="Index.cshtml.cs" t="Include" />
+<<<<<<< HEAD
         <e p="Shoppagina.cshtml" t="Include" />
         <e p="Shoppagina.cshtml.cs" t="Include" />
+=======
+        <e p="Partials" t="Include">
+          <e p="_LogInModalPartial.cshtml" t="Include" />
+          <e p="_RegisterModalPartial.cshtml" t="Include" />
+        </e>
+        <e p="Shop.cshtml" t="Include" />
+        <e p="Shop.cshtml.cs" t="Include" />
+        <e p="ShopModernUrban.cshtml" t="Include" />
+        <e p="ShopModernUrban.cshtml.cs" t="Include" />
+>>>>>>> NickN
       </e>
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
@@ -66,12 +93,24 @@
             <e p="bootstrap.min.js.map" t="Include" />
           </e>
         </e>
+        <e p="Classes" t="Include">
+          <e p="Photo.cs" t="Include" />
+          <e p="Repositories" t="Include">
+            <e p="PhotoRepository.cs" t="Include" />
+          </e>
+        </e>
         <e p="css" t="Include">
           <e p="contact.css" t="Include" />
+<<<<<<< HEAD
+=======
+          <e p="index.css" t="Include" />
+          <e p="Modern.css" t="Include" />
+>>>>>>> NickN
           <e p="shop.css" t="Include" />
           <e p="site.css" t="Include" />
           <e p="stylesheet-layout.css" t="Include" />
         </e>
+<<<<<<< HEAD
         <e p="images" t="Include">
           <e p="BannerV1.jpg" t="Include" />
           <e p="description_black_24dp.svg" t="Include" />
@@ -86,9 +125,218 @@
           <e p="perm_identity_black_24dp.svg" t="Include" />
           <e p="Pop-Afbeelding-Shop.jpg" t="Include" />
           <e p="title_black.svg" t="Include" />
+=======
+        <e p="Images" t="Include">
+          <e p="BannerV3.png" t="Include" />
+          <e p="build_black_24dp.svg" t="Include" />
+          <e p="delete_black_24dp.svg" t="Include" />
+          <e p="Foto.jpg" t="Include" />
+          <e p="HomeCollage.png" t="Include" />
+          <e p="kok.jpg" t="Include" />
+          <e p="LogoV4.png" t="Include" />
+          <e p="mail.svg" t="Include" />
+          <e p="Modern-Afbeelding-Shop.jpg" t="Include" />
+          <e p="nameIcon.svg" t="Include" />
+          <e p="outline_person_black_24dp.png" t="Include" />
+          <e p="outline_shopping_cart_black_24dp.png" t="Include" />
+          <e p="passwordIcon.svg" t="Include" />
+          <e p="Pop-Afbeelding-Shop.jpg" t="Include" />
+          <e p="ProductImages" t="Include">
+            <e p="Modern Urban Foto's" t="Include">
+              <e p="Urban1.jpg" t="Include" />
+              <e p="Urban10.jpg" t="Include" />
+              <e p="Urban11.jpg" t="Include" />
+              <e p="Urban12.jpg" t="Include" />
+              <e p="Urban13.jpg" t="Include" />
+              <e p="Urban14.jpg" t="Include" />
+              <e p="Urban15.jpg" t="Include" />
+              <e p="Urban16.jpg" t="Include" />
+              <e p="Urban17.jpg" t="Include" />
+              <e p="Urban18.jpg" t="Include" />
+              <e p="Urban19.jpg" t="Include" />
+              <e p="Urban2.jpg" t="Include" />
+              <e p="Urban20.jpg" t="Include" />
+              <e p="Urban21.jpg" t="Include" />
+              <e p="Urban22.jpg" t="Include" />
+              <e p="Urban23.jpg" t="Include" />
+              <e p="Urban24.jpg" t="Include" />
+              <e p="Urban25.jpg" t="Include" />
+              <e p="Urban26.jpg" t="Include" />
+              <e p="Urban27.jpg" t="Include" />
+              <e p="Urban28.jpg" t="Include" />
+              <e p="Urban29.jpg" t="Include" />
+              <e p="Urban3.jpg" t="Include" />
+              <e p="Urban30.jpg" t="Include" />
+              <e p="Urban31.jpg" t="Include" />
+              <e p="Urban32.jpg" t="Include" />
+              <e p="Urban33.jpg" t="Include" />
+              <e p="Urban34.jpg" t="Include" />
+              <e p="Urban35.jpg" t="Include" />
+              <e p="Urban36.jpg" t="Include" />
+              <e p="Urban37.jpg" t="Include" />
+              <e p="Urban38.jpg" t="Include" />
+              <e p="Urban39.jpg" t="Include" />
+              <e p="Urban4.jpg" t="Include" />
+              <e p="Urban40.jpg" t="Include" />
+              <e p="Urban41.jpg" t="Include" />
+              <e p="Urban42.jpg" t="Include" />
+              <e p="Urban43.jpg" t="Include" />
+              <e p="Urban44.jpg" t="Include" />
+              <e p="Urban45.jpg" t="Include" />
+              <e p="Urban46.jpg" t="Include" />
+              <e p="Urban47.jpg" t="Include" />
+              <e p="Urban48.jpg" t="Include" />
+              <e p="Urban49.jpg" t="Include" />
+              <e p="Urban5.jpg" t="Include" />
+              <e p="Urban50.jpg" t="Include" />
+              <e p="Urban51.jpg" t="Include" />
+              <e p="Urban52.jpg" t="Include" />
+              <e p="Urban53.jpg" t="Include" />
+              <e p="Urban54.jpg" t="Include" />
+              <e p="Urban55.jpg" t="Include" />
+              <e p="Urban56.jpg" t="Include" />
+              <e p="Urban57.jpg" t="Include" />
+              <e p="Urban58.jpg" t="Include" />
+              <e p="Urban59.jpg" t="Include" />
+              <e p="Urban6.jpg" t="Include" />
+              <e p="Urban60.jpg" t="Include" />
+              <e p="Urban61.jpg" t="Include" />
+              <e p="Urban62.jpg" t="Include" />
+              <e p="Urban63.jpg" t="Include" />
+              <e p="Urban64.jpg" t="Include" />
+              <e p="Urban65.jpg" t="Include" />
+              <e p="Urban66.jpg" t="Include" />
+              <e p="Urban67.jpg" t="Include" />
+              <e p="Urban68.jpg" t="Include" />
+              <e p="Urban69.jpg" t="Include" />
+              <e p="Urban7.jpg" t="Include" />
+              <e p="Urban70.jpg" t="Include" />
+              <e p="Urban71.jpg" t="Include" />
+              <e p="Urban72.jpg" t="Include" />
+              <e p="Urban73.jpg" t="Include" />
+              <e p="Urban74.jpg" t="Include" />
+              <e p="Urban75.jpg" t="Include" />
+              <e p="Urban76.jpg" t="Include" />
+              <e p="Urban77.jpg" t="Include" />
+              <e p="Urban78.jpg" t="Include" />
+              <e p="Urban79.jpg" t="Include" />
+              <e p="Urban8.jpg" t="Include" />
+              <e p="Urban80.jpg" t="Include" />
+              <e p="Urban81.jpg" t="Include" />
+              <e p="Urban82.jpg" t="Include" />
+              <e p="Urban9.jpg" t="Include" />
+            </e>
+            <e p="Pop Foto's" t="Include">
+              <e p="Pop1.jpg" t="Include" />
+              <e p="Pop10.jpg" t="Include" />
+              <e p="Pop11.jpg" t="Include" />
+              <e p="Pop12.jpg" t="Include" />
+              <e p="Pop13.jpg" t="Include" />
+              <e p="Pop14.jpg" t="Include" />
+              <e p="Pop15.jpg" t="Include" />
+              <e p="Pop16.jpg" t="Include" />
+              <e p="Pop17.jpg" t="Include" />
+              <e p="Pop18.jpg" t="Include" />
+              <e p="Pop19.jpg" t="Include" />
+              <e p="Pop2.jpg" t="Include" />
+              <e p="Pop20.jpg" t="Include" />
+              <e p="Pop21.jpg" t="Include" />
+              <e p="Pop22.jpg" t="Include" />
+              <e p="Pop23.jpg" t="Include" />
+              <e p="Pop24.jpg" t="Include" />
+              <e p="Pop25.jpg" t="Include" />
+              <e p="Pop26.jpg" t="Include" />
+              <e p="Pop27.jpg" t="Include" />
+              <e p="Pop28.jpg" t="Include" />
+              <e p="Pop29.jpg" t="Include" />
+              <e p="Pop3.jpg" t="Include" />
+              <e p="Pop30.jpg" t="Include" />
+              <e p="Pop31.jpg" t="Include" />
+              <e p="Pop32.jpg" t="Include" />
+              <e p="Pop33.jpg" t="Include" />
+              <e p="Pop34.jpg" t="Include" />
+              <e p="Pop35.jpg" t="Include" />
+              <e p="Pop36.jpg" t="Include" />
+              <e p="Pop37.jpg" t="Include" />
+              <e p="Pop38.jpg" t="Include" />
+              <e p="Pop39.jpg" t="Include" />
+              <e p="Pop4.jpg" t="Include" />
+              <e p="Pop40.jpg" t="Include" />
+              <e p="Pop41.jpg" t="Include" />
+              <e p="Pop42.jpg" t="Include" />
+              <e p="Pop43.jpg" t="Include" />
+              <e p="Pop44.jpg" t="Include" />
+              <e p="Pop45.jpg" t="Include" />
+              <e p="Pop46.jpg" t="Include" />
+              <e p="Pop47.jpg" t="Include" />
+              <e p="Pop48.jpg" t="Include" />
+              <e p="Pop49.jpg" t="Include" />
+              <e p="Pop5.jpg" t="Include" />
+              <e p="Pop50.jpg" t="Include" />
+              <e p="Pop51.jpg" t="Include" />
+              <e p="Pop52.jpg" t="Include" />
+              <e p="Pop53.jpg" t="Include" />
+              <e p="Pop54.jpg" t="Include" />
+              <e p="Pop55.jpg" t="Include" />
+              <e p="Pop56.jpg" t="Include" />
+              <e p="Pop57.jpg" t="Include" />
+              <e p="Pop58.jpg" t="Include" />
+              <e p="Pop59.jpg" t="Include" />
+              <e p="Pop6.jpg" t="Include" />
+              <e p="Pop60.jpg" t="Include" />
+              <e p="Pop61.jpg" t="Include" />
+              <e p="Pop62.jpg" t="Include" />
+              <e p="Pop63.jpg" t="Include" />
+              <e p="Pop64.jpg" t="Include" />
+              <e p="Pop65.jpg" t="Include" />
+              <e p="Pop66.jpg" t="Include" />
+              <e p="Pop67.jpg" t="Include" />
+              <e p="Pop68.jpg" t="Include" />
+              <e p="Pop69.jpg" t="Include" />
+              <e p="Pop7.jpg" t="Include" />
+              <e p="Pop70.jpg" t="Include" />
+              <e p="Pop71.jpg" t="Include" />
+              <e p="Pop72.jpg" t="Include" />
+              <e p="Pop8.jpg" t="Include" />
+              <e p="Pop9.jpg" t="Include" />
+            </e>
+            <e p="Urbex Foto's" t="Include">
+              <e p="Urbex1.jpg" t="Include" />
+              <e p="Urbex10.jpg" t="Include" />
+              <e p="Urbex11.jpg" t="Include" />
+              <e p="Urbex12.jpg" t="Include" />
+              <e p="Urbex13.jpg" t="Include" />
+              <e p="Urbex14.jpg" t="Include" />
+              <e p="Urbex15.jpg" t="Include" />
+              <e p="Urbex16.jpg" t="Include" />
+              <e p="Urbex17.jpg" t="Include" />
+              <e p="Urbex18.jpg" t="Include" />
+              <e p="Urbex19.jpg" t="Include" />
+              <e p="Urbex2.jpg" t="Include" />
+              <e p="Urbex20.jpg" t="Include" />
+              <e p="Urbex21.jpg" t="Include" />
+              <e p="Urbex22.jpg" t="Include" />
+              <e p="Urbex23.jpg" t="Include" />
+              <e p="Urbex24.jpg" t="Include" />
+              <e p="Urbex25.jpg" t="Include" />
+              <e p="Urbex26.jpg" t="Include" />
+              <e p="Urbex27.jpg" t="Include" />
+              <e p="Urbex28.jpg" t="Include" />
+              <e p="Urbex3.jpg" t="Include" />
+              <e p="Urbex4.jpg" t="Include" />
+              <e p="Urbex5.jpg" t="Include" />
+              <e p="Urbex6.jpg" t="Include" />
+              <e p="Urbex7.jpg" t="Include" />
+              <e p="Urbex8.jpg" t="Include" />
+              <e p="Urbex9.jpg" t="Include" />
+            </e>
+          </e>
+          <e p="Urbex Foto's" t="Include" />
+>>>>>>> NickN
           <e p="Urbex-Afbeelding-Shop.jpg" t="Include" />
         </e>
         <e p="js" t="Include">
+          <e p="home.js" t="Include" />
           <e p="jquery-3.5.1.js" t="Include" />
           <e p="popper.min.js" t="Include" />
         </e>

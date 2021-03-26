@@ -76,20 +76,11 @@ INSERT INTO account (Email, Password, Account_type, First_name, Last_name)
 VALUES ("admin@admin.com", "123", "admin", "Fotograaf", "Persoon");
 
 INSERT INTO category (Name, Description)
-VALUES ("Urban", "Dit is een mooie Urban categorie");
+VALUES ("Modern Urban", "Dit is een mooie Urban categorie");
 INSERT INTO category (Name, Description)
 VALUES ("Urbex", "Dit is een mooie Urbex categorie");
 INSERT INTO category (Name, Description)
 VALUES ("Pop", "Dit is een mooie Pop categorie");
 
-INSERT INTO fotoshop.contact (Subject, Message, Name, Email)
-VALUES ("Test", "Ik ben een test bericht", "Nick", "nick.numan@student.nhlstenden.com");
-
-INSERT INTO placed_order (Account_id, Download_link)
-VALUES ("1", "https://downloadhieruwfotos.nl");
-
-INSERT INTO photo (Photo_path, Price, Description, Category_name)
-VALUES ("~/Path/To/photo.jpg", "12.99", "Dit is een mooie foto", "Urban");
-
-INSERT INTO placed_order_photo (Placed_order_id, Photo_id)
-VALUES ("1", "1");
+INSERT INTO contact (Subject, Message, Name, Email)
+VALUES ("Test", "Ik ben een test bericht", "Nick", "nick.numan@student.nhlstenden.com"); 

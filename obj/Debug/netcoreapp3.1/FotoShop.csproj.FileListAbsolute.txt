@@ -45,9 +45,16 @@ C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp
 =======
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Contact.cshtml.g.cs
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Partials\_LogInModalPartial.cshtml.g.cs
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Partials\_RegisterModalPartial.cshtml.g.cs
+<<<<<<< HEAD
 >>>>>>> NickN
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Shoppagina.cshtml.g.cs
+=======
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\PhotoPage.cshtml.g.cs
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Shop.cshtml.g.cs
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopModernUrban.cshtml.g.cs
+>>>>>>> NickN
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\_Layout.cshtml.g.cs
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\_ViewImports.cshtml.g.cs
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.RazorTargetAssemblyInfo.cache
@@ -57,6 +64,7 @@ C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.dll
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.pdb
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.genruntimeconfig.cache
+<<<<<<< HEAD
 <<<<<<< HEAD
 D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.csprojAssemblyReference.cache
 D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.AssemblyInfoInputs.cache
@@ -112,4 +120,6 @@ D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.csproj.CopyComplet
 D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.genruntimeconfig.cache
 =======
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Partials\_LogInModalPartial.cshtml.g.cs
+>>>>>>> NickN
+=======
 >>>>>>> NickN
