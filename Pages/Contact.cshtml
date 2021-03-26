@@ -10,31 +10,55 @@
     <link rel="stylesheet" href="~/css/contact.css" />
 }
 
-<div class="container blauw">
+<div class="container-fluid blauw">
+    
+    <div class="titel d-flex justify-content-center">
+        <h1>@ViewData["Title"]</h1>
+    </div>
+
     <div class="row">
-        <div class="col-12">
-            <h1>@ViewData["Title"]</h1>
+        <div class="col-md-12 d-flex justify-content-center">
             <p>
                 Heeft u vragen, opmerkingen of klachten?
                 Laat het ons weten door het onderstaande formulier in tevullen.
             </p>
         </div>
-        <div class="d-flex justify-content-center">
-            <div class="col-8">
-                <form>
-                    <label for="Voornaam">Voornaam*</label> <br>
-                    <input id="Voornaam" type="text"> <br>
-                    <label for="Achternaam">Achternaam*</label> <br>
-                    <input id="Achternaam" type="text"> <br>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+            <form method="post" asp-page-handler="ContactForm">
+                
+                <div class="form-group">
+                    <label for="Naam">Naam*</label> <br>
+                    <img src="images/perm_identity_black_24dp.svg"></img>
+                    <input id="Naam" type="text"> <br>
+                </div>
+
+                <div class="form-group">
                     <label for="Email">E-mailadres*</label> <br>
-                    <input id="Email" type="email" /> <br>
+                    <img src="images/email_black_24dp.svg"></img>
+                    <input id="Email" type="email"/> <br>
+                </div>
+
+                <div class="form-group">
                     <label for="Onderwerp">Onderwerp*</label> <br>
+                    <img src="images/title_black.svg">
                     <input id="Onderwerp" type="text"> <br>
+                </div>
+
+                <div class="form-group">
+                    <img src="images/description_black_24dp.svg">
                     <label for="Bericht">Bericht*</label> <br>
                     <textarea id="Bericht" rows="6" cols="40"></textarea> <br>
-                    <input type="submit">
-                </form>
-            </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" class="btn-primary">
+                </div>
+                
+            </form>
         </div>
     </div>
+    
 </div>

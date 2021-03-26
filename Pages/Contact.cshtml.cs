@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace FotoShop.Pages
@@ -8,5 +9,7 @@ namespace FotoShop.Pages
         {
             
         }
+        
+        
     }
 }
