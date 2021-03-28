@@ -104,3 +104,5 @@ C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3
 C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopModernUrban.cshtml.g.cs
 C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Partials\_LogInModalPartial.cshtml.g.cs
 C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Partials\_RegisterModalPartial.cshtml.g.cs
+C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopPop.cshtml.g.cs
+C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopUrbex.cshtml.g.cs

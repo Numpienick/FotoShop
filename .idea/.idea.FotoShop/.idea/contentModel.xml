@@ -45,6 +45,10 @@
         <e p="Shop.cshtml.cs" t="Include" />
         <e p="ShopModernUrban.cshtml" t="Include" />
         <e p="ShopModernUrban.cshtml.cs" t="Include" />
+        <e p="ShopPop.cshtml" t="Include" />
+        <e p="ShopPop.cshtml.cs" t="Include" />
+        <e p="ShopUrbex.cshtml" t="Include" />
+        <e p="ShopUrbex.cshtml.cs" t="Include" />
       </e>
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
@@ -87,8 +91,8 @@
         <e p="css" t="Include">
           <e p="contact.css" t="Include" />
           <e p="index.css" t="Include" />
-          <e p="Modern.css" t="Include" />
           <e p="shop.css" t="Include" />
+          <e p="shoppagina.css" t="Include" />
           <e p="site.css" t="Include" />
           <e p="stylesheet-layout.css" t="Include" />
         </e>
@@ -297,7 +301,6 @@
               <e p="Urbex9.jpg" t="Include" />
             </e>
           </e>
-          <e p="Urbex Foto's" t="Include" />
           <e p="Urbex-Afbeelding-Shop.jpg" t="Include" />
         </e>
         <e p="js" t="Include">
