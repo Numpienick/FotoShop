@@ -18,7 +18,8 @@ body {
 }
 
 .icon-size {
-    size: 2vw;
+    width: 3vw;
+    height: auto;
 }
 
 .banner {
@@ -39,6 +40,7 @@ body {
 
 .logo-size {
     width: 100vw;
+    height: auto;
 }
 
 .dropdown-menu {
