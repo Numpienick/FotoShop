@@ -67,12 +67,16 @@
                                data-url="@Url.Page("Index", "LogInModalPartial")">
                                 <img src="images/personIcon.svg" class="icon-size" />
                             </a>
-                            <a class="loggedIn nav-link" asp-page="">
-                                @*Use this for openining admin page*@
+                            <a class="loggedIn nav-link" asp-page="UploadImage">
+                                @*Use this for openining account page*@
                                 <img src="images/personIcon.svg" class="icon-size" />
                             </a>
                         </li>
-                        <li class="nav-item div-style"><a class="nav-link text-dark" asp-page=""><img src="images/shoppingCartIcon.svg" class="icon-size" /></a></li>
+                        <li class="nav-item div-style">
+                            <a class="nav-link text-dark" asp-page="">
+                                <img src="images/shoppingCartIcon.svg" class="icon-size" />
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>
