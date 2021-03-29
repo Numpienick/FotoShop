@@ -7,6 +7,10 @@
     border-bottom: 2px solid black;
 }
 
+.HomeText:hover, .ShopText:hover, .AccountText:hover, .ContactText:hover{
+    text-decoration: underline;
+} 
+
 .div-style {
     font-size: 8px;
     padding-right: 2%;
