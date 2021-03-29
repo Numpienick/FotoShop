@@ -4,20 +4,13 @@
     <projectFile>FotoShop.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7d6491f-1459-4ea8-8c7d-0208d62f363c" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/wwwroot/Images/gJEQ7vy.png" afterDir="false" />
+    <list default="true" id="b7d6491f-1459-4ea8-8c7d-0208d62f363c" name="Default Changelist" comment="Able to delete images from directory.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FotoShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FotoShop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/UploadImage.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/UploadImage.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/UploadImage.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/UploadImage.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/_Layout.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" afterDir="false" />
     </list>
@@ -45,6 +38,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/jelme/RiderProjects/FotoShop/Pages/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2BC5ED24-0D5C-402C-8B6A-BD14FFCEE267/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/wwwroot/Classes/Photo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/wwwroot/Classes/Repositories/CategoryRepository.cs" root0="SKIP_HIGHLIGHTING" />
@@ -62,11 +56,11 @@
       <option value="$PROJECT_DIR$/wwwroot/Classes/Category.cs" />
       <option value="$PROJECT_DIR$/wwwroot/Classes/Repositories/CategoryRepository.cs" />
       <option value="$PROJECT_DIR$/wwwroot/Classes/Repositories/PhotoRepository.cs" />
-      <option value="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" />
-      <option value="$PROJECT_DIR$/Pages/_Layout.cshtml" />
       <option value="$PROJECT_DIR$/Pages/UploadImage.cshtml" />
       <option value="$PROJECT_DIR$/Pages/UploadImage.cshtml.cs" />
       <option value="$APPLICATION_CONFIG_DIR$/consoles/db/70d0ed85-fc7b-4fb2-8e65-02eef4deb4da/console.sql" />
+      <option value="$PROJECT_DIR$/Pages/_Layout.cshtml" />
+      <option value="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ppr6MG45OpE0vRdbXLGFrshMgv" />
@@ -148,7 +142,7 @@
       <workItem from="1616942614761" duration="428000" />
       <workItem from="1617014465434" duration="1744000" />
       <workItem from="1617016405098" duration="40000" />
-      <workItem from="1617016482531" duration="385000" />
+      <workItem from="1617016482531" duration="3461000" />
     </task>
     <task id="LOCAL-00001" summary="ContactPage is toegevoegt.">
       <created>1615902311635</created>
@@ -185,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616776574328</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Able to delete images from directory.">
+      <created>1617017042104</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617017042104</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +214,8 @@
     <MESSAGE value="Added Functionality for admin." />
     <MESSAGE value="Able to upload images to database and local image directory." />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="Able to delete images from directory." />
+    <option name="LAST_COMMIT_MESSAGE" value="Able to delete images from directory." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
