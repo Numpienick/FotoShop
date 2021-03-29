@@ -7,8 +7,8 @@
     <title>Hoekstra Foto's</title>
     <script src="~/js/jquery-3.5.1.js"></script>
     <script src="~/js/popper.min.js"></script>
-    <script src="~/js/layout.js"></script>
     <script src="~/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+    <script src="~/js/layout.js"></script>
     <link href="~/bootstrap-4.5.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/stylesheet-layout.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -33,7 +33,7 @@
                         <a class="nav-link text-dark" asp-area="" asp-page="Index">Home</a>
                     </li>
                     <li class="nav-item dropdown padding">
-                        <a class="nav-link text-dark dropdown-toggle caret" asp-page="Shoppagina">Shop</a>
+                        <a class="nav-link text-dark dropdown-toggle caret" asp-page="Shop">Shop</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown_target">
                             <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="ShopModernUrban">Modern Urban</a>
                             <div class="dropdown-divider"></div>
@@ -52,7 +52,18 @@
             </div>
             <div class="collapse navbar-collapse justify-content-end div-style">
                 <ul class="navbar-nav">
-                    <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src="images/personIcon.svg" /></a></li>
+                    <li class="nav-item div-style">
+                        <a class="notLoggedIn nav-link"
+                           role="button"
+                           data-toggle="ajax-modal"
+                           data-url="@Url.Page("Index", "LogInModalPartial")">
+                            <img src="images/personIcon.svg" />
+                        </a>
+                        <a class="loggedIn nav-link" asp-page="">
+                            @*Use this for openining admin page*@
+                            <img src="images/personIcon.svg" />
+                        </a>
+                    </li>
                     <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src="images/shoppingCartIcon.svg" /></a></li>
                     <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src="" />Insta logo</a></li>
                     <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page="">Twitter logo</a></li>
