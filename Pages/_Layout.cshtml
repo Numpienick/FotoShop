@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hoekstra Foto's</title>
+    <title>@ViewData["title"] - Hoekstra Foto's</title>
+    
+    <!-- Jquery, popper and bootstrap files -->
     <script src="~/js/jquery-3.5.1.js"></script>
     <script src="~/js/popper.min.js"></script>
     <script src="~/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
     <script src="~/js/layout.js"></script>
     <link href="~/bootstrap-4.5.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    
+    <!-- CSS files from root folder -->
     <link href="css/stylesheet-layout.css" rel="stylesheet" type="text/css" />
+    <link href="css/site.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Stylesheets from googlefonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
-    <link rel="stylesheet" href="css/site.css" type="text/css" />
 
     @await RenderSectionAsync("Styles", false)
     @await RenderSectionAsync("JavaScript", false)
@@ -67,18 +73,21 @@
                     <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src="images/shoppingCartIcon.svg" /></a></li>
                     <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src="" />Insta logo</a></li>
                     <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page="">Twitter logo</a></li>
-
                 </ul>
             </div>
         </nav>
-        <div class="container-fluid m-0">
-            <div class="row">
-                <div class="col-12">
-                    <img class="banner" src="images/BannerV3.png" />
-                </div>
+    
+    <div class="container-fluid m-0">
+        <div class="row">
+            <div class="col-12">
+                <img class="banner" src="images/BannerV3.png" />
             </div>
         </div>
-    </header>
-    @RenderBody()
+    </div>
+    
+</header>
+
+@RenderBody()
+
 </body>
 </html>
