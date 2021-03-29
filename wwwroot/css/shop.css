@@ -1,22 +1,21 @@
-.shop_row{
+
+.shop_row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 0.125vw;
     max-width: 100%;
+    margin-left: 0.001vw;
 }
 
-.shop_column{
+.shop_column {
     flex: 25%;
     max-width: 25%;
     padding: 0 0.125vw;
 }
 
-.testimg{
+.testimg {
     margin-top: 0.25vw;
     vertical-align: middle;
     width: 100%;
-   
-    
 }
-
 
