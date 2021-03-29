@@ -17,6 +17,9 @@
             <label asp-for="ImageFile" class="">Image File</label><br>
             <input asp-for="ImageFile" accept="image/*"/><br>
             <button type="submit" asp-page-handler="Upload">Submit</button>
-        </form>    
+        </form>
+        <form method="post">
+            <button type="submit" asp-page-handler="Delete">Submit</button>
+        </form>
     </div>
 </div>

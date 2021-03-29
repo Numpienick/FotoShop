@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.IO;
+using System.Net;
 using System.Net.Mime;
 using System.Threading.Tasks;
 using FotoShop.wwwroot.Classes;
@@ -30,7 +32,7 @@ namespace FotoShop.Pages
             
         }
         
-        public async Task<IActionResult> OnPost(string description, string categoryName, float price)
+        public async Task<IActionResult> OnPostUpload(string description, string categoryName, float price)
         {
             if (ModelState.IsValid)
             {
@@ -51,6 +53,22 @@ namespace FotoShop.Pages
             }
             
             return Redirect("/UploadImage");
+        }
+
+        public async void OnPostDelete()
+        {
+            string rootPath = _hostEnvironment.WebRootPath;
+            try
+            {
+                if (System.IO.File.Exists(Path.Combine(rootPath + "/images/gJEQ7vy.png")))
+                {
+                    System.IO.File.Delete(Path.Combine(rootPath + "/images/gJEQ7vy.png"));
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
     }
 }
