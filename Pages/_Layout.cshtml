@@ -5,18 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["title"] - Hoekstra Foto's</title>
-    
+
     <!-- Jquery, popper and bootstrap files -->
     <script src="~/js/jquery-3.5.1.js"></script>
     <script src="~/js/popper.min.js"></script>
     <script src="~/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
     <script src="~/js/layout.js"></script>
     <link href="~/bootstrap-4.5.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    
+
     <!-- CSS files from root folder -->
     <link href="css/stylesheet-layout.css" rel="stylesheet" type="text/css" />
     <link href="css/site.css" rel="stylesheet" type="text/css" />
-    
+
     <!-- Stylesheets from googlefonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -28,65 +28,67 @@
 </head>
 
 <body>
-<header>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <nav class="navbar navbar-expand navbar-style fixed-top h-navbar">
-                    <a class="navbar-brand contain-logo">
-                        <img class="logo-size " src="images/LogoV3.png" alt="logo">
-                    </a>
-                    <div class="justify-content-start collapse navbar-collapse">
-                        <ul class="navbar-nav">
-                            <li class="nav-item padding">
-                                <a class="nav-link text-dark" asp-area="" asp-page="HomePagina">Home</a>
-                            </li>
-                            <li class="nav-item dropdown padding">
-                                <a class="nav-link text-dark dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" asp-area="" asp-page="Shoppagina">Shop</a>
-                                <span class="caret"></span>
-                                <div class="dropdown-menu " aria-labelledby="dropdown_target">
-                                    <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="Shop">Modern Urban</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="">Urbex</a>
-                                    <div class="dropdown-divider "></div>
-                                    <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="">Pop</a>
-                                </div>
-                            </li>
-                            <li class="nav-item padding">
-                                <a class="nav-link text-dark" asp-area="" asp-page="">Account</a>
-                            </li>
-                            <li class="nav-item padding">
-                                <a class="nav-link text-dark" asp-area="" asp-page="Contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="navbar-collapse collapse justify-content-end div-style">
-                    <li class="nav-item div-style">
-                        <a class="notLoggedIn nav-link"
-                           role="button"
-                           data-toggle="ajax-modal"
-                           data-url="@Url.Page("Index", "LogInModalPartial")">
-                            <img src="images/personIcon.svg" />
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand navbar-style fixed-top h-navbar">
+                        <a class="navbar-brand contain-logo">
+                            <img class="logo-size" src="images/LogoV4.png" alt="logo">
                         </a>
-                        <a class="loggedIn nav-link" asp-page="">
-                            @*Use this for openining admin page*@
-                            <img src="images/personIcon.svg" />
-                        </a>
-                    </li>
-                    <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src="images/shoppingCartIcon.svg" class="icon-size" /></a></li>
-                </ul>
-            </div>
-        </nav>
-            <div class="container-fluid m-0">
-                <div class="row">
-                    <div class="col-12">
-                        <img class="banner" src="images/BannerV1.jpg"/>
+                        <div class="justify-content-start collapse navbar-collapse">
+                            <ul class="navbar-nav">
+                                <li class="nav-item padding">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="HomePagina">Home</a>
+                                </li>
+                                <li class="nav-item dropdown padding">
+                                    <a class="nav-link text-dark dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" asp-area="" asp-page="Shoppagina">Shop</a>
+                                    <span class="caret"></span>
+                                    <div class="dropdown-menu " aria-labelledby="dropdown_target">
+                                        <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="Shop">Modern Urban</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="">Urbex</a>
+                                        <div class="dropdown-divider "></div>
+                                        <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="">Pop</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item padding">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="">Account</a>
+                                </li>
+                                <li class="nav-item padding">
+                                    <a class="nav-link text-dark" asp-area="" asp-page="Contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navbar-collapse collapse justify-content-end div-style">
+                            <ul class="navbar-nav">
+                                <li class="nav-item div-style">
+                                    <a class="notLoggedIn nav-link"
+                                       role="button"
+                                       data-toggle="ajax-modal"
+                                       data-url="@Url.Page("Index", "LogInModalPartial")">
+                                        <img src="images/personIcon.svg" class="icon-size" />
+                                    </a>
+                                    <a class="loggedIn nav-link" asp-page="">
+                                        @*Use this for openining admin page*@
+                                        <img src="images/personIcon.svg" class="icon-size" />
+                                    </a>
+                                </li>
+                                <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src="images/shoppingCartIcon.svg" class="icon-size" /></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="container-fluid m-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="banner" src="images/BannerV3.png" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
     @RenderBody()
     <footer class="footer text-muted">
         <div class="container-fluid">
