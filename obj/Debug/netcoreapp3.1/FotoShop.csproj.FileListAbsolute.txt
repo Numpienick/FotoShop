@@ -1,10 +1,3 @@
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.csprojAssemblyReference.cache
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.AssemblyInfoInputs.cache
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.AssemblyInfo.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.csproj.CoreCompileInputs.cache
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.RazorAssemblyInfo.cache
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.RazorAssemblyInfo.cs
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\FotoShop.exe
@@ -31,6 +24,13 @@ C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.csprojAssemblyReference.cache
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.AssemblyInfoInputs.cache
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.AssemblyInfo.cs
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.csproj.CoreCompileInputs.cache
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.RazorAssemblyInfo.cache
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.RazorAssemblyInfo.cs
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\staticwebassets\FotoShop.StaticWebAssets.Manifest.cache
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\staticwebassets\FotoShop.StaticWebAssets.xml
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\scopedcss\bundle\FotoShop.styles.css
@@ -44,6 +44,8 @@ C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\PhotoPage.cshtml.g.cs
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Shop.cshtml.g.cs
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopModernUrban.cshtml.g.cs
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopPop.cshtml.g.cs
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopUrbex.cshtml.g.cs
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\UploadImage.cshtml.g.cs
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\_Layout.cshtml.g.cs
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\_ViewImports.cshtml.g.cs

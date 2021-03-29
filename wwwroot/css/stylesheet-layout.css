@@ -2,6 +2,8 @@
     background-color: #f2f2f2;
     color: #1e2c2e;
     font-family: 'Poppins', sans-serif;
+    margin-top: 8.5vh;
+    margin-bottom: 6vh;
 }
 
 h1,
@@ -23,10 +25,10 @@ h6 {
     top: 0;
 }
 
-body {
-    margin-bottom: 6vh;
-    margin-top: 8.5vh;
-}
+.HomeText:hover, .ShopText:hover, .AccountText:hover, .ContactText:hover{
+    text-decoration: underline;
+} 
+
 .div-style {
     size: 2vw;
     padding-right: 2vw;

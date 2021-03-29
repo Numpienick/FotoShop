@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="b7d6491f-1459-4ea8-8c7d-0208d62f363c" name="Default Changelist" comment="Contact pagina">
       <change afterPath="$PROJECT_DIR$/Pages/ContactDB/ContactCols.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Pages/ContactDB/ContactRepository.cs" afterDir="false" />
@@ -38,18 +39,16 @@
       <change afterPath="$PROJECT_DIR$/wwwroot/Images/build_black_24dp.svg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/wwwroot/Images/delete_black_24dp.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FotoShop/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FotoShop/.idea/contentModel.xml" afterDir="false" />
+=======
+    <list default="true" id="b7d6491f-1459-4ea8-8c7d-0208d62f363c" name="Default Changelist" comment="Added updated banner &amp; logo">
+>>>>>>> Shoppagina-EJ
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FotoShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FotoShop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/ShopModernUrban.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/ShopModernUrban.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/ShopModernUrban.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/ShopModernUrban.cshtml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.RazorCoreGenerate.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.pdb" afterDir="false" />
+<<<<<<< HEAD
 >>>>>>> NickN
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.csproj.FileListAbsolute.txt" afterDir="false" />
@@ -92,6 +91,11 @@
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/_Layout.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" afterDir="false" />
 >>>>>>> Jelmer
+=======
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/_Layout.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/shop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" afterDir="false" />
+>>>>>>> Shoppagina-EJ
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,9 +151,10 @@
     <setting file="file://$PROJECT_DIR$/Pages/ShopModernUrban.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/ShopModernUrban.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A9C37662-579A-499A-A4DE-B3C85349280D/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/eelco_b0keash/OneDrive/Documenten/Week 3/FotoShop/Pages/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/_Layout.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Shop.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+<<<<<<< HEAD
     <setting file="file://$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/_ViewImports.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
 =======
     <setting file="mock://C:/Users/jelme/RiderProjects/FotoShop/Pages/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
@@ -158,6 +163,9 @@
     <setting file="file://$PROJECT_DIR$/wwwroot/Classes/Repositories/CategoryRepository.cs" root0="SKIP_HIGHLIGHTING" />
 >>>>>>> Jelmer
     <setting file="file://$PROJECT_DIR$/wwwroot/Classes/Repositories/PhotoRepository.cs" root0="SKIP_HIGHLIGHTING" />
+=======
+    <setting file="file://$PROJECT_DIR$/wwwroot/Classes/Repositories/PhotoRepository.cs" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> Shoppagina-EJ
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -166,14 +174,15 @@
 <<<<<<< HEAD
       <option value="$PROJECT_DIR$/wwwroot/css/site.css" />
       <option value="$PROJECT_DIR$/Pages/Shoppagina.cshtml" />
-      <option value="$PROJECT_DIR$/wwwroot/css/shop.css" />
       <option value="$PROJECT_DIR$/Pages/ModernUrban.cshtml" />
-      <option value="$PROJECT_DIR$/Pages/Shop.cshtml" />
       <option value="$PROJECT_DIR$/Pages/ShopModernUrban.cshtml.cs" />
-      <option value="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" />
-      <option value="$PROJECT_DIR$/Pages/_Layout.cshtml" />
       <option value="$PROJECT_DIR$/wwwroot/css/Modern.css" />
+      <option value="$PROJECT_DIR$/Pages/Shop.cshtml" />
+      <option value="$PROJECT_DIR$/Pages/ShopPop.cshtml.cs" />
+      <option value="$PROJECT_DIR$/Pages/ShopUrbex.cshtml" />
+      <option value="$PROJECT_DIR$/Pages/ShopPop.cshtml" />
       <option value="$PROJECT_DIR$/Pages/ShopModernUrban.cshtml" />
+<<<<<<< HEAD
 >>>>>>> NickN
 =======
       <option value="$PROJECT_DIR$/wwwroot/Classes/Photo.cs" />
@@ -190,6 +199,12 @@
       <option value="$PROJECT_DIR$/Pages/_Layout.cshtml" />
       <option value="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" />
 >>>>>>> Jelmer
+=======
+      <option value="$PROJECT_DIR$/wwwroot/css/shoppagina.css" />
+      <option value="$PROJECT_DIR$/wwwroot/css/shop.css" />
+      <option value="$PROJECT_DIR$/Pages/_Layout.cshtml" />
+      <option value="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" />
+>>>>>>> Shoppagina-EJ
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ppr6MG45OpE0vRdbXLGFrshMgv" />
@@ -281,6 +296,7 @@
 =======
       <workItem from="1616598232728" duration="3617000" />
       <workItem from="1616665708307" duration="4305000" />
+<<<<<<< HEAD
       <workItem from="1616751885083" duration="7763000" />
 >>>>>>> NickN
 =======
@@ -298,6 +314,13 @@
       <workItem from="1617016405098" duration="40000" />
       <workItem from="1617016482531" duration="3461000" />
 >>>>>>> Jelmer
+=======
+      <workItem from="1616751885083" duration="11287000" />
+      <workItem from="1616770010739" duration="1274000" />
+      <workItem from="1616939008943" duration="4327000" />
+      <workItem from="1616952769698" duration="302000" />
+      <workItem from="1617006248845" duration="7221000" />
+>>>>>>> Shoppagina-EJ
     </task>
     <task id="LOCAL-00001" summary="ContactPage is toegevoegt.">
       <created>1615902311635</created>
@@ -328,6 +351,7 @@
       <option name="project" value="LOCAL" />
       <updated>1616592299426</updated>
     </task>
+<<<<<<< HEAD
     <option name="localTasksCounter" value="5" />
 =======
     <task id="LOCAL-00003" summary="Added Functionality for admin.">
@@ -360,6 +384,30 @@
     </task>
     <option name="localTasksCounter" value="7" />
 >>>>>>> Jelmer
+=======
+    <task id="LOCAL-00005" summary="Add product layout">
+      <created>1616762009409</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616762009409</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added finished shoppages">
+      <created>1616943347867</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616943347867</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added updated banner &amp; logo">
+      <created>1617011505527</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617011505527</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+>>>>>>> Shoppagina-EJ
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,6 +435,7 @@
 <<<<<<< HEAD
     <MESSAGE value="Add link to shoppagina" />
     <MESSAGE value="Add all images" />
+<<<<<<< HEAD
     <option name="LAST_COMMIT_MESSAGE" value="Add all images" />
 =======
     <MESSAGE value="Added Functionality for admin." />
@@ -427,5 +476,11 @@
       </breakpoints>
     </breakpoint-manager>
 >>>>>>> Jelmer
+=======
+    <MESSAGE value="Add product layout" />
+    <MESSAGE value="Added finished shoppages" />
+    <MESSAGE value="Added updated banner &amp; logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added updated banner &amp; logo" />
+>>>>>>> Shoppagina-EJ
   </component>
 </project>
