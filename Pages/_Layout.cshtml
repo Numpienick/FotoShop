@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["title"] - Hoekstra Foto's</title>
+    
     <!-- Jquery, popper and bootstrap files -->
     <script src="~/js/jquery-3.5.1.js"></script>
     <script src="~/js/popper.min.js"></script>
@@ -27,24 +28,24 @@
 </head>
 
 <body>
-<<<<<<< HEAD
 <header>
     <nav class="navbar navbar-expand-md navbar-style">
-        <a class="navbar-brand contain-logo">
-            <img class="logo-size " src="images/LogoV3.png" alt="logo">
+        
+        <a class="navbar-brand contain-logo" asp-page="Index">
+            <img class="logo-size " src="images/LogoV4.png" alt="logo">
         </a>
+
         <div class="collapse navbar-collapse justify-content-start">
             <ul class="navbar-nav">
                 <li class="nav-item padding">
-                    <a class="nav-link text-dark" asp-area="" asp-page="HomePagina">Home</a>
+                    <a class="nav-link text-dark" asp-area="" asp-page="Index">Home</a>
                 </li>
                 <li class="nav-item dropdown padding">
-                    <a class="nav-link text-dark dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" asp-area="" asp-page="">Shop</a>
-                    <span class="caret"></span>
-                    <div class="dropdown-menu " aria-labelledby="dropdown_target">
-                        <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="">Modern Urban</a>
+                    <a class="nav-link text-dark dropdown-toggle caret" asp-page="Shoppagina">Shop</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                        <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="ShopModernUrban">Modern Urban</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="">Urbex</a>
+                        <a class="dropdown-item nav-link text-dark" asp-route-id="1" asp-page="PhotoPage">Urbex</a>
                         <div class="dropdown-divider "></div>
                         <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="">Pop</a>
                     </div>
@@ -57,66 +58,29 @@
                 </li>
             </ul>
         </div>
+
         <div class="collapse navbar-collapse justify-content-end div-style">
             <ul class="navbar-nav">
-                <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src="images/outline_person_black_24dp.png" /></a></li>
-                <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src="images/outline_shopping_cart_black_24dp.png" /></a></li>
-                <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src="" />Insta logo</a></li>
+                <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src="images/outline_person_black_24dp.png"/></a></li>
+                <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src="images/outline_shopping_cart_black_24dp.png"/></a></li>
+                <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src=""/>Insta logo</a></li>
                 <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page="">Twitter logo</a></li>
-=======
-    <header>
-        <nav class="navbar navbar-expand-md navbar-style">
-            <a class="navbar-brand contain-logo" asp-page="Index">
-                <img class="logo-size " src="images/LogoV4.png" alt="logo">
-            </a>
-            <div class="collapse navbar-collapse justify-content-start">
-                <ul class="navbar-nav">
-                    <li class="nav-item padding">
-                        <a class="nav-link text-dark" asp-area="" asp-page="Index">Home</a>
-                    </li>
-                    <li class="nav-item dropdown padding">
-                        <a class="nav-link text-dark dropdown-toggle caret" asp-page="Shoppagina">Shop</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown_target">
-                            <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="ShopModernUrban">Modern Urban</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item nav-link text-dark" asp-route-id="1" asp-page="PhotoPage">Urbex</a>
-                            <div class="dropdown-divider "></div>
-                            <a class="dropdown-item nav-link text-dark" asp-area="" asp-page="">Pop</a>
-                        </div>
-                    </li>
-                    <li class="nav-item padding">
-                        <a class="nav-link text-dark" asp-area="" asp-page="">Account</a>
-                    </li>
-                    <li class="nav-item padding">
-                        <a class="nav-link text-dark" asp-area="" asp-page="Contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="collapse navbar-collapse justify-content-end div-style">
-                <ul class="navbar-nav">
-                    <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src="images/outline_person_black_24dp.png" /></a></li>
-                    <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src="images/outline_shopping_cart_black_24dp.png" /></a></li>
-                    <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page=""><img src="" />Insta logo</a></li>
-                    <li class="nav-item div-style"><a class="nav-link text-dark" asp-area="" asp-page="">Twitter logo</a></li>
->>>>>>> NickN
-
             </ul>
         </div>
+
     </nav>
+    
     <div class="container-fluid m-0">
         <div class="row">
             <div class="col-12">
-                <img class="banner" src="images/BannerV1.jpg" />
-            </div>
-        </nav>
-        <div class="container-fluid m-0">
-            <div class="row">
-                <div class="col-12">
-                    <img class="banner" src="images/BannerV3.png" />
-                </div>
+                <img class="banner" src="images/BannerV3.png" />
             </div>
         </div>
-    </header>
-    @RenderBody()
+    </div>
+    
+</header>
+
+@RenderBody()
+
 </body>
 </html>

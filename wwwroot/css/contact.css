@@ -1,3 +1,17 @@
 .blauw{
     background-color: #80E4F0;
 }
+
+.ContactForm {
+    width: 50%;
+}
+
+@media screen and (max-width: 576px) {
+    .ContactForm{
+        width: 75%;
+    }
+}
+
+.form-group{
+    width: 100%;
+}
