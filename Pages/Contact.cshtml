@@ -34,6 +34,7 @@
                 <div class="form-group">
                     <img src="images/perm_identity_black_24dp.svg"></img>
                     <label for="Naam">Naam*</label> <br>
+                    <span class="text-danger" asp-validation-for="GetDbContact.name"></span>
                     <input  id="Naam" 
                             class="form-control input-lg"
                             asp-for="GetDbContact.name"> <br>
@@ -42,6 +43,7 @@
                 <div class="form-group">
                     <img src="images/email_black_24dp.svg"></img>
                     <label for="Email">E-mailadres*</label> <br>
+                      <span class="text-danger" asp-validation-for="GetDbContact.email"></span>
                     <input id="Email"
                            class="form-control input-lg" 
                            asp-for="GetDbContact.email" 
@@ -51,6 +53,7 @@
                 <div class="form-group">
                     <img src="images/title_black.svg">
                     <label for="Onderwerp">Onderwerp*</label> <br>
+                      <span class="text-danger" asp-validation-for="GetDbContact.message"></span>
                     <input id="Onderwerp" 
                            class="form-control input-lg" 
                            asp-for="GetDbContact.subject"> <br>
@@ -59,6 +62,7 @@
                 <div class="form-group">
                     <img src="images/description_black_24dp.svg">
                     <label for="Bericht">Bericht*</label> <br>
+                     <span class="text-danger" asp-validation-for="GetDbContact.message"></span>
                     <textarea id="Bericht" 
                                 class="form-control input-lg"
                                 rows="7"
