@@ -42,8 +42,8 @@ CREATE TABLE contact (
 CREATE TABLE placed_order (
   Placed_order_id int NOT NULL AUTO_INCREMENT,
   Account_id int NOT NULL,
-  Date_placed_order_placed datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  Date_placed_order_paid datetime DEFAULT NULL,
+  Date_order_placed datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  Date_order_paid datetime DEFAULT NULL,
   Download_link varchar(100) DEFAULT NULL,
   PRIMARY KEY (Placed_order_id),
   UNIQUE KEY Placed_order_id_UNIQUE (Placed_order_id),

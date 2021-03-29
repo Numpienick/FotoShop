@@ -15,11 +15,11 @@
             <label>Price</label><br>
             <input type="text" name="price"/><br>
             <label asp-for="ImageFile" class="">Image File</label><br>
-            <input asp-for="ImageFile" accept="image/*"/><br>
+            <input asp-for="ImageFile" accept="image/png, image/jpeg, image/jpg"/><br>
             <button type="submit" asp-page-handler="Upload">Submit</button>
         </form>
         <form method="post">
-            <button type="submit" asp-page-handler="Delete">Submit</button>
+            <button type="submit" asp-page-handler="Delete">Delete</button>
         </form>
     </div>
 </div>

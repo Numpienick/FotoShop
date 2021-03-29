@@ -19,7 +19,8 @@ namespace FotoShop.Pages
         {
             if (ModelState.IsValid)
             {
-                new ContactRepository().InsertNewContact(GetDbContact);
+                using ContactRepository repo = new ContactRepository(DbUtils.GetDbConnection());
+                repo.InsertNewContact(GetDbContact);
 
                 ModelState.Clear();
             }
