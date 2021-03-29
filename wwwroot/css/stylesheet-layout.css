@@ -16,22 +16,29 @@ h6 {
 .navbar-style {
     background-color: #87E5B3;
     font-family: 'Source Sans Pro', sans-serif !important;
-    font-size: 32px !important;
+    font-size: 2.5vw !important;
     font-palette: dark;
     color: black;
     border-bottom: 2px solid black;
+    top: 0;
 }
 
+body {
+    margin-bottom: 6vh;
+    margin-top: 8.5vh;
+}
 .div-style {
-    font-size: 8px;
-    padding-right: 2%;
-    padding-left: 2%;
+    size: 2vw;
+    padding-right: 2vw;
 }
 
-.text-dark {
+.icon-size {
+    width: 3vw;
+    height: auto;
 }
 
 .banner {
+    top: auto;
     border-left: 2px solid black;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
@@ -41,13 +48,19 @@ h6 {
 }
 
 .contain-logo {
-    width: 15%;
+    width: 15vw;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
 
 .logo-size {
-    width: 100%;
+    width: 100vw;
+    height: auto;
+}
+
+.dropdown-menu {
+    padding: 0 0 0 0;
+    margin:  0 0 0 0;
 }
 
 .dropdown-menu a {
@@ -61,13 +74,11 @@ h6 {
     }
 
 .dropdown:hover .dropdown-menu {
-    display: flex;
-    flex-direction: column;
+    display:block;
 }
 
 .padding {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5vw 0 0;
 }
 
 .background {
@@ -76,9 +87,13 @@ h6 {
 
 .footer {
     background: #6EECAC;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     white-space: nowrap;
-    line-height: 20px; /* Vertically center the text there */
+    border-top: 1px solid black;
+}
+
+.h-navbar {
+    height: 10vh;
 }
