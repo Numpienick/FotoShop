@@ -1,0 +1,25 @@
+﻿@page
+@model FotoShop.Pages.UploadImage
+
+@{
+    Layout = null;
+}
+
+<div class="container">
+    <div>
+        <form method="post" enctype="multipart/form-data">
+            <label>Description</label><br>
+            <input type="text" name="Description"/><br>
+            <label>Category Name</label><br>
+            <input type="text" name="categoryName"/><br>
+            <label>Price</label><br>
+            <input type="text" name="price"/><br>
+            <label asp-for="ImageFile" class="">Image File</label><br>
+            <input asp-for="ImageFile" accept="image/*"/><br>
+            <button type="submit" asp-page-handler="Upload">Submit</button>
+        </form>
+        <form method="post">
+            <button type="submit" asp-page-handler="Delete">Submit</button>
+        </form>
+    </div>
+</div>

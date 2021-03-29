@@ -41,6 +41,7 @@
         <e p="Contact.cshtml.cs" t="Include" />
         <e p="Index.cshtml" t="Include" />
         <e p="Index.cshtml.cs" t="Include" />
+<<<<<<< HEAD
         <e p="Partials" t="Include">
           <e p="_LogInModalPartial.cshtml" t="Include" />
           <e p="_RegisterModalPartial.cshtml" t="Include" />
@@ -51,6 +52,12 @@
         <e p="Shop.cshtml.cs" t="Include" />
         <e p="ShopModernUrban.cshtml" t="Include" />
         <e p="ShopModernUrban.cshtml.cs" t="Include" />
+=======
+        <e p="Shoppagina.cshtml" t="Include" />
+        <e p="Shoppagina.cshtml.cs" t="Include" />
+        <e p="UploadImage.cshtml" t="Include" />
+        <e p="UploadImage.cshtml.cs" t="Include" />
+>>>>>>> Jelmer
       </e>
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
@@ -85,6 +92,17 @@
             <e p="bootstrap.min.js.map" t="Include" />
           </e>
         </e>
+<<<<<<< HEAD
+=======
+        <e p="Classes" t="Include">
+          <e p="Category.cs" t="Include" />
+          <e p="Photo.cs" t="Include" />
+          <e p="Repositories" t="Include">
+            <e p="CategoryRepository.cs" t="Include" />
+            <e p="PhotoRepository.cs" t="Include" />
+          </e>
+        </e>
+>>>>>>> Jelmer
         <e p="css" t="Include">
           <e p="contact.css" t="Include" />
           <e p="index.css" t="Include" />

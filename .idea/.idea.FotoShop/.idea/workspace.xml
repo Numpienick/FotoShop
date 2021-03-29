@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="b7d6491f-1459-4ea8-8c7d-0208d62f363c" name="Default Changelist" comment="Contact pagina">
       <change afterPath="$PROJECT_DIR$/Pages/ContactDB/ContactCols.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Pages/ContactDB/ContactRepository.cs" afterDir="false" />
@@ -80,6 +81,17 @@
       <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wwwroot/css/Modern.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/Modern.css" afterDir="false" />
 >>>>>>> NickN
+=======
+    <list default="true" id="b7d6491f-1459-4ea8-8c7d-0208d62f363c" name="Default Changelist" comment="Able to delete images from directory.">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FotoShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FotoShop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/_Layout.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" afterDir="false" />
+>>>>>>> Jelmer
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +142,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+<<<<<<< HEAD
     <setting file="file://$PROJECT_DIR$/Pages/Shop.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/ShopModernUrban.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/ShopModernUrban.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
@@ -138,12 +151,19 @@
     <setting file="file://$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/_Layout.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Shop.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/_ViewImports.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
+=======
+    <setting file="mock://C:/Users/jelme/RiderProjects/FotoShop/Pages/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2BC5ED24-0D5C-402C-8B6A-BD14FFCEE267/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/wwwroot/Classes/Photo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/wwwroot/Classes/Repositories/CategoryRepository.cs" root0="SKIP_HIGHLIGHTING" />
+>>>>>>> Jelmer
     <setting file="file://$PROJECT_DIR$/wwwroot/Classes/Repositories/PhotoRepository.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Pages/Contact.cshtml" />
       <option value="$PROJECT_DIR$/wwwroot/css/CustomStylesheet.css" />
+<<<<<<< HEAD
       <option value="$PROJECT_DIR$/wwwroot/css/site.css" />
       <option value="$PROJECT_DIR$/Pages/Shoppagina.cshtml" />
       <option value="$PROJECT_DIR$/wwwroot/css/shop.css" />
@@ -155,6 +175,21 @@
       <option value="$PROJECT_DIR$/wwwroot/css/Modern.css" />
       <option value="$PROJECT_DIR$/Pages/ShopModernUrban.cshtml" />
 >>>>>>> NickN
+=======
+      <option value="$PROJECT_DIR$/wwwroot/Classes/Photo.cs" />
+      <option value="$PROJECT_DIR$/Pages/Shop.cshtml.cs" />
+      <option value="$PROJECT_DIR$/Pages/Shop.cshtml" />
+      <option value="$PROJECT_DIR$/Startup.cs" />
+      <option value="$PROJECT_DIR$/Controllers/UploadImageController.cs" />
+      <option value="$PROJECT_DIR$/wwwroot/Classes/Category.cs" />
+      <option value="$PROJECT_DIR$/wwwroot/Classes/Repositories/CategoryRepository.cs" />
+      <option value="$PROJECT_DIR$/wwwroot/Classes/Repositories/PhotoRepository.cs" />
+      <option value="$PROJECT_DIR$/Pages/UploadImage.cshtml" />
+      <option value="$PROJECT_DIR$/Pages/UploadImage.cshtml.cs" />
+      <option value="$APPLICATION_CONFIG_DIR$/consoles/db/70d0ed85-fc7b-4fb2-8e65-02eef4deb4da/console.sql" />
+      <option value="$PROJECT_DIR$/Pages/_Layout.cshtml" />
+      <option value="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" />
+>>>>>>> Jelmer
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ppr6MG45OpE0vRdbXLGFrshMgv" />
@@ -171,10 +206,15 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
 <<<<<<< HEAD
     <property name="DatabaseDriversLRU" value="mysql" />
+<<<<<<< HEAD
 =======
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34975636" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
 >>>>>>> NickN
+=======
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34995976" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
+>>>>>>> Jelmer
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -234,6 +274,7 @@
       <workItem from="1615904801071" duration="15278000" />
       <workItem from="1616007072298" duration="128000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1616665784289" duration="6352000" />
       <workItem from="1616753492491" duration="2415000" />
       <workItem from="1616756750842" duration="1522000" />
@@ -242,6 +283,21 @@
       <workItem from="1616665708307" duration="4305000" />
       <workItem from="1616751885083" duration="7763000" />
 >>>>>>> NickN
+=======
+      <workItem from="1616591719532" duration="147000" />
+      <workItem from="1616591932750" duration="1975000" />
+      <workItem from="1616597720304" duration="972000" />
+      <workItem from="1616598724746" duration="3085000" />
+      <workItem from="1616681412867" duration="1795000" />
+      <workItem from="1616750819156" duration="143000" />
+      <workItem from="1616763365672" duration="12270000" />
+      <workItem from="1616775799169" duration="799000" />
+      <workItem from="1616935758156" duration="6300000" />
+      <workItem from="1616942614761" duration="428000" />
+      <workItem from="1617014465434" duration="1744000" />
+      <workItem from="1617016405098" duration="40000" />
+      <workItem from="1617016482531" duration="3461000" />
+>>>>>>> Jelmer
     </task>
     <task id="LOCAL-00001" summary="ContactPage is toegevoegt.">
       <created>1615902311635</created>
@@ -257,6 +313,7 @@
       <option name="project" value="LOCAL" />
       <updated>1616006446860</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00003" summary="Add link to shoppagina">
       <created>1616579531363</created>
       <option name="number" value="00003" />
@@ -272,6 +329,37 @@
       <updated>1616592299426</updated>
     </task>
     <option name="localTasksCounter" value="5" />
+=======
+    <task id="LOCAL-00003" summary="Added Functionality for admin.">
+      <created>1616601537760</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616601537760</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Able to upload images to database and local image directory.">
+      <created>1616776534225</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616776534225</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit">
+      <created>1616776574328</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616776574328</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Able to delete images from directory.">
+      <created>1617017042104</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617017042104</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+>>>>>>> Jelmer
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,8 +384,48 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="ContactPage is toegevoegt." />
     <MESSAGE value="Contact pagina" />
+<<<<<<< HEAD
     <MESSAGE value="Add link to shoppagina" />
     <MESSAGE value="Add all images" />
     <option name="LAST_COMMIT_MESSAGE" value="Add all images" />
+=======
+    <MESSAGE value="Added Functionality for admin." />
+    <MESSAGE value="Able to upload images to database and local image directory." />
+    <MESSAGE value="commit" />
+    <MESSAGE value="Able to delete images from directory." />
+    <option name="LAST_COMMIT_MESSAGE" value="Able to delete images from directory." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/wwwroot/Classes/Repositories/PhotoRepository.cs</url>
+          <line>30</line>
+          <properties documentPath="C:\Users\jelme\RiderProjects\FotoShop\wwwroot\Classes\Repositories\PhotoRepository.cs" initialLine="30" containingFunctionPresentation="method 'Add'">
+            <startOffsets>
+              <option value="969" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1308" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/wwwroot/Classes/Repositories/PhotoRepository.cs</url>
+          <line>35</line>
+          <properties documentPath="C:\Users\jelme\RiderProjects\FotoShop\wwwroot\Classes\Repositories\PhotoRepository.cs" initialLine="35" containingFunctionPresentation="method 'Add'">
+            <startOffsets>
+              <option value="1334" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1359" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+>>>>>>> Jelmer
   </component>
 </project>
