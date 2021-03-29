@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace FotoShop
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("nl-NL");
             services.AddRazorPages();
 #if DEBUG
             SetupDatabase();
@@ -61,8 +63,8 @@ namespace FotoShop
             {
                 string path = Path.Combine(photo.Directory.Name, photo.Name);
                 path = path.Replace("\\", @"/");
-                sql += String.Format(@" INSERT INTO photo (Photo_path, Price, Description, Category_name)
-                    VALUES('{0}', '12.99', 'Dit is een mooie foto', '{1}');",
+                sql += String.Format(@" INSERT INTO photo (Photo_path, Price, Title, Description, Category_name)
+                    VALUES('{0}', '12.99', 'Foto!', 'Dit is een mooie foto', '{1}');",
                     path, photo.Directory.Name);
             }
             connection.Execute(dbSetupScript + sql);

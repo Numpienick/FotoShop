@@ -6,8 +6,8 @@ using System.IO;
 using System.Net;
 using System.Net.Mime;
 using System.Threading.Tasks;
-using FotoShop.wwwroot.Classes;
-using FotoShop.wwwroot.Classes.Repositories;
+using FotoShop.Classes;
+using FotoShop.Classes.Repositories;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -26,13 +26,13 @@ namespace FotoShop.Pages
         {
             this._hostEnvironment = hostEnvironment;
         }
-        
+
         public void OnGet()
         {
-            
+
         }
-        
-        public async Task<IActionResult> OnPostUpload(string description, string categoryName, float price)
+
+        public async Task<IActionResult> OnPostUpload(string description, string categoryName, string price)
         {
             if (ModelState.IsValid)
             {
@@ -49,26 +49,11 @@ namespace FotoShop.Pages
                 photo.Price = price;
                 photo.Description = description;
                 photo.Category_name = categoryName;
-                new PhotoRepository().Add(photo);
+                using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
+                repo.Add(photo);
             }
-            
-            return Redirect("/UploadImage");
-        }
 
-        public async void OnPostDelete()
-        {
-            string rootPath = _hostEnvironment.WebRootPath;
-            try
-            {
-                if (System.IO.File.Exists(Path.Combine(rootPath + "/images/gJEQ7vy.png")))
-                {
-                    System.IO.File.Delete(Path.Combine(rootPath + "/images/gJEQ7vy.png"));
-                }
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
+            return Redirect("/UploadImage");
         }
     }
 }

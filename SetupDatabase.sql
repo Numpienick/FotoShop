@@ -55,6 +55,7 @@ CREATE TABLE photo (
   Photo_id int NOT NULL AUTO_INCREMENT,
   Photo_path varchar(100) NOT NULL,
   Price decimal(5,2) DEFAULT '0.00',
+  Title varchar(45) DEFAULT NULL,
   Description varchar(500) DEFAULT NULL,
   Category_name varchar(20) NOT NULL,
   PRIMARY KEY (Photo_id),
@@ -74,6 +75,8 @@ CREATE TABLE placed_order_photo (
 
 INSERT INTO account (Email, Password, Account_type, First_name, Last_name)
 VALUES ("admin@admin.com", "123", "admin", "Fotograaf", "Persoon");
+INSERT INTO account (Email, Password, First_name, Last_name)
+VALUES ("user@user.com", "123", "Account", "Persoon");
 
 INSERT INTO category (Name, Description)
 VALUES ("Modern Urban", "Dit is een mooie Urban categorie");
