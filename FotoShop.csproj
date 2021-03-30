@@ -17,12 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Classes\Photo.cs" />
     <Content Include="obj\rider.project.restore.info" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="wwwroot\Classes\Photo.cs" />
-    <Compile Include="wwwroot\Classes\Repositories\PhotoRepository.cs" />
-  </ItemGroup>
-
 </Project>

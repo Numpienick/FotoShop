@@ -1,5 +1,5 @@
 ﻿@page
-@using FotoShop.wwwroot.Classes
+@using FotoShop.Classes
 @model FotoShop.Pages.ModernUrban
 
 @{
@@ -15,28 +15,30 @@
 <div>
     <div class="row shop_row">
         <div class="col-lg shop_column">
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban1.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban6.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban9.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban10.jpg"/>
+            <a asp-route-id="1" asp-page="PhotoPage">
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban1.jpg"/>
+            </a>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban6.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban9.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban10.jpg"/>
         </div>
         <div class="col-lg shop_column">
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban2.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban7.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban11.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban12.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban2.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban7.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban11.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban12.jpg"/>
         </div>
         <div class="col-lg shop_column">
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban3.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban8.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban13.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban14.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban3.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban8.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban13.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban14.jpg"/>
         </div>
         <div class="col-lg shop_column">
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban4.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban9.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban15.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban Foto's/Urban16.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban4.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban9.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban15.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban16.jpg"/>
         </div>
         <!--     @foreach (var photo in @Model.AllPhotos)
                  {
