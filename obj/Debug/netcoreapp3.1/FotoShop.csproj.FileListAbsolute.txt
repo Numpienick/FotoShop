@@ -114,3 +114,4 @@ C:\Users\thimo\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.csproj.Co
 C:\Users\thimo\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.dll
 C:\Users\thimo\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.pdb
 C:\Users\thimo\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.genruntimeconfig.cache
+C:\Users\thimo\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\ShoppingCart.cshtml.g.cs

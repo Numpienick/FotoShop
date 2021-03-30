@@ -2,18 +2,66 @@
 @model FotoShop.Pages.ShoppingCart
 
 @{
-    Layout = null;
+    Layout = "_Layout";
 }
 
-<!DOCTYPE html>
+@section Styles {
+    <link href="~/css/cart.css" rel="stylesheet"/>
+}
 
-<html>
-<head>
-    <title></title>
-</head>
 <body>
-<div>
-    
+<div class="container">
+    <div class="col Main_col">
+        <div class="row Photo_display">
+            <div class="row border-dark border-top-0 border-right-0 border-left-0 Item">
+                <div class="col Item_img">
+                    <img class="testimg" src="Images/ProductImages/Modern Urban/Urban1.jpg"/>
+                </div>
+                <div class="col Item_info">
+                    <div class="row Item_titel">
+                        <span>Titel</span>
+                    </div>
+                    <div class="row Item_prijs">
+                        <span>Prijs</span>
+                    </div>
+                    <div class="row Item_button">
+                        <button id="deleteBtn" class="btn btn-outline-danger my-3" type="button">
+                            <img class="mr-2" src="~/images/delete_black_24dp.svg"/>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row border-dark border-top-0 border-right-0 border-left-0 Item">
+                <div class="col Item_img">
+                    <img class="testimg" src="Images/ProductImages/Pop/Pop69.jpg"/>
+                </div>
+                <div class="col Item_info">
+                    <div class="row Item_titel">
+                        <span>Titel</span>
+                    </div>
+                    <div class="row Item_prijs">
+                        <span>Prijs</span>
+                    </div>
+                    <div class="row Item_button">
+                        <button id="deleteBtn" class="btn btn-outline-danger my-3" type="button">
+                            <img class="mr-2" src="~/images/delete_black_24dp.svg"/>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col Item_payment">
+            <div class="row Price_sum">
+                <span>Subtotaal: </span>
+            </div>
+            <div class="row Vat_payment">
+                <span>Inclusief BTW 21%</span>
+            </div>
+            <div class="row mb-3 Pay_button">
+                <button>Afrekenen</button>
+            </div>
+        </div>
+    </div>
+
 </div>
 </body>
-</html>

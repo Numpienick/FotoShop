@@ -94,6 +94,7 @@
           </e>
         </e>
         <e p="css" t="Include">
+          <e p="cart.css" t="Include" />
           <e p="contact.css" t="Include" />
           <e p="index.css" t="Include" />
           <e p="shop.css" t="Include" />

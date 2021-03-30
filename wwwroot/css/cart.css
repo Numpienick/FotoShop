@@ -1,0 +1,23 @@
+﻿.body{
+    background-color: #f2f2f2;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+.Item{
+    margin: 1%;
+}
+
+.testimg{
+    flex: 25%;
+    max-width: 75%;
+    box-sizing: border-box;
+}
+
+.Item_payment{
+    margin-left: 1%;
+}
