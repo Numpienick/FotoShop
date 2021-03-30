@@ -16,7 +16,7 @@
                     <div class="my-2">
                         <span> @Html.AntiForgeryToken()</span>
                         <input id="photoId" type="hidden" name="id"
-                               value="@Model.PagePhoto.Photo_id" />
+                               value="@Model.PagePhoto.Photo_id"/>
                         <img class="img-fluid border border-dark" src="@Model.GetPhotoPath()" />
                     </div>
                     <h2 id="title" class="editable" contenteditable="false">@Model.PagePhoto.Title</h2>
@@ -45,13 +45,11 @@
                     </div>
                 </form>
             </div>
-
             <div class="col-lg-1"></div>
-
             <div class="col-lg-3">
                 <h4 class="pt-4">€<span id="price" class="editable" contenteditable="false">@Model.PagePhoto.Price.Replace('.', ',')</span></h4>
-                <button class="btn-sm btn-success text-nowrap" type="button"><img class="mr-2" src="~/images/addToShoppingCartIcon.svg" />Voeg toe aan winkelwagen</button>
+                <button  class="btn-sm btn-success text-nowrap" type="button"><img class="mr-2" src="~/images/addToShoppingCartIcon.svg" />Voeg toe aan winkelwagen</button>
             </div>
         </div>
-    </div>
-</body>
+</div>
+</body> 
