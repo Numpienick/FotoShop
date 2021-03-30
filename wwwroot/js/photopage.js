@@ -28,7 +28,7 @@
 			data: JSON.stringify(myData),
 			success: function (data) {
 				if (data == "success") {
-					location.reload();				
+					location.reload();
 				}
 				if (data == "failed") {
 					$("#alert").html($(

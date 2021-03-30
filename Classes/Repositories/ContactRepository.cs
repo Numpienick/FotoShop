@@ -1,23 +1,26 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using Dapper;
 using MySql.Data.MySqlClient;
 
 namespace FotoShop.Classes.Repositories
 {
-    public class ContactRepository
+    public class ContactRepository : IDisposable
     {
-        public IDbConnection Connect()
+        private readonly IDbConnection _connection;
+        public ContactRepository(IDbConnection connection)
         {
-            string connectionString = @"Server=127.0.0.1;
-                                        Database=fotoshop;
-                                        Uid=root;
-                                        Pwd=admin;";
-            return new MySqlConnection(connectionString);
+            _connection = connection;
+        }
+
+        public void Dispose()
+        {
+            _connection?.Dispose();
         }
 
         public bool InsertNewContact(DBContact dbContact)
         {
-            using var connection = Connect();
+            using var connection = _connection;
             var numRowEffected = connection.Execute(
                 @"INSERT INTO contact(Subject, Message, Name, Email)
                         VALUES (@paraSubject, @paraMessage, @paraName, @paraEmail)", 

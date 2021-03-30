@@ -21,3 +21,9 @@
     width: 100%;
 }
 
+@media screen and (max-width: 800px) {
+    .shop_column {
+        flex: 50%;
+        max-width: 50vw;
+    }
+}
