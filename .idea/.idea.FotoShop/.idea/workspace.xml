@@ -4,6 +4,7 @@
     <projectFile>FotoShop.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -82,12 +83,16 @@
 >>>>>>> NickN
 =======
     <list default="true" id="b7d6491f-1459-4ea8-8c7d-0208d62f363c" name="Default Changelist" comment="Able to delete images from directory.">
+=======
+    <list default="true" id="b7d6491f-1459-4ea8-8c7d-0208d62f363c" name="Default Changelist" comment="Added cs files">
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FotoShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FotoShop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/ShopModernUrban.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/ShopModernUrban.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp3.1/FotoShop.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/FotoShop.Views.pdb" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/_Layout.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/_Layout.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" afterDir="false" />
 >>>>>>> Jelmer
@@ -96,6 +101,10 @@
       <change beforePath="$PROJECT_DIR$/wwwroot/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/shop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" afterDir="false" />
 >>>>>>> Shoppagina-EJ
+=======
+      <change beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/ShopModernUrban.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/Pages/ShopModernUrban.cshtml.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/css/shop.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/shop.css" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,11 +158,12 @@
 <<<<<<< HEAD
     <setting file="file://$PROJECT_DIR$/Pages/Shop.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/ShopModernUrban.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/wwwroot/Classes/Photo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/ShopModernUrban.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A9C37662-579A-499A-A4DE-B3C85349280D/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/eelco_b0keash/OneDrive/Documenten/Week 3/FotoShop/Pages/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Pages/Shop.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <setting file="file://$PROJECT_DIR$/obj/Debug/netcoreapp3.1/Razor/_ViewImports.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
 =======
@@ -166,6 +176,9 @@
 =======
     <setting file="file://$PROJECT_DIR$/wwwroot/Classes/Repositories/PhotoRepository.cs" root0="FORCE_HIGHLIGHTING" />
 >>>>>>> Shoppagina-EJ
+=======
+    <setting file="file://$PROJECT_DIR$/wwwroot/Classes/Repositories/PhotoRepository.cs" root0="SKIP_HIGHLIGHTING" />
+>>>>>>> Stashed changes
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -181,6 +194,7 @@
       <option value="$PROJECT_DIR$/Pages/ShopPop.cshtml.cs" />
       <option value="$PROJECT_DIR$/Pages/ShopUrbex.cshtml" />
       <option value="$PROJECT_DIR$/Pages/ShopPop.cshtml" />
+<<<<<<< Updated upstream
       <option value="$PROJECT_DIR$/Pages/ShopModernUrban.cshtml" />
 <<<<<<< HEAD
 >>>>>>> NickN
@@ -200,11 +214,17 @@
       <option value="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" />
 >>>>>>> Jelmer
 =======
+=======
+>>>>>>> Stashed changes
       <option value="$PROJECT_DIR$/wwwroot/css/shoppagina.css" />
-      <option value="$PROJECT_DIR$/wwwroot/css/shop.css" />
       <option value="$PROJECT_DIR$/Pages/_Layout.cshtml" />
       <option value="$PROJECT_DIR$/wwwroot/css/stylesheet-layout.css" />
+<<<<<<< Updated upstream
 >>>>>>> Shoppagina-EJ
+=======
+      <option value="$PROJECT_DIR$/wwwroot/css/shop.css" />
+      <option value="$PROJECT_DIR$/Pages/ShopModernUrban.cshtml" />
+>>>>>>> Stashed changes
     </changedPaths>
   </component>
   <component name="ProjectId" id="1ppr6MG45OpE0vRdbXLGFrshMgv" />
@@ -319,8 +339,13 @@
       <workItem from="1616770010739" duration="1274000" />
       <workItem from="1616939008943" duration="4327000" />
       <workItem from="1616952769698" duration="302000" />
+<<<<<<< Updated upstream
       <workItem from="1617006248845" duration="7221000" />
 >>>>>>> Shoppagina-EJ
+=======
+      <workItem from="1617006248845" duration="7688000" />
+      <workItem from="1617048849718" duration="2317000" />
+>>>>>>> Stashed changes
     </task>
     <task id="LOCAL-00001" summary="ContactPage is toegevoegt.">
       <created>1615902311635</created>
@@ -406,8 +431,19 @@
       <option name="project" value="LOCAL" />
       <updated>1617011505527</updated>
     </task>
+<<<<<<< Updated upstream
     <option name="localTasksCounter" value="8" />
 >>>>>>> Shoppagina-EJ
+=======
+    <task id="LOCAL-00008" summary="Added cs files">
+      <created>1617030604596</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617030604596</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+>>>>>>> Stashed changes
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +516,12 @@
     <MESSAGE value="Add product layout" />
     <MESSAGE value="Added finished shoppages" />
     <MESSAGE value="Added updated banner &amp; logo" />
+<<<<<<< Updated upstream
     <option name="LAST_COMMIT_MESSAGE" value="Added updated banner &amp; logo" />
 >>>>>>> Shoppagina-EJ
+=======
+    <MESSAGE value="Added cs files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added cs files" />
+>>>>>>> Stashed changes
   </component>
 </project>
