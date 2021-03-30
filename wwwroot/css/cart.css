@@ -21,3 +21,7 @@
 .Item_payment{
     margin-left: 1%;
 }
+
+.Pay_button{
+    border-radius: 10px;
+}
