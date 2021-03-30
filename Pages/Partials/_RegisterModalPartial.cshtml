@@ -1,6 +1,6 @@
-﻿@model HappyBrides.Classes.User
+﻿@model FotoShop.Classes.User
 
-<div class="signUp w-100">
+<div class="w-100">
     <div class="modal fade modal-md"
          id="modalRegisterForm"
          tabindex="-1"
@@ -16,7 +16,7 @@
                     </a>
                 </div>
                 <div class="modal-body mx-4">
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <form asp-page-handler="RegisterModalPartial">
                         <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
                         <div class="input-group mt-2">
@@ -29,11 +29,18 @@
 
                         <div class="input-group mt-2">
                             <span class="p-2"><img src="images/nameIcon.svg" /></span>
-                            <input type="text" asp-for="User_Name"
+                            <input type="text" asp-for="First_name"
                                    class="form-control border-top-0 border-left-0 border-right-0 my-auto"
-                                   placeholder="Uw naam..." />
+                                   placeholder="Uw voornaam..." />
+                            <span>&nbsp</span>
+                            <input type="text" asp-for="Last_name"
+                                   class="form-control border-top-0 border-left-0 border-right-0 my-auto"
+                                   placeholder="Uw achternaam..." />
                         </div>
-                        <span asp-validation-for="User_Name" class="text-danger"></span>
+                        <span asp-validation-for="First_name" class="text-danger"></span>
+                        <div></div>
+                        <span asp-validation-for="Last_name" class="text-danger"></span>
+
                         <div class="input-group mt-3">
                             <span class="p-2">
                                 <img src="images/passwordIcon.svg" />
@@ -43,6 +50,7 @@
                                    placeholder="Uw wachtwoord..." />
                         </div>
                         <span asp-validation-for="User_Password" class="text-danger"></span>
+
                         <div class="input-group mt-1">
                             <span class="p-2">
                                 <img src="images/passwordIcon.svg" />

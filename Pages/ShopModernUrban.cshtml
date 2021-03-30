@@ -1,0 +1,56 @@
+﻿@page
+@using FotoShop.Classes
+@model FotoShop.Pages.ModernUrban
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Shop";
+}
+
+@section Styles {
+    <link href="/css/Shop.css" rel="stylesheet"/>
+}
+
+<body>
+<div>
+    <div class="row shop_row">
+        <div class="col-lg shop_column">
+            <a asp-route-id="1" asp-page="PhotoPage">
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban1.jpg"/>
+            </a>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban6.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban9.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban10.jpg"/>
+        </div>
+        <div class="col-lg shop_column">
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban2.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban7.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban11.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban12.jpg"/>
+        </div>
+        <div class="col-lg shop_column">
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban3.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban8.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban13.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban14.jpg"/>
+        </div>
+        <div class="col-lg shop_column">
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban4.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban9.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban15.jpg"/>
+            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban16.jpg"/>
+        </div>
+        <!--     @foreach (var photo in @Model.AllPhotos)
+                 {
+                     <div class="UserProduct">
+                         <img src="@photo.Photo_path"/>
+                         <label value="@photo.Price"></label>
+                     </div>
+                     //<div class="AdminProduct">
+                     //    <img/>
+                     //    <label value="@photo.Price"/>
+                     //</div>
+                 }!-->
+    </div>
+</div>
+</body>
