@@ -42,8 +42,8 @@ CREATE TABLE contact (
 CREATE TABLE placed_order (
   Placed_order_id int NOT NULL AUTO_INCREMENT,
   Account_id int NOT NULL,
-  Date_placed_order_placed datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  Date_placed_order_paid datetime DEFAULT NULL,
+  Date_order_placed datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  Date_order_paid datetime DEFAULT NULL,
   Download_link varchar(100) DEFAULT NULL,
   PRIMARY KEY (Placed_order_id),
   UNIQUE KEY Placed_order_id_UNIQUE (Placed_order_id),
@@ -55,6 +55,7 @@ CREATE TABLE photo (
   Photo_id int NOT NULL AUTO_INCREMENT,
   Photo_path varchar(100) NOT NULL,
   Price decimal(5,2) DEFAULT '0.00',
+  Title varchar(45) DEFAULT NULL,
   Description varchar(500) DEFAULT NULL,
   Category_name varchar(20) NOT NULL,
   PRIMARY KEY (Photo_id),
@@ -74,6 +75,8 @@ CREATE TABLE placed_order_photo (
 
 INSERT INTO account (Email, Password, Account_type, First_name, Last_name)
 VALUES ("admin@admin.com", "123", "admin", "Fotograaf", "Persoon");
+INSERT INTO account (Email, Password, First_name, Last_name)
+VALUES ("user@user.com", "123", "Account", "Persoon");
 
 INSERT INTO category (Name, Description)
 VALUES ("Modern Urban", "Dit is een mooie Urban categorie");

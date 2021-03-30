@@ -1,19 +1,6 @@
-﻿.body {
-    display: grid;
-    background-color: #f2f2f2;
-}
-
-.linker {
+﻿.linker {
     font-family: 'Poppins', sans-serif;
     text-align: right;
-}
-
-.container {
-    width: 100%;
-}
-
-.NormaleT {
-    font-family: 'Poppins', sans-serif;
 }
 
 .LI {
@@ -50,20 +37,5 @@
 
 .titel {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #1e2c2e;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-p {
-    color: #1e2c2e;
     font-family: 'Poppins', sans-serif;
 }

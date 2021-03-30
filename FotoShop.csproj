@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Images\ProductImages" />
-    <Folder Include="wwwroot\Images\Urbex Foto's" />
     <Folder Include="wwwroot\js\" />
   </ItemGroup>
 
@@ -21,5 +20,4 @@
     <Content Include="Classes\Photo.cs" />
     <Content Include="obj\rider.project.restore.info" />
   </ItemGroup>
-
 </Project>

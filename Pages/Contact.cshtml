@@ -12,7 +12,7 @@
 }
 
 <div class="container-fluid blauw">
-    
+
     <div class="titel d-flex justify-content-center">
         <h1>@ViewData["Title"]</h1>
     </div>
@@ -28,69 +28,67 @@
 
     <div class="row">
         <div class="col-lg-12 d-flex justify-content-center">
-            
+
             <form class="ContactForm" method="post">
-            
-                <div class="form-group">
-                    <img src="images/perm_identity_black_24dp.svg"></img>
+
+                <div class="form-group mt-2">
+                    <img src="images/perm_identity_black_24dp.svg" />
                     <label for="Naam">Naam*</label> <br>
                     <span class="text-danger" asp-validation-for="GetDbContact.name"></span>
-                    <input  id="Naam" 
-                            class="form-control input-lg"
-                            asp-for="GetDbContact.name"> <br>
+                    <input id="Naam"
+                           class="form-control input-lg"
+                           asp-for="GetDbContact.name">
                 </div>
 
-                <div class="form-group">
-                    <img src="images/email_black_24dp.svg"></img>
+                <div class="form-group mt-2">
+                    <img src="images/email_black_24dp.svg" />
                     <label for="Email">E-mailadres*</label> <br>
-                      <span class="text-danger" asp-validation-for="GetDbContact.email"></span>
+                    <span class="text-danger" asp-validation-for="GetDbContact.email"></span>
                     <input id="Email"
-                           class="form-control input-lg" 
-                           asp-for="GetDbContact.email" 
-                           type="email"/> <br>
+                           class="form-control input-lg"
+                           asp-for="GetDbContact.email"
+                           type="email" />
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mt-2">
                     <img src="images/title_black.svg">
                     <label for="Onderwerp">Onderwerp*</label> <br>
-                      <span class="text-danger" asp-validation-for="GetDbContact.message"></span>
-                    <input id="Onderwerp" 
-                           class="form-control input-lg" 
-                           asp-for="GetDbContact.subject"> <br>
+                    <span class="text-danger" asp-validation-for="GetDbContact.subject"></span>
+                    <input id="Onderwerp"
+                           class="form-control input-lg"
+                           asp-for="GetDbContact.subject">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mt-2">
                     <img src="images/description_black_24dp.svg">
                     <label for="Bericht">Bericht*</label> <br>
-                     <span class="text-danger" asp-validation-for="GetDbContact.message"></span>
-                    <textarea id="Bericht" 
-                                class="form-control input-lg"
-                                rows="7"
-                                asp-for="GetDbContact.message">
-                    </textarea> <br>
+                    <span class="text-danger" asp-validation-for="GetDbContact.message"></span>
+                    <textarea id="Bericht"
+                              class="form-control input-lg"
+                              rows="7"
+                              asp-for="GetDbContact.message">
+                    </textarea>
                 </div>
-                
+
                 <div class="form-group d-flex justify-content-center">
                     <button id="SubmitButton"
-                            class="btn-primary"
+                            class="btn btn-primary"
                             type="submit"
-                            asp-page-handler="Create"
-                    >Verzenden
+                            asp-page-handler="Create">
+                        Verzenden
                     </button>
                 </div>
-                
                 <!--
-               if (Model.inputIsValid == true)
-                {
-                    <script> 
-                        function showAlert() {
-                            alert("Uw bericht is ontvangen!");
-                            }
-                    </script>  
-                }-->
-                
+                if (Model.inputIsValid == true)
+                 {
+                     <script>
+                         function showAlert() {
+                             alert("Uw bericht is ontvangen!");
+                             }
+                     </script>
+                 }-->
+
             </form>
         </div>
     </div>
-    
 </div>

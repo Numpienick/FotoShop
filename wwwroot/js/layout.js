@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
 	var user = GetCookie('UserLoggedIn');
-	if (user == "") {
+	if (user == "" || user == undefined) {
 		$(".loggedIn").hide();
 	} else {
 		$(".notLoggedIn").hide();
@@ -20,6 +20,5 @@
 				return c.substring(name.length, c.length);
 			}
 		}
-		return "";
 	}
 });

@@ -1,51 +1,29 @@
-﻿
-.container{
+.body{
+    background-color: #f2f2f2;
+}
+.shop_row {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top:1vw;
-    max-width: 100vw;
-    
-} 
-.moderncont{
-    background-color: #adc5c8;
-    text-align: center;
-    border-radius: 15px;
-}
-.urbexcont{
-    background-color: #8ba0a3;
-    text-align: center;
-    border-radius: 15px;
-}
-.popcont{
-    background-color: #afced2;
-    text-align: center;
-    border-radius: 15px;
+    padding: 0 0.125vw;
+    max-width: 100%;
+    margin-left: 0.001vw;
 }
 
-.ModernImgShop{
-    width: 23vw;
-    margin: 5vw 3vw 2vw 3vw;
+.shop_column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 0.125vw;
 }
 
-.PopImgShop{
-    width: 23vw;
-    margin: 5vw 3vw 2vw 3vw;
+.testimg {
+    margin-top: 0.25vw;
+    vertical-align: middle;
+    width: 100%;
 }
 
-.UrbexImgShop{
-    width: 23vw;
-    margin: 5vw 3vw 2vw 3vw;
+@media screen and (max-width: 800px) {
+    .shop_column {
+        flex: 50%;
+        max-width: 50vw;
+    }
 }
-
-.ModernPrijs, .UrbexPrijs, .PopPrijs{
-    padding-top: 6vw;
-    padding-bottom: 1vw;
-}
-
-.TitelPop, .TitelModern, .TitelUrbex{
-    padding-top: 1vw;
-    font-weight: bold;
-}
-

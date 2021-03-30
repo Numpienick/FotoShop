@@ -41,10 +41,33 @@ namespace FotoShop.Classes.Repositories
         public string LogIn(string email, string password)
         {
             using var connection = _connection;
-            string id = connection.QuerySingleOrDefault<string>(@"SELECT User_id FROM user 
+            string id = connection.QuerySingleOrDefault<string>(@"SELECT Account_id FROM account 
                 WHERE Email = @Email AND Password = @Password",
                 new { Email = email, Password = password });
             return id;
+        }
+
+        /// <summary>
+        /// Accesses the account table to retrieve the value of the designated column
+        /// </summary>
+        /// <param name="toGet">Name of the column that holds the wanted value</param>
+        /// <param name="id">Id of the user</param>
+        /// <returns></returns>
+        public string GetFromAccount(string toGet, string id)
+        {
+            string userValue = "";
+            using var connection = _connection;
+            try
+            {
+                userValue = connection.ExecuteScalar<string>(@$"SELECT {toGet} FROM account 
+                WHERE Account_id = @Id", new { Id = id });
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return userValue;
+            }
+            return userValue;
         }
     }
 }

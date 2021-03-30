@@ -1,22 +1,36 @@
-﻿.navbar-style{
-    background-color: #87E5B3;
-    font-family: 'Source Sans Pro', sans-serif !important;
-    font-size: 32px !important;
-    font-palette: dark;
-    color: black;
-    border-bottom: 2px solid black;
+﻿body {
+    background-color: #f2f2f2;
+    color: #1e2c2e;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 70px;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 2.5rem;
 }
 
-.div-style {
-    font-size: 8px;
-    padding-right: 2%;
-    padding-left: 2%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
 }
-.text-dark{
-    
+
+.navbar-style {
+    background-color: #87E5B3;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 26px;
+    border-bottom: 1px solid black;
+}
+
+.icon-size {
+    width: 3vw;
+    height: auto;
 }
 
 .banner {
+    top: auto;
     border-left: 2px solid black;
     border-right: 2px solid black;
     border-bottom: 2px solid black;
@@ -26,40 +40,42 @@
 }
 
 .contain-logo {
-    width: 15%;
+    width: 15vw;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
 
-.logo-size {
-    width: 100%;
-}
-
-.dropdown-menu a {
-    text-decoration: none;
+/*.dropdown-menu {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
 }
 
-.dropdown-menu a:hover {
-    background-color: grey;
-}
+    .dropdown-menu a {
+        text-decoration: none;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
 
-.dropdown:hover .dropdown-menu {
-    display:flex;
-    flex-direction: column;
-}
+        .dropdown-menu a:hover {
+            background-color: grey;
+        }*/
+
+/*.dropdown:hover .dropdown-menu {
+    display: block;
+}*/
 
 .padding {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 0 5vw 0 0;
 }
 
-.footer {
-    background: #6EECAC;
+.background {
+    background-color: #80E4F0;
+}
+
+footer {
+    background-color: #6EECAC;
     position: absolute;
     bottom: 0;
     width: 100%;
-    white-space: nowrap;
-    line-height: 20px; /* Vertically center the text there */
+    height: 2.5rem;
 }
