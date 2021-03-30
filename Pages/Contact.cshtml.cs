@@ -23,10 +23,9 @@ namespace FotoShop.Pages
                 repo.InsertNewContact(GetDbContact);
 
                 ModelState.Clear();
-            }
+            }          
             
-            
-            return Page();
+            return Redirect("Contact");
         }
     }
 }

@@ -31,50 +31,53 @@
 
             <form class="ContactForm" method="post">
 
-                <div class="form-group">
-                    <img src="images/perm_identity_black_24dp.svg"></img>
+                <div class="form-group mt-2">
+                    <img src="images/perm_identity_black_24dp.svg" />
                     <label for="Naam">Naam*</label> <br>
+                    <span class="text-danger" asp-validation-for="GetDbContact.name"></span>
                     <input id="Naam"
                            class="form-control input-lg"
-                           asp-for="GetDbContact.name"> <br>
+                           asp-for="GetDbContact.name">
                 </div>
 
-                <div class="form-group">
-                    <img src="images/email_black_24dp.svg"></img>
+                <div class="form-group mt-2">
+                    <img src="images/email_black_24dp.svg" />
                     <label for="Email">E-mailadres*</label> <br>
+                    <span class="text-danger" asp-validation-for="GetDbContact.email"></span>
                     <input id="Email"
                            class="form-control input-lg"
                            asp-for="GetDbContact.email"
-                           type="email" /> <br>
+                           type="email" />
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mt-2">
                     <img src="images/title_black.svg">
                     <label for="Onderwerp">Onderwerp*</label> <br>
+                    <span class="text-danger" asp-validation-for="GetDbContact.subject"></span>
                     <input id="Onderwerp"
                            class="form-control input-lg"
-                           asp-for="GetDbContact.subject"> <br>
+                           asp-for="GetDbContact.subject">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mt-2">
                     <img src="images/description_black_24dp.svg">
                     <label for="Bericht">Bericht*</label> <br>
+                    <span class="text-danger" asp-validation-for="GetDbContact.message"></span>
                     <textarea id="Bericht"
                               class="form-control input-lg"
                               rows="7"
                               asp-for="GetDbContact.message">
-                    </textarea> <br>
+                    </textarea>
                 </div>
 
                 <div class="form-group d-flex justify-content-center">
                     <button id="SubmitButton"
-                            class="btn-primary"
+                            class="btn btn-primary"
                             type="submit"
                             asp-page-handler="Create">
                         Verzenden
                     </button>
                 </div>
-
                 <!--
                 if (Model.inputIsValid == true)
                  {
@@ -88,5 +91,4 @@
             </form>
         </div>
     </div>
-
 </div>
