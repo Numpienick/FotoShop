@@ -1,0 +1,49 @@
+﻿@model FotoShop.Classes.LogIn
+
+
+<div class="modal fade modal-md"
+     id="modalLoginForm"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modal-md">
+            <div class="modal-header text-center bg-dark text-light">
+                <h4 class="modal-title w-100">Log in</h4>
+                <a href="" class="close text-white" data-dismiss="modal">
+                    &times;
+                </a>
+            </div>
+            <div class="modal-body mx-4">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <form asp-page-handler="LogInModalPartial">
+                    <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+                    <div class="input-group mt-2">
+                        <span class="p-2"><img src="images/mail.svg" /></span>
+                        <input type="email" asp-for="Email"
+                               class="form-control border-top-0 border-left-0 border-right-0 my-auto"
+                               placeholder="Uw e-mail adres..." />
+                    </div>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                    <div class="input-group">
+                        <span class="p-2">
+                            <img src="images/passwordIcon.svg" />
+                        </span>
+                        <input type="password" asp-for="Password"
+                               class="form-control border-top-0 border-left-0 border-right-0 my-auto"
+                               placeholder="Uw wachtwoord..." />
+                    </div>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button id="saveModal" class="btn btn-success" data-save="modal" type="button">Log in</button>
+                <button class="btn btn-outline-success" type="button" data-dismiss="modal"
+                        data-toggle="ajax-modal" data-url="@Url.Page("Index", "RegisterModalPartial")">
+                    Registreer
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
