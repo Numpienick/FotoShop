@@ -45,24 +45,9 @@ h6 {
     margin: 0 0 0 0;
 }
 
-/*.dropdown-menu {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
+.dropdown-item:hover {
+    background: rgba(0, 0, 0, 0.1);
 }
-
-    .dropdown-menu a {
-        text-decoration: none;
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
-    }
-
-        .dropdown-menu a:hover {
-            background-color: grey;
-        }*/
-
-/*.dropdown:hover .dropdown-menu {
-    display: block;
-}*/
 
 .padding {
     padding: 0 5vw 0 0;
