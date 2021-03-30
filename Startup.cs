@@ -20,7 +20,6 @@ namespace FotoShop
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("nl-NL");
             services.AddRazorPages();
 #if DEBUG
             SetupDatabase();
