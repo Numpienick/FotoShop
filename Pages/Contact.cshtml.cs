@@ -9,12 +9,12 @@ namespace FotoShop.Pages
     {
         public void OnGet()
         {
-            
+
         }
 
         [BindProperty]
         public DBContact GetDbContact { get; set; }
-        
+
         public IActionResult OnPostCreate()
         {
             if (ModelState.IsValid)
@@ -23,9 +23,9 @@ namespace FotoShop.Pages
                 repo.InsertNewContact(GetDbContact);
 
                 ModelState.Clear();
-            }          
-            
-            return Redirect("Contact");
+                return Redirect("Contact");
+            }
+            return Page();
         }
     }
 }

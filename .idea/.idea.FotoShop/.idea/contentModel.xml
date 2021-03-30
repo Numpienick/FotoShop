@@ -37,6 +37,9 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="Pages" t="Include">
         <e p="_Layout.cshtml" t="Include" />
+        <e p="Components" t="Include">
+          <e p="ShoppingCart.cshtml" t="Include" />
+        </e>
         <e p="Contact.cshtml" t="Include" />
         <e p="Contact.cshtml.cs" t="Include" />
         <e p="Index.cshtml" t="Include" />
@@ -57,6 +60,9 @@
         <e p="ShopUrbex.cshtml.cs" t="Include" />
         <e p="UploadImage.cshtml" t="Include" />
         <e p="UploadImage.cshtml.cs" t="Include" />
+        <e p="ViewComponents" t="Include">
+          <e p="PhotoInfoComponent.cs" t="Include" />
+        </e>
       </e>
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
