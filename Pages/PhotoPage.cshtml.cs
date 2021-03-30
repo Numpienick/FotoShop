@@ -95,5 +95,16 @@ namespace FotoShop.Pages
             string path = repo.GetFromPhoto("Photo_path", PagePhoto.Photo_id);
             return string.Format("/Images/ProductImages/{0}", path);
         }
+
+        [BindProperty] public string ide {get;set;}
+        public void OnPostSubmitWinkelwagen()
+        {
+            string PhotoId = ide.ToString();
+            var Cookie = Request.Cookies["ShoppingCartAdd"];
+            if (Cookie != null)
+            {
+                Response.Cookies.Append("ShoppingCartAdd", PhotoId);
+            }
+        }
     }
 }

@@ -48,11 +48,10 @@
             <div class="col-lg-1"></div>
             <div class="col-lg-3">
                 <h4 class="pt-4">€<span id="price" class="editable" contenteditable="false">@Model.PagePhoto.Price.Replace('.', ',')</span></h4>
-<<<<<<< HEAD
-                <button  class="btn-sm btn-success text-nowrap" type="button"><img class="mr-2" src="~/images/addToShoppingCartIcon.svg" />Voeg toe aan winkelwagen</button>
-=======
-                <button class="btn-sm btn-success text-nowrap mb-3" type="button"><img class="mr-2" src="~/images/addToShoppingCartIcon.svg" />Voeg toe aan winkelwagen</button>
->>>>>>> NickN
+                <form method="post">
+                    <input type="hidden" asp-for="ide" value="@Model.PagePhoto.Photo_id"/>
+                    <button type="create" asp-page-handler="SubmitWinkelwagen" class="btn-sm btn-success text-nowrap" type="button"><img class="mr-2" src="~/images/addToShoppingCartIcon.svg" />Voeg toe aan winkelwagen</button>
+                </form>
             </div>
         </div>
 </div>
