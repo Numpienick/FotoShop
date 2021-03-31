@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\appsettings.json
 D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.exe
@@ -110,7 +109,6 @@ C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.pdb
 C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.genruntimeconfig.cache
 C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\UploadImage.cshtml.g.cs
 >>>>>>> Jelmer
-=======
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\FotoShop.exe
@@ -170,3 +168,6 @@ C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.pdb
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.genruntimeconfig.cache
 >>>>>>> merging_29_march
+D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopPop.cshtml.g.cs
+D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopUrbex.cshtml.g.cs
+D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\UploadImage.cshtml.g.cs
