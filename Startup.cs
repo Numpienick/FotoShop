@@ -62,7 +62,7 @@ namespace FotoShop
             {
                 string path = Path.Combine(photo.Directory.Name, photo.Name);
                 path = path.Replace("\\", @"/");
-                sql += String.Format(@" INSERT INTO photo (Photo_path, Price, Title, Description, Category_name)
+                sql += String.Format(@" INSERT INTO fotoshop.photo (Photo_path, Price, Title, Description, Category_name)
                     VALUES('{0}', '12.99', 'Foto!', 'Dit is een mooie foto', '{1}');",
                     path, photo.Directory.Name);
             }
