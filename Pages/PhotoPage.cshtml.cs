@@ -99,20 +99,26 @@ namespace FotoShop.Pages
         [BindProperty] public string PhotoId {get;set;}
         public IActionResult OnPostSubmitWinkelwagen()
         {
+            using OrderRepository repo = new OrderRepository(DbUtils.GetDbConnection());
             var Cookie = Request.Cookies["ShoppingCartAdd"];
             if (Cookie == null)
             {
                 Response.Cookies.Append("ShoppingCartAdd", PhotoId);
             }
-            using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
-            var Order = 
-            
-            
-            
-            
-            
+            var Cookie1 = Request.Cookies["UserLoggedIn"];
+            var OrderExcist = repo.Get(Cookie1);
+            if (OrderExcist == null)
+            {
+                using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
+                string downloadlink = "Randomlinkdit";
+                var NewOrder = repoAdd.Add(Cookie1, downloadlink, PhotoId);
+            }
+            else
+            {
+                using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
+                repoAdd.SelectOrderID(Cookie1, PhotoId);
+            }
             return Redirect($"PhotoPage?Id={PhotoId}");
         }
-        
     }
 }

@@ -24,7 +24,7 @@ namespace FotoShop
             services.AddMvc();
             services.AddRazorPages();
 #if DEBUG
-            SetupDatabase();
+            //SetupDatabase();
 #endif
         }
 

@@ -15,9 +15,11 @@
         <e p="DBContact.cs" t="Include" />
         <e p="DbUtils.cs" t="Include" />
         <e p="LogIn.cs" t="Include" />
+        <e p="Order.cs" t="Include" />
         <e p="Photo.cs" t="Include" />
         <e p="Repositories" t="Include">
           <e p="ContactRepository.cs" t="Include" />
+          <e p="OrderRepository.cs" t="Include" />
           <e p="PhotoRepository.cs" t="Include" />
           <e p="UserRepository.cs" t="Include" />
         </e>
