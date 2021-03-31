@@ -15,10 +15,10 @@
     padding: 0 0.125vw;
 }
 
-.testimg {
+.img {
     margin-top: 0.25vw;
     vertical-align: middle;
-    width: 100%;
+    width: 100% ;
 }
 
 @media screen and (max-width: 800px) {
@@ -27,3 +27,4 @@
         max-width: 50vw;
     }
 }
+
