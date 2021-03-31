@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using FotoShop.Classes;
 using FotoShop.Classes.Repositories;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -106,17 +107,20 @@ namespace FotoShop.Pages
                 Response.Cookies.Append("ShoppingCartAdd", PhotoId);
             }
             var Cookie1 = Request.Cookies["UserLoggedIn"];
-            var OrderExcist = repo.Get(Cookie1);
-            if (OrderExcist == null)
+            var OrderCookie = Request.Cookies["Order"];
+            if (OrderCookie == null)
             {
                 using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
                 string downloadlink = "Randomlinkdit";
                 var NewOrder = repoAdd.Add(Cookie1, downloadlink, PhotoId);
+                CookieOptions options = new CookieOptions();
+                options.Expires = DateTime.Now.AddMinutes(9999999);  
+                Response.Cookies.Append("Order", NewOrder.Placed_order_id);
             }
             else
             {
                 using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
-                repoAdd.SelectOrderID(Cookie1, PhotoId);
+                repoAdd.InsertPhoto(OrderCookie, PhotoId);
             }
             return Redirect($"PhotoPage?Id={PhotoId}");
         }
