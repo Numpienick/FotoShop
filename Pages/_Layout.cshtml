@@ -40,9 +40,14 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle caret" href="#" id="shopDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
-                    <div class="dropdown-menu" style="background-color: #f2f2f2" aria-labelledby="shopDropDown">
+                <li class="nav-item dropdown btn-group d-table py-2">
+                    <a class="nav-link d-inline" asp-page="Shop">Shop</a>
+                    <a class="nav-link d-inline dropdown-toggle dropdown-toggle-split"
+                       id="shopDropDown" href="#" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </a>
+                    <div class="dropdown-menu mt-md-3" aria-labelledby="shopDropDown">
                         <a class="dropdown-item" asp-page="ShopModernUrban">Modern Urban</a>
                         <div class="dropdown-divider border-dark"></div>
                         <a class="dropdown-item" asp-page="ShopUrbex">Urbex</a>
@@ -56,6 +61,11 @@
             </ul>
             <ul class="navbar-nav ml-auto list-group-horizontal">
                 <li class="nav-item">
+                    <a class="nav-link" asp-page="">
+                        <img src="images/shoppingCartIcon.svg" />
+                    </a>
+                </li>
+                <li class="nav-item ml-4">
                     <a class="nav-link notLoggedIn"
                        role="button"
                        data-toggle="ajax-modal"
@@ -63,24 +73,29 @@
                         <img src="images/personIcon.svg" />
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link loggedIn" asp-page="UploadImage">
+                <li class="nav-item ml-3 dropdown">
+                    <a class="nav-link loggedIn" href="#"
+                       role="button"
+                       id="accountDropDown"
+                       data-toggle="dropdown"
+                       aria-haspopup="true"
+                       aria-expanded="false">
                         <img src="images/personIcon.svg" />
                     </a>
-                </li>
-                <li class="nav-item ml-4">
-                    <a class="nav-link" asp-page="">
-                        <img src="images/shoppingCartIcon.svg" />
-                    </a>
+                    <div class="dropdown-menu dropdown-menu-right mt-md-3" aria-labelledby="accountDropDown">
+                        <a class="dropdown-item" asp-page-handler="LogOut">Log uit</a>
+                        <div class="dropdown-divider border-dark"></div>
+                        <a class="dropdown-item" asp-page="UploadImage">Account</a>
+                    </div>
                 </li>
             </ul>
         </div>
     </nav>
     @RenderBody()
     <footer class="mt-auto text-center align-items-center">
-            <p class="text-muted pt-2">
-                &copy; 2021 Hoekstra's Fotografie <a asp-page="Contact">Contact</a>
-            </p>
+        <p class="text-muted pt-2">
+            &copy; 2021 Hoekstra's Fotografie <a asp-page="Contact">Contact</a>
+        </p>
     </footer>
 </body>
 </html>

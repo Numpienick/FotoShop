@@ -16,7 +16,7 @@ namespace FotoShop.Pages
         [BindProperty]
         public DBContact GetDbContact { get; set; }
 
-        public IActionResult OnPostCreate()
+        public void OnPostCreate()
         {
             if (ModelState.IsValid)
             {
@@ -25,9 +25,7 @@ namespace FotoShop.Pages
                 ModelState.Clear();
                 Hidden = "";
                 GetDbContact = new DBContact();
-                //return Redirect("Contact");
             }
-            return Page();
         }
     }
 }
