@@ -11,11 +11,11 @@
     <script src="~/js/popper.min.js"></script>
     <script src="~/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
     <script src="~/js/layout.js"></script>
-    <link href="~/bootstrap-4.5.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-    <!-- CSS files from root folder -->
+    <!-- Global css files -->
     <link href="css/stylesheet-layout.css" rel="stylesheet" type="text/css" />
     <link href="css/site.css" rel="stylesheet" type="text/css" />
+    <link href="~/bootstrap-4.5.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
     <!-- Stylesheets from googlefonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -69,7 +69,7 @@
                     <a class="nav-link notLoggedIn"
                        role="button"
                        data-toggle="ajax-modal"
-                       data-url="@Url.Page("Index", "LogInModalPartial")">
+                       data-url="@Url.Page("Ajax", "LogInModalPartial")">
                         <img src="images/personIcon.svg" />
                     </a>
                 </li>
@@ -83,7 +83,12 @@
                         <img src="images/personIcon.svg" />
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="accountDropDown">
-                        <a class="dropdown-item" asp-page-handler="LogOut">Log uit</a>
+                        <a class="dropdown-item"
+                           role="button"
+                           id="logOut"
+                           data-url="@Url.Page("Ajax", "LogOut")">
+                            Log uit
+                        </a>
                         <div class="dropdown-divider border-dark"></div>
                         <a class="dropdown-item" asp-page="UploadImage">Account</a>
                     </div>
@@ -92,6 +97,7 @@
         </div>
     </nav>
     @RenderBody()
+    <div id="modal-placeholder"></div>
     <footer class="mt-auto text-center align-items-center">
         <p class="text-muted pt-2">
             &copy; 2021 Hoekstra's Fotografie <a asp-page="Contact">Contact</a>
