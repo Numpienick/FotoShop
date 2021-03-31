@@ -14,6 +14,7 @@
       <e p="Classes" t="Include">
         <e p="DBContact.cs" t="Include" />
         <e p="DbUtils.cs" t="Include" />
+        <e p="HardDriveUtils.cs" t="Include" />
         <e p="LogIn.cs" t="Include" />
         <e p="Photo.cs" t="Include" />
         <e p="Repositories" t="Include">
