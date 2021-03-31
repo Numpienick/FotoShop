@@ -74,5 +74,11 @@ namespace FotoShop.Pages
                 ViewData = new ViewDataDictionary<User>(ViewData, user)
             };
         }
+
+        public IActionResult OnGetLogOut()
+        {
+            Response.Cookies.Delete("UserLoggedIn");
+            return Redirect("Index");
+        }
     }
 }
