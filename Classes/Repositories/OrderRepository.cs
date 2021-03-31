@@ -58,11 +58,11 @@ namespace FotoShop.Classes.Repositories
             return AllPhoto;
         }
 
-        public void DeletePhoto(int Photo_id)
+        public void DeletePhoto(int Photo_id, string OrderCookie)
         {
             using var connection = _connection;
-            var DeletePhoto = connection.Execute("DELETE FROM placed_order_photo WHERE Photo_id = @Photo_id",
-                new {Photo_id = Photo_id});
+            var DeletePhoto = connection.Execute("DELETE FROM placed_order_photo WHERE Photo_id = @Photo_id AND Placed_order_id = @OrderCookie",
+                new {Photo_id = Photo_id, OrderCookie = OrderCookie});
         }
     }
 }

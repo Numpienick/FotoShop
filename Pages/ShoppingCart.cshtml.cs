@@ -38,8 +38,9 @@ namespace FotoShop.Pages
         [BindProperty] public int ImgId { get; set; }
         public void OnPostDelete()
         {
+            var OrderCookie = Request.Cookies["Order"];
             using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
-            repoAdd.DeletePhoto(ImgId);
+            repoAdd.DeletePhoto(ImgId, OrderCookie);
         }
     }
 }
