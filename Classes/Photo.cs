@@ -17,7 +17,7 @@ namespace FotoShop.Classes
         public string Description { get; set; }
         [Required(ErrorMessage = "Gelieve een prijs in te voeren!"), 
          Range(0, float.MaxValue, ErrorMessage = "Uw prijs moet een geldig decimaal getal zijn"), 
-         RegularExpression(@"[\d]{1,3}([,][\d]{1,2})?", ErrorMessage = "Uw prijs is te groot. Maximale prijs is 999,99")]
+         RegularExpression(@"[\d]{1,3}([,.][\d]{1,2})?", ErrorMessage = "Uw prijs is te groot. Maximale prijs is 999,99")]
         public string Price { get; set; }
         
         public string Category_name { get; set; }

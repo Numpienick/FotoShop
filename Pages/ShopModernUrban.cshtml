@@ -11,10 +11,9 @@
 @section Styles {
     <link href="/css/Shop.css" rel="stylesheet"/>
 }
-
 <div class="container-fluid">
-    <div class="row shop_row">
-        <div class="shop_column">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 shop_column">
             @for (int i = 0; i < @Model.AllPhotos.Count; i++)
             {
                 if (i == 0 || i % 4 == 0)
@@ -25,7 +24,7 @@
                 }
             }
         </div>
-        <div class="shop_column">
+        <div class="col-lg-3 col-md-6 shop_column">
             @for (int i = 0; i < @Model.AllPhotos.Count; i++)
             {
                 if (i == 1 || i % 4 == 1)
@@ -36,7 +35,7 @@
                 }
             }
         </div>
-        <div class="shop_column">
+        <div class="col-lg-3 col-md-6 shop_column">
             @for (int i = 0; i < @Model.AllPhotos.Count; i++)
             {
                 if (i == 2 || i % 4 == 2)
@@ -47,7 +46,7 @@
                 }
             }
         </div>
-        <div class="shop_column">
+        <div class="col-lg-3 col-md-6 shop_column">
             @for (int i = 0; i < @Model.AllPhotos.Count; i++)
             {
                 if (i == 3 || i % 4 == 3)

@@ -10,8 +10,6 @@
 }
 
 .shop_column {
-    flex: 25%;
-    max-width: 25%;
     padding: 0 0.125vw;
 }
 
@@ -27,4 +25,5 @@
         max-width: 50vw;
     }
 }
+
 
