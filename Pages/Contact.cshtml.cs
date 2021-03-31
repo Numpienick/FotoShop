@@ -7,6 +7,7 @@ namespace FotoShop.Pages
 {
     public class Contact : PageModel
     {
+        public string Hidden { get; set; } = "hidden";
         public void OnGet()
         {
 
@@ -21,9 +22,10 @@ namespace FotoShop.Pages
             {
                 using ContactRepository repo = new ContactRepository(DbUtils.GetDbConnection());
                 repo.InsertNewContact(GetDbContact);
-
                 ModelState.Clear();
-                return Redirect("Contact");
+                Hidden = "";
+                GetDbContact = new DBContact();
+                //return Redirect("Contact");
             }
             return Page();
         }
