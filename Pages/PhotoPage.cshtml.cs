@@ -96,15 +96,23 @@ namespace FotoShop.Pages
             return string.Format("/Images/ProductImages/{0}", path);
         }
 
-        [BindProperty] public string ide {get;set;}
-        public void OnPostSubmitWinkelwagen()
+        [BindProperty] public string PhotoId {get;set;}
+        public IActionResult OnPostSubmitWinkelwagen()
         {
-            string PhotoId = ide.ToString();
             var Cookie = Request.Cookies["ShoppingCartAdd"];
-            if (Cookie != null)
+            if (Cookie == null)
             {
                 Response.Cookies.Append("ShoppingCartAdd", PhotoId);
             }
+            using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
+            var Order = 
+            
+            
+            
+            
+            
+            return Redirect($"PhotoPage?Id={PhotoId}");
         }
+        
     }
 }
