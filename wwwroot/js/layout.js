@@ -5,6 +5,26 @@
 	} else {
 		$(".notLoggedIn").hide();
 	}
+	var width = $(window).width();
+	StyleDropdown();
+
+	$(window).resize(function () {
+		width = $(window).width();
+		StyleDropdown();
+	});
+
+	function StyleDropdown() {
+		if (width >= 575) {
+			var dropdown = $(".dropdown-menu");
+			dropdown.css("background-color", "#f2f2f2");
+			dropdown.removeClass("bg-transparent border-0");
+		}
+		else {
+			var dropdown = $(".dropdown-menu");
+			dropdown.css("background-color", "");
+			dropdown.addClass("bg-transparent border-0");
+		}
+	}
 
 	// Credits to https://www.w3schools.com/js/js_cookies.asp
 	function GetCookie(cname) {

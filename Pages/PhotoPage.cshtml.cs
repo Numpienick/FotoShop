@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using FotoShop.Classes;
 using FotoShop.Classes.Repositories;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -94,6 +95,34 @@ namespace FotoShop.Pages
             using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
             string path = repo.GetFromPhoto("Photo_path", PagePhoto.Photo_id);
             return string.Format("/Images/ProductImages/{0}", path);
+        }
+
+        [BindProperty] public string PhotoId {get;set;}
+        public IActionResult OnPostSubmitWinkelwagen()
+        {
+            using OrderRepository repo = new OrderRepository(DbUtils.GetDbConnection());
+            var Cookie = Request.Cookies["ShoppingCartAdd"];
+            if (Cookie == null)
+            {
+                Response.Cookies.Append("ShoppingCartAdd", PhotoId);
+            }
+            var Cookie1 = Request.Cookies["UserLoggedIn"];
+            var OrderCookie = Request.Cookies["Order"];
+            if (OrderCookie == null)
+            {
+                using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
+                string downloadlink = "Randomlinkdit";
+                var NewOrder = repoAdd.Add(Cookie1, downloadlink, PhotoId);
+                CookieOptions options = new CookieOptions();
+                options.Expires = DateTime.Now.AddMinutes(9999999);  
+                Response.Cookies.Append("Order", NewOrder.Placed_order_id);
+            }
+            else
+            {
+                using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
+                repoAdd.InsertPhoto(OrderCookie, PhotoId);
+            }
+            return Redirect($"PhotoPage?Id={PhotoId}");
         }
     }
 }

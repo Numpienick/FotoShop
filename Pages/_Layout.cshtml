@@ -40,22 +40,16 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav mr-auto">
-                @*<li class="nav-item">
-                    <a class="nav-link" asp-page="Index">Home</a>
-                </li>*@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle caret" href="#" id="shopDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
-                    <div class="dropdown-menu" aria-labelledby="shopDropDown">
+                    <div class="dropdown-menu" style="background-color: #f2f2f2" aria-labelledby="shopDropDown">
                         <a class="dropdown-item" asp-page="ShopModernUrban">Modern Urban</a>
-                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-divider border-dark"></div>
                         <a class="dropdown-item" asp-page="ShopUrbex">Urbex</a>
-                        <div class="dropdown-divider "></div>
+                        <div class="dropdown-divider border-dark"></div>
                         <a class="dropdown-item" asp-page="ShopPop">Pop</a>
                     </div>
                 </li>
-                @*<li class="nav-item">
-                    <a class="nav-link" asp-page="">Account</a>
-                </li>*@
                 <li class="nav-item">
                     <a class="nav-link" asp-page="Contact">Contact</a>
                 </li>
@@ -75,7 +69,7 @@
                     </a>
                 </li>
                 <li class="nav-item ml-4">
-                    <a class="nav-link" asp-page="">
+                    <a class="nav-link" asp-page="ShoppingCart">
                         <img src="images/shoppingCartIcon.svg" />
                     </a>
                 </li>
@@ -88,12 +82,5 @@
                 &copy; 2021 Hoekstra's Fotografie <a asp-page="Contact">Contact</a>
             </p>
     </footer>
-    @*<div class="container-fluid m-0">
-            <div class="row">
-                <div class="col-12">
-                    <img class="banner" src="images/BannerV3.jpg" />
-                </div>
-            </div>
-        </div>*@
 </body>
 </html>
