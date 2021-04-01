@@ -1473,6 +1473,7 @@
   },
   "packageFolders": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\Remco\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {}
@@ -1480,10 +1481,16 @@
     "C:\\Users\\eelco_b0keash\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet": {}
 >>>>>>> EelcoJ
+=======
+    "C:\\Users\\nickn\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+>>>>>>> NickN
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
 <<<<<<< HEAD
       "projectUniqueName": "D:\\1 School\\HBO-ICT\\FotoShop\\FotoShop.csproj",
       "projectName": "FotoShop",
@@ -1509,6 +1516,20 @@
 =======
         "C:\\Users\\eelco_b0keash\\AppData\\Roaming\\NuGet\\NuGet.Config",
 >>>>>>> EelcoJ
+=======
+      "projectUniqueName": "C:\\Users\\nickn\\Documents\\NHLStenden\\Webdevelopment\\Fotoshop\\FotoShop.csproj",
+      "projectName": "FotoShop",
+      "projectPath": "C:\\Users\\nickn\\Documents\\NHLStenden\\Webdevelopment\\Fotoshop\\FotoShop.csproj",
+      "packagesPath": "C:\\Users\\nickn\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nickn\\Documents\\NHLStenden\\Webdevelopment\\Fotoshop\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\nickn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> NickN
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1584,10 +1605,14 @@
           }
         },
 <<<<<<< HEAD
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
 =======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
 >>>>>>> EelcoJ
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+>>>>>>> NickN
       }
     }
   }
