@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\thimo\\RiderProjects\\FotoShop\\FotoShop.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "C:\\Users\\thimo\\RiderProjects\\FotoShop\\FotoShop.csproj",
         "packagesPath": "C:\\Users\\thimo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\thimo\\RiderProjects\\FotoShop\\obj\\",
+=======
+    "C:\\Users\\jelme\\RiderProjects\\FotoShop\\FotoShop.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\jelme\\RiderProjects\\FotoShop\\FotoShop.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\jelme\\RiderProjects\\FotoShop\\FotoShop.csproj",
+        "projectName": "FotoShop",
+        "projectPath": "C:\\Users\\jelme\\RiderProjects\\FotoShop\\FotoShop.csproj",
+        "packagesPath": "C:\\Users\\jelme\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jelme\\RiderProjects\\FotoShop\\obj\\",
+>>>>>>> Jelmer
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\thimo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\jelme\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> Jelmer
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -85,7 +103,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+>>>>>>> Jelmer
         }
       }
     }

@@ -54,16 +54,15 @@ namespace FotoShop.Pages
 
         public IActionResult OnPostDelete(string id)
         {
-            var imagesDir = Path.Combine(new DirectoryInfo(
-                Directory.GetCurrentDirectory()).FullName, "wwwroot", "Images", "ProductImages");
+            var imagesDir = new HardDriveUtils().GetImgDir();
 
             using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
-            repo.GetFromPhoto("Photo_path", id);
+            string photoPath = repo.GetFromPhoto("Photo_path", id);
 
             using PhotoRepository delRepo = new PhotoRepository(DbUtils.GetDbConnection());
             delRepo.Delete(id);
 
-            var imagePath = Path.Combine(imagesDir, "Photo_path");
+            var imagePath = Path.Combine(imagesDir, photoPath);
             if (System.IO.File.Exists(imagePath))
             {
                 System.IO.File.Delete(imagePath);

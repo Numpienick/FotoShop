@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+<<<<<<< HEAD
     <e p="C:\Users\Remco\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Remco\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FotoShop.-1740476221.00" t="ExcludeRecursive" />
     <e p="C:\Users\Remco\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\Remco\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
     <e p="D:\1 School\HBO-ICT\FotoShop" t="IncludeRecursive">
+=======
+    <e p="C:\Users\jelme\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\jelme\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FotoShop.1485108578.00" t="ExcludeRecursive" />
+    <e p="C:\Users\jelme\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\jelme\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\jelme\RiderProjects\FotoShop" t="IncludeRecursive">
+>>>>>>> Jelmer
       <e p=".gitignore" t="Include" />
       <e p="_ViewImports.cshtml" t="Include" />
       <e p="appsettings.Development.json" t="Include" />
@@ -14,6 +22,7 @@
       <e p="Classes" t="Include">
         <e p="DBContact.cs" t="Include" />
         <e p="DbUtils.cs" t="Include" />
+        <e p="HardDriveUtils.cs" t="Include" />
         <e p="LogIn.cs" t="Include" />
         <e p="Order.cs" t="Include" />
         <e p="Photo.cs" t="Include" />
@@ -53,8 +62,11 @@
         <e p="Shop.cshtml.cs" t="Include" />
         <e p="ShopModernUrban.cshtml" t="Include" />
         <e p="ShopModernUrban.cshtml.cs" t="Include" />
+<<<<<<< HEAD
         <e p="ShoppingCart.cshtml" t="Include" />
         <e p="ShoppingCart.cshtml.cs" t="Include" />
+=======
+>>>>>>> Jelmer
         <e p="ShopPop.cshtml" t="Include" />
         <e p="ShopPop.cshtml.cs" t="Include" />
         <e p="ShopUrbex.cshtml" t="Include" />
@@ -103,6 +115,7 @@
           <e p="shoppagina.css" t="Include" />
           <e p="site.css" t="Include" />
           <e p="stylesheet-layout.css" t="Include" />
+          <e p="UploadImage.css" t="Include" />
         </e>
         <e p="images" t="Include">
           <e p="addToShoppingCartIcon.svg" t="Include" />
@@ -320,12 +333,12 @@
           <e p="wrenchIcon.svg" t="Include" />
         </e>
         <e p="js" t="Include">
-          <e p="ContactJS.js" t="Include" />
           <e p="index.js" t="Include" />
           <e p="jquery-3.5.1.js" t="Include" />
           <e p="layout.js" t="Include" />
           <e p="photopage.js" t="Include" />
           <e p="popper.min.js" t="Include" />
+          <e p="UploadImage.js" t="Include" />
         </e>
       </e>
     </e>
