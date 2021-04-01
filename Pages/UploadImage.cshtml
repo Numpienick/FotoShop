@@ -14,46 +14,47 @@
     <script src="~/js/UploadImage.js"></script>
 }
 
-<div class="container-fluid">
+<div class="container-fluid background">
+
+        <div class="titel d-flex justify-content-center">
+            <h1>@ViewData["Title"]</h1>
+        </div>
     
-    <div class="titel d-flex justify-content-center">
-        <h1>@ViewData["Title"]</h1>
-    </div>
-    
-    <div class="col-md-6 offset-md-3 mt-5">
-        <form method="post" enctype="multipart/form-data">
-            <div class="form-group">
-                <label>Title</label><br>
-                <span class="text-danger" asp-validation-for="NewPhoto.Title"></span>
-                <input type="text" asp-for="NewPhoto.Title" class="form-control"/>
-            </div>
-            <div class="form-group">
-                <label>Category name</label><br>
-                <span class="text-danger" asp-validation-for="NewPhoto.Category_name"></span>
-                <select asp-for="NewPhoto.Category_name" class="form-control ">
-                    <option value="Modern Urban">Modern Urban</option>
-                    <option value="Pop">Pop</option>
-                    <option value="Urbex">Urbex</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Price</label><br>
-                <span class="text-danger" asp-validation-for="NewPhoto.Price"></span>
-                <input type="text" asp-for="NewPhoto.Price" class="form-control"/>
-            </div>
-            <div class="form-group">
-                <label>Description</label><br>
-                <span class="text-danger" asp-validation-for="NewPhoto.Description"></span>
-                <textarea class="form-control" rows="7" asp-for="NewPhoto.Description"></textarea>
-            </div>
-            <div class="form-group mt-3 custom-file">
-                <input asp-for="ImageFile" type="file" class="custom-file-input form-control" id="customFile" accept="image/png, image/jpeg"/>
-                <label class="custom-file-label" for="customFile">Choose file</label><br>
-                <span class="text-danger" asp-validation-for="ImageFile"></span>
-            </div>
-            <div class="form-group mt-3">
-                <button class="btn btn-primary form-control" type="submit" asp-page-handler="Upload">Submit</button>
-            </div>
-        </form>
-    </div>
+        <div class="col-md-6 offset-md-3 mt-5">
+            <form method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label>Title</label><br>
+                    <span class="text-danger" asp-validation-for="NewPhoto.Title"></span>
+                    <input type="text" asp-for="NewPhoto.Title" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label>Category name</label><br>
+                    <span class="text-danger" asp-validation-for="NewPhoto.Category_name"></span>
+                    <select asp-for="NewPhoto.Category_name" class="form-control ">
+                        <option value="Modern Urban">Modern Urban</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Urbex">Urbex</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Price</label><br>
+                    <span class="text-danger" asp-validation-for="NewPhoto.Price"></span>
+                    <input type="text" asp-for="NewPhoto.Price" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label>Description</label><br>
+                    <span class="text-danger" asp-validation-for="NewPhoto.Description"></span>
+                    <textarea class="form-control" rows="7" asp-for="NewPhoto.Description"></textarea>
+                </div>
+                <div class="form-group mt-3 custom-file">
+                    <input asp-for="ImageFile" type="file" class="custom-file-input form-control" id="customFile" accept="image/png, image/jpeg"/>
+                    <label class="custom-file-label" for="customFile">Choose file</label><br>
+                    <span class="text-danger" asp-validation-for="ImageFile"></span>
+                </div>
+                <div class="form-group mt-3">
+                    <button class="btn btn-primary form-control" type="submit" asp-page-handler="Upload">Submit</button>
+                </div>
+            </form>
+        </div>
+
 </div>
