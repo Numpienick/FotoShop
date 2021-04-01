@@ -100,11 +100,6 @@ namespace FotoShop.Pages
         public IActionResult OnPostSubmitWinkelwagen()
         {
             using OrderRepository repo = new OrderRepository(DbUtils.GetDbConnection());
-            var Cookie = Request.Cookies["ShoppingCartAdd"];
-            if (Cookie == null)
-            {
-                Response.Cookies.Append("ShoppingCartAdd", PhotoId);
-            }
             var Cookie1 = Request.Cookies["UserLoggedIn"];
             var OrderCookie = Request.Cookies["Order"];
             if (OrderCookie == null)

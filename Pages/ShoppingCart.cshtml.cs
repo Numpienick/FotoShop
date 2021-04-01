@@ -36,6 +36,7 @@ namespace FotoShop.Pages
         }
         
         [BindProperty] public int ImgId { get; set; }
+        public string Hidden { get; set; } = "hidden";
         public void OnPostDelete()
         {
             var OrderCookie = Request.Cookies["Order"];
@@ -49,6 +50,20 @@ namespace FotoShop.Pages
             using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
             repoAdd.OrderSucces(OrderCookie);
             Response.Cookies.Delete("Order");
+            Hidden = "";
+        }
+        
+        public decimal TotalPrice()
+        {
+            decimal TotPrice = 0;
+            foreach (var photoid in GetAllPhoto())
+            {
+                using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
+                decimal price = repo.GetPrice(photoid);
+                TotPrice += price;
+
+            }
+            return TotPrice;
         }
     }
 }
