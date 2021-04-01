@@ -1,5 +1,11 @@
-.body{
+.container-fluid{
     background-color: #f2f2f2;
+}
+
+h1{
+    font-size: 4vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
 }
 .shop_row {
     display: flex;
@@ -13,10 +19,14 @@
     padding: 0 0.125vw;
 }
 
-.img {
+.img{
     margin-top: 0.25vw;
     vertical-align: middle;
     width: 100% ;
+}
+
+.img:hover{
+    transform: scale(1.01);
 }
 
 @media screen and (max-width: 800px) {
