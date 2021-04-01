@@ -37,6 +37,7 @@ namespace FotoShop.Pages
         
         [BindProperty] public int ImgId { get; set; }
         public string Hidden { get; set; } = "hidden";
+        public string Hidden1 { get; set; } = "hidden1";
         public void OnPostDelete()
         {
             var OrderCookie = Request.Cookies["Order"];
@@ -50,6 +51,7 @@ namespace FotoShop.Pages
             using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
             repoAdd.OrderSucces(OrderCookie);
             Response.Cookies.Delete("Order");
+            Response.Cookies.Delete("ShoppingCard");
             Hidden = "";
         }
         

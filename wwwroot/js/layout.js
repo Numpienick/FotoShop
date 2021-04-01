@@ -5,6 +5,14 @@
 	} else {
 		$(".notLoggedIn").hide();
 	}
+	var user = GetCookie('ShoppingCard');
+	if (user == "" || user == undefined) {
+		$(".Subtot").hide();
+		$(".Afrekenen").hide();
+	} 
+	else {
+		$(".ShoppingLeeg").hide();
+	}
 	var width = $(window).width();
 	StyleDropdown();
 

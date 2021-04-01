@@ -120,6 +120,7 @@ namespace FotoShop.Pages
                 {
                     using OrderRepository repoAddN = new OrderRepository(DbUtils.GetDbConnection());
                     repoAddN.InsertPhoto(OrderCookie, PhotoId);
+                    Response.Cookies.Append("ShoppingCard", PhotoId);
                 }
             }
             return Redirect($"PhotoPage?Id={PhotoId}");

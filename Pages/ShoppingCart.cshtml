@@ -16,7 +16,6 @@
     </div>
 </div>
 
-
 <body>
 <div class="container">
     <div class="col Main_col">
@@ -44,14 +43,15 @@
                         </div>
                     </div>
                 }
+                <span class="text-danger ShoppingLeeg">Let op uw winkelwagen is momenteel leeg! Bekijk nu ons aanbod in de <a href="./Shop">Shop</a> </span>
             </div>
         </div>
         <div class="col Item_payment">
             <div class="row Price_sum">
-                <span>Subtotaal: €@Model.TotalPrice()</span>
+                <span class="Subtot">Subtotaal: €@Model.TotalPrice()</span>
             </div>
             <form method="post">
-                <button asp-page-handler="OrderSucces" class="btn-primary Pay_button">Afrekenen</button>
+                <button class="Afrekenen" asp-page-handler="OrderSucces" class="btn-primary Pay_button">Afrekenen</button>
             </form>
         </div>
     </div>
