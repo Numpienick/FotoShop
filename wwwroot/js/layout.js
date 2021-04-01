@@ -7,8 +7,8 @@
 	}
 	var user = GetCookie('ShoppingCard');
 	if (user == "" || user == undefined) {
-		$(".Subtot").hide();
 		$(".Afrekenen").hide();
+		$(".Subtot").hide();
 	} 
 	else {
 		$(".ShoppingLeeg").hide();
