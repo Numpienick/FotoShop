@@ -104,7 +104,7 @@ namespace FotoShop.Classes.Repositories
             decimal photoPrice = connection.QuerySingleOrDefault<decimal>(@"SELECT Price FROM photo
             WHERE Photo_id = @photoid", new {photoid = photoid});
             return photoPrice;
-        } 
+        }
     }
     
 }

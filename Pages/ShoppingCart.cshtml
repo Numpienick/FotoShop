@@ -20,6 +20,7 @@
 <body>
 <div class="container">
     <div class="col Main_col">
+        <h1 class="Header">Uw winkelwagen</h1>
         <div class="row Photo_display">
             <div class="row border-dark border-top-0 border-right-0 border-left-0 Item">
                 @foreach (var item in @Model.GetPhoto())
@@ -50,9 +51,9 @@
             <div class="row Price_sum">
                 <span>Subtotaal: €@Model.TotalPrice()</span>
             </div>
-            <form method="post">
-                <button asp-page-handler="OrderSucces" class="btn-primary Pay_button">Afrekenen</button>
-            </form>
+            <div class="row mb-3 Pay_button">
+                <button class="btn-primary Pay_button">Afrekenen</button>
+            </div>
         </div>
     </div>
 

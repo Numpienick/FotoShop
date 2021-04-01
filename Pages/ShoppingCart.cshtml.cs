@@ -34,36 +34,26 @@ namespace FotoShop.Pages
             }
             return photoList;
         }
-        
         [BindProperty] public int ImgId { get; set; }
-        public string Hidden { get; set; } = "hidden";
+
         public void OnPostDelete()
         {
             var OrderCookie = Request.Cookies["Order"];
             using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
             repoAdd.DeletePhoto(ImgId, OrderCookie);
         }
-
-        public void OnPostOrderSucces()
-        {
-            var OrderCookie = Request.Cookies["Order"];
-            using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
-            repoAdd.OrderSucces(OrderCookie);
-            Response.Cookies.Delete("Order");
-            Hidden = "";
-        }
         
         public decimal TotalPrice()
         {
-            decimal TotPrice = 0;
+            decimal totPrice = 0;
             foreach (var photoid in GetAllPhoto())
             {
                 using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
                 decimal price = repo.GetPrice(photoid);
-                TotPrice += price;
+                totPrice += price;
 
             }
-            return TotPrice;
+            return totPrice;
         }
     }
 }

@@ -5,7 +5,12 @@
 .container{
     display: flex;
     flex-wrap: wrap;
+}
 
+h1 {
+    font-size: 4vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
 }
 
 .Item{
@@ -29,7 +34,7 @@
 
 .Item_price{
     font-size: 1vw;
-
+    
 }
 .Item_title{
     font-size: 1vw;

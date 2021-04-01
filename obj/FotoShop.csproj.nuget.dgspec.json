@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\1 School\\HBO-ICT\\FotoShop\\FotoShop.csproj": {}
   },
   "projects": {
@@ -12,14 +13,31 @@
         "projectPath": "D:\\1 School\\HBO-ICT\\FotoShop\\FotoShop.csproj",
         "packagesPath": "C:\\Users\\Remco\\.nuget\\packages\\",
         "outputPath": "D:\\1 School\\HBO-ICT\\FotoShop\\obj\\",
+=======
+    "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\FotoShop.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\FotoShop.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\FotoShop.csproj",
+        "projectName": "FotoShop",
+        "projectPath": "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\FotoShop.csproj",
+        "packagesPath": "C:\\Users\\eelco_b0keash\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\obj\\",
+>>>>>>> EelcoJ
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\Remco\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+=======
+          "C:\\Users\\eelco_b0keash\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> EelcoJ
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -73,6 +91,19 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+<<<<<<< HEAD
+=======
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.12, 3.1.12]"
+            }
+          ],
+>>>>>>> EelcoJ
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -81,7 +112,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+>>>>>>> EelcoJ
         }
       }
     }
