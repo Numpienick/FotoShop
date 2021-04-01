@@ -57,7 +57,6 @@ namespace FotoShop.Classes.Repositories
                 new {orderid = orderid, photoid = photoid});
             return order;
         }
-                
         
         public List<int> GetPhoto(int Order_id)
         {
@@ -68,6 +67,13 @@ namespace FotoShop.Classes.Repositories
             return AllPhoto;
         }
 
+        public void OrderSucces(string OrderCookie)
+        {
+            using var connection = _connection;
+            var OrderSucces = connection.Execute(@"DELETE FROM placed_order_photo WHERE Placed_order_id = @OrderCookie",
+                new {OrderCookie = OrderCookie});
+        }
+        
         public void DeletePhoto(int Photo_id, string OrderCookie)
         {
             using var connection = _connection;

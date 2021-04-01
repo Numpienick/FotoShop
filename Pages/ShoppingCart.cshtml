@@ -47,7 +47,9 @@
                 <span>Inclusief BTW 21%</span>
             </div>
             <div class="row mb-3 Pay_button">
-                <button class="btn-primary Pay_button">Afrekenen</button>
+                <form method="post">
+                <button asp-page-handler="OrderSucces" class="btn-primary Pay_button">Afrekenen</button>
+                </form>
             </div>
         </div>
     </div>
