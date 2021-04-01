@@ -49,6 +49,16 @@ namespace FotoShop.Classes.Repositories
                 new {orderid = orderid, photoid = photoid});
         }
 
+        public Order CheckFoto(string orderid, string photoid)
+        {
+            using var connection = _connection;
+            Order order = connection.QuerySingleOrDefault<Order>(
+                @"SELECT * FROM placed_order_photo WHERE Placed_order_id = @orderid AND Photo_id = @photoid",
+                new {orderid = orderid, photoid = photoid});
+            return order;
+        }
+                
+        
         public List<int> GetPhoto(int Order_id)
         {
             using var connection = _connection;
@@ -58,11 +68,11 @@ namespace FotoShop.Classes.Repositories
             return AllPhoto;
         }
 
-        public void DeletePhoto(int Photo_id)
+        public void DeletePhoto(int Photo_id, string OrderCookie)
         {
             using var connection = _connection;
-            var DeletePhoto = connection.Execute("DELETE FROM placed_order_photo WHERE Photo_id = @Photo_id",
-                new {Photo_id = Photo_id});
+            var DeletePhoto = connection.Execute("DELETE FROM placed_order_photo WHERE Photo_id = @Photo_id AND Placed_order_id = @OrderCookie",
+                new {Photo_id = Photo_id, OrderCookie = OrderCookie});
         }
     }
 }
