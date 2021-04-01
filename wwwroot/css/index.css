@@ -1,4 +1,66 @@
-﻿.validation-summary-errors ul {
-    list-style-type: none;
-    margin-left: -40px
+﻿h1,
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+.Bovengedeelte,
+.homecollage,
+.over,
+.camera{
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.Bovengedeelte{
+    width: 100%;
+}
+
+.home-button{
+    display: inline-block;
+    text-align: center;
+    padding: 8px 16px;
+
+    border-radius: 15px;
+
+    color: #f2f2f2;
+    background-color: #1e2c2e;
+}
+
+.centeredText {
+    color: #f2f2f2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 576px) {
+    .col-sm-4{
+        margin-top: 2rem;
+    }
+}
+
+/* images and backgrounds*/
+
+#img-col-urban,
+#img-col-urbex,
+#img-col-pop{
+    opacity: 0.67;
+}
+
+#img-col-urban:hover,
+#img-col-urbex:hover,
+#img-col-pop:hover{
+    opacity: 1;
+}
+
+#urban1,
+#urbex1,
+#pop1{
+    width: 100%;
+}
+
+#camera{
+    width: 70%;
 }
