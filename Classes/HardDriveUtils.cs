@@ -35,5 +35,17 @@ namespace FotoShop.Classes
                 Directory.GetCurrentDirectory()).FullName, "wwwroot", "Images", "ProductImages");
             return imagesDir;
         }
+
+        public bool DeleteImg(string pathImagesDir, string photoPath)
+        {
+            var imagePath = Path.Combine(pathImagesDir, photoPath);
+            if (System.IO.File.Exists(imagePath))
+            {
+                System.IO.File.Delete(imagePath);
+                return true;
+            }
+
+            return false;
+        }
     }
 }

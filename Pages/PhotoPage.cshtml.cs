@@ -62,11 +62,7 @@ namespace FotoShop.Pages
             using PhotoRepository delRepo = new PhotoRepository(DbUtils.GetDbConnection());
             delRepo.Delete(id);
 
-            var imagePath = Path.Combine(imagesDir, photoPath);
-            if (System.IO.File.Exists(imagePath))
-            {
-                System.IO.File.Delete(imagePath);
-            }
+            var deleted = new HardDriveUtils().DeleteImg(imagesDir, photoPath);
             return Redirect("Shop");
         }
 
