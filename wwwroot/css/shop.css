@@ -17,12 +17,13 @@ h1{
 
 .shop_column {
     padding: 0 0.125vw;
+    height: 100%;
 }
 
 .img{
     margin-top: 0.25vw;
     vertical-align: middle;
-    width: 100% ;
+    width: 100%;
 }
 
 .img:hover{
@@ -31,8 +32,10 @@ h1{
 
 @media screen and (max-width: 800px) {
     .shop_column {
+        border: 2px solid black;
         flex: 50%;
-        max-width: 50vw;
+        max-width: 50%;
     }
 }
+
 
