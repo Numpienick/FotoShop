@@ -42,5 +42,13 @@ namespace FotoShop.Pages
             using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
             repoAdd.DeletePhoto(ImgId, OrderCookie);
         }
+
+        public void OnPostOrderSucces()
+        {
+            var OrderCookie = Request.Cookies["Order"];
+            using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
+            repoAdd.OrderSucces(OrderCookie);
+            Response.Cookies.Delete("Order");
+        }
     }
 }
