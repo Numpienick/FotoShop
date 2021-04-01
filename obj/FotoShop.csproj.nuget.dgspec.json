@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jelme\\RiderProjects\\FotoShop\\FotoShop.csproj": {}
+    "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\FotoShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jelme\\RiderProjects\\FotoShop\\FotoShop.csproj": {
+    "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\FotoShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jelme\\RiderProjects\\FotoShop\\FotoShop.csproj",
+        "projectUniqueName": "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\FotoShop.csproj",
         "projectName": "FotoShop",
-        "projectPath": "C:\\Users\\jelme\\RiderProjects\\FotoShop\\FotoShop.csproj",
-        "packagesPath": "C:\\Users\\jelme\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jelme\\RiderProjects\\FotoShop\\obj\\",
+        "projectPath": "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\FotoShop.csproj",
+        "packagesPath": "C:\\Users\\eelco_b0keash\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\eelco_b0keash\\OneDrive\\Documenten\\Week 3\\FotoShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet"
         ],
         "configFilePaths": [
-          "C:\\Users\\jelme\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eelco_b0keash\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -71,6 +71,16 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.12, 3.1.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -79,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

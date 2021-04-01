@@ -15,9 +15,11 @@
         <e p="DBContact.cs" t="Include" />
         <e p="DbUtils.cs" t="Include" />
         <e p="LogIn.cs" t="Include" />
+        <e p="Order.cs" t="Include" />
         <e p="Photo.cs" t="Include" />
         <e p="Repositories" t="Include">
           <e p="ContactRepository.cs" t="Include" />
+          <e p="OrderRepository.cs" t="Include" />
           <e p="PhotoRepository.cs" t="Include" />
           <e p="UserRepository.cs" t="Include" />
         </e>
@@ -51,6 +53,8 @@
         <e p="Shop.cshtml.cs" t="Include" />
         <e p="ShopModernUrban.cshtml" t="Include" />
         <e p="ShopModernUrban.cshtml.cs" t="Include" />
+        <e p="ShoppingCart.cshtml" t="Include" />
+        <e p="ShoppingCart.cshtml.cs" t="Include" />
         <e p="ShopPop.cshtml" t="Include" />
         <e p="ShopPop.cshtml.cs" t="Include" />
         <e p="ShopUrbex.cshtml" t="Include" />
@@ -92,6 +96,7 @@
           </e>
         </e>
         <e p="css" t="Include">
+          <e p="cart.css" t="Include" />
           <e p="contact.css" t="Include" />
           <e p="index.css" t="Include" />
           <e p="shop.css" t="Include" />
@@ -118,10 +123,10 @@
           <e p="passwordIcon.svg" t="Include" />
           <e p="perm_identity_black_24dp.svg" t="Include" />
           <e p="personIcon.svg" t="Include" />
-          <e p="pexels-scott-webb-2824173.jpg" t="Include" />
           <e p="Pop-Afbeelding-Shop.jpg" t="Include" />
           <e p="ProductImages" t="Include">
             <e p="Modern Urban" t="Include">
+              <e p="3840x2160a.jpg" t="Include" />
               <e p="Urban1.jpg" t="Include" />
               <e p="Urban10.jpg" t="Include" />
               <e p="Urban11.jpg" t="Include" />
