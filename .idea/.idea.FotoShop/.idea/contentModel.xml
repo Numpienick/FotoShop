@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\thimo\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\thimo\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FotoShop.1168888656.00" t="ExcludeRecursive" />
-    <e p="C:\Users\thimo\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\thimo\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\thimo\RiderProjects\FotoShop" t="IncludeRecursive">
+    <e p="C:\Users\Remco\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Remco\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FotoShop.-1740476221.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Remco\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Remco\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
+    <e p="D:\1 School\HBO-ICT\FotoShop" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
       <e p="_ViewImports.cshtml" t="Include" />
       <e p="appsettings.Development.json" t="Include" />
@@ -104,7 +104,7 @@
           <e p="site.css" t="Include" />
           <e p="stylesheet-layout.css" t="Include" />
         </e>
-        <e p="Images" t="Include">
+        <e p="images" t="Include">
           <e p="addToShoppingCartIcon.svg" t="Include" />
           <e p="BannerV3.jpg" t="Include" />
           <e p="build_black_24dp.svg" t="Include" />
