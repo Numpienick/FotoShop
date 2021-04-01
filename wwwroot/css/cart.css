@@ -40,7 +40,42 @@ h1 {
     font-size: 1vw;
     margin-top: 1vw;
 }
+.delete{
+    margin-top: 1vw;
+    float: right;
+}
 
 .Price_sum{
+    font-size: 1vw;
     margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 800px) {
+    .Price_sum, .Item_title, .Item_price {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .img{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h1{
+       font-size: 8vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .delete {
+        width: 8vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Pay_button{
+        font-size: 4vw;
+    }
 }

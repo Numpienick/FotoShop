@@ -19,23 +19,23 @@
                 @foreach (var item in @Model.GetPhoto())
                 {
                     <div class="col Item_img">
-                        <img class="img" src="/Images/ProductImages/@item.Photo_path"/>
+                        <img class=" img" src="/Images/ProductImages/@item.Photo_path"/>
                     </div>
                     <div class="col Item_info">
                         <div class="row Item_title">
                             <span>@item.Title</span>
                         </div>
                         <div class="row Item_price">
-                            <span>€@item.Price</span>
+                            <span>€@item.Price.Replace('.', ',')</span>
                         </div>
-                        <div class="row Item_button">
-                            <form method="post">
-                                <input type="hidden" asp-for="ImgId" value="@item.Photo_id"/>
-                                <button class="btn btn-outline-danger my-3" asp-page-handler="Delete" type="submit">
-                                    <img class="mr-2" src="~/images/delete_black_24dp.svg"/>Verwijder deze foto
-                                </button>
-                            </form>
-                        </div>
+                    </div>
+                    <div class="col Item_button">
+                        <form method="post">
+                            <input type="hidden" asp-for="ImgId" value="@item.Photo_id"/>
+                            <button class="btn btn-outline-danger delete" asp-page-handler="Delete" type="submit">
+                                <span>X</span>
+                            </button>
+                        </form>
                     </div>
                 }
             </div>
@@ -45,7 +45,7 @@
                 <span>Subtotaal: €@Model.TotalPrice()</span>
             </div>
             <div class="row mb-3 Pay_button">
-                <button class="btn-primary Pay_button">Afrekenen</button>
+                <button class="btn btn-primary Pay_button">Afrekenen</button>
             </div>
         </div>
     </div>
