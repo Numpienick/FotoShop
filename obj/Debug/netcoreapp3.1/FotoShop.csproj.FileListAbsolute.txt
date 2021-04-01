@@ -25,7 +25,6 @@ C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.csprojAssemblyReference.cache
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.AssemblyInfoInputs.cache
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.AssemblyInfo.cs
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.csproj.CoreCompileInputs.cache
@@ -57,6 +56,7 @@ C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.dll
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.pdb
 C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\thimo\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\thimo\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\thimo\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.exe
@@ -178,3 +178,7 @@ C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.dll
 C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.pdb
 C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.genruntimeconfig.cache
 >>>>>>> Jelmer
+=======
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.csprojAssemblyReference.cache
+C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Ajax.cshtml.g.cs
+>>>>>>> NickN

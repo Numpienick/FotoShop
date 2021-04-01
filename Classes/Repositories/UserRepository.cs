@@ -28,7 +28,7 @@ namespace FotoShop.Classes.Repositories
             using var connection = _connection;
             try
             {
-                numRowsAffected = connection.Execute(@"INSERT INTO user (Email, Password, First_name, Last_name) 
+                numRowsAffected = connection.Execute(@"INSERT INTO account (Email, Password, First_name, Last_name) 
              VALUES(@Email, @User_Password, @First_name, @Last_name)", user);
             }
             catch (Exception)
