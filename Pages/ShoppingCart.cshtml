@@ -10,6 +10,13 @@
     <link href="~/css/cart.css" rel="stylesheet"/>
 }
 
+<div class="container mt-3" @Model.Hidden>
+    <div class="alert alert-success" role="alert">
+        <strong>Gelukt</strong> Uw order is geplaatst en betaald!
+    </div>
+</div>
+
+
 <body>
 <div class="container">
     <div class="col Main_col">
@@ -21,17 +28,17 @@
                         <img class="img" src="/Images/ProductImages/@item.Photo_path"/>
                     </div>
                     <div class="col Item_info">
-                        <div class="row Item_titel">
+                        <div class="row Item_title">
                             <span>@item.Title</span>
                         </div>
-                        <div class="row Item_prijs">
-                            <span>@item.Price</span>
+                        <div class="row Item_price">
+                            <span>€@item.Price</span>
                         </div>
                         <div class="row Item_button">
                             <form method="post">
-                            <input type="hidden" asp-for="ImgId" value="@item.Photo_id"/>
-                                   <button class="btn btn-outline-danger my-3" asp-page-handler="Delete" type="submit">
-                                    <img class="mr-2" src="~/images/delete_black_24dp.svg"/>
+                                <input type="hidden" asp-for="ImgId" value="@item.Photo_id"/>
+                                <button class="btn btn-outline-danger my-3" asp-page-handler="Delete" type="submit">
+                                    <img class="mr-2" src="~/images/delete_black_24dp.svg"/>Verwijder deze foto
                                 </button>
                             </form>
                         </div>
@@ -41,16 +48,11 @@
         </div>
         <div class="col Item_payment">
             <div class="row Price_sum">
-                <span>Subtotaal: </span>
+                <span>Subtotaal: €@Model.TotalPrice()</span>
             </div>
-            <div class="row Vat_payment">
-                <span>Inclusief BTW 21%</span>
-            </div>
-            <div class="row mb-3 Pay_button">
-                <form method="post">
+            <form method="post">
                 <button asp-page-handler="OrderSucces" class="btn-primary Pay_button">Afrekenen</button>
-                </form>
-            </div>
+            </form>
         </div>
     </div>
 
