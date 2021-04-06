@@ -27,8 +27,8 @@ namespace FotoShop.Pages
 
         public void OnGet()
         {
-
         }
+
         public async Task<IActionResult> OnPostUpload()
         {
             if (ModelState.IsValid)

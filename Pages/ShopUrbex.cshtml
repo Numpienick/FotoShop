@@ -3,59 +3,23 @@
 
 @{
     Layout = "_Layout";
-    ViewData["Title"] = "Shop";
+    ViewData["Title"] = "Urbex";
 }
 
 @section Styles {
-    <link href="/css/Shop.css" rel="stylesheet"/>
+    <link href="/css/Shop.css" rel="stylesheet" />
 }
 
-<div class="container-fluid Body_urbex">
-    <h1>Urbex Shop</h1>
-    <div class="row shop_row">
-        <div class="col-lg-3 col-md-6 shop_column">
-            @for (int i = 0; i < @Model.AllPhotos.Count; i++)
-            {
-                if (i == 0 || i % 4 == 0)
-                {
-                    <a asp-route-id="@Model.AllPhotos[i].Photo_id" asp-page="PhotoPage">
-                        <img class="img" src="~/Images/ProductImages/@Model.AllPhotos[i].Photo_path"/>
-                    </a>
-                }
-            }
-        </div>
-        <div class="col-lg-3 col-md-6 shop_column">
-            @for (int i = 0; i < @Model.AllPhotos.Count; i++)
-            {
-                if (i == 1 || i % 4 == 1)
-                {
-                    <a asp-route-id="@Model.AllPhotos[i].Photo_id" asp-page="PhotoPage">
-                        <img class="img" src="~/Images/ProductImages/@Model.AllPhotos[i].Photo_path"/>
-                    </a>
-                }
-            }
-        </div>
-        <div class="col-lg-3 col-md-6 shop_column">
-            @for (int i = 0; i < @Model.AllPhotos.Count; i++)
-            {
-                if (i == 2 || i % 4 == 2)
-                {
-                    <a asp-route-id="@Model.AllPhotos[i].Photo_id" asp-page="PhotoPage">
-                        <img class="img" src="~/Images/ProductImages/@Model.AllPhotos[i].Photo_path"/>
-                    </a>
-                }
-            }
-        </div>
-        <div class="col-lg-3 col-md-6 shop_column">
-            @for (int i = 0; i < @Model.AllPhotos.Count; i++)
-            {
-                if (i == 3 || i % 4 == 3)
-                {
-                    <a asp-route-id="@Model.AllPhotos[i].Photo_id" asp-page="PhotoPage">
-                        <img class="img" src="~/Images/ProductImages/@Model.AllPhotos[i].Photo_path"/>
-                    </a>
-                }
-            }
-        </div>
+<div class="display-4 text-center py-3">Urbex</div>
+<div class="container-fluid">
+    <div class="card-columns">
+        @foreach (var photo in Model.AllPhotos)
+        {
+            <div class="card">
+                <a asp-route-id="@photo.Photo_id" asp-page="PhotoPage">
+                    <img class="card-img-top" src="~/Images/ProductImages/@photo.Photo_path" />
+                </a>
+            </div>
+        }
     </div>
 </div>

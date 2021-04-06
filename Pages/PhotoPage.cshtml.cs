@@ -128,5 +128,6 @@ namespace FotoShop.Pages
             }
             return Redirect($"PhotoPage?Id={PhotoId}");
         }
+        
     }
 }

@@ -5,23 +5,77 @@
 .container{
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid black;
+}
+
+h1 {
+    font-size: 4vw;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
 }
 
 .Item{
     margin: 1%;
+    border-bottom: 4px solid black;
 }
 
 .img{
-    flex: 25%;
-    max-width: 75%;
-    box-sizing: border-box;
+    width: 20vw;
+    margin-bottom: 1vw;
 }
 
 .Item_payment{
     margin-left: 1%;
+    font-size: 1vw;
 }
 
 .Pay_button{
     border-radius: 10px;
+}
+
+.Item_price{
+    font-size: 1vw;
+    
+}
+.Item_title{
+    font-size: 1vw;
+    margin-top: 1vw;
+}
+.delete{
+    margin-top: 1vw;
+    float: right;
+}
+
+.Price_sum{
+    font-size: 1vw;
+    margin-bottom: 1vw;
+}
+
+@media screen and (max-width: 800px) {
+    .Price_sum, .Item_title, .Item_price {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .img{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h1{
+       font-size: 8vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .delete {
+        width: 8vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Pay_button{
+        font-size: 4vw;
+    }
 }
