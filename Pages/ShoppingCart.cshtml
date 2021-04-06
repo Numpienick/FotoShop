@@ -10,6 +10,12 @@
     <link href="~/css/cart.css" rel="stylesheet"/>
 }
 
+<div class="container mt-3" @Model.Hidden>
+    <div class="alert alert-success" role="alert">
+        <strong>Gelukt</strong> Uw order is geplaatst en betaald!
+    </div>
+</div>
+
 <body>
 <div class="container">
     <div class="col Main_col">
@@ -38,6 +44,7 @@
                         </form>
                     </div>
                 }
+                <span class="text-danger ShoppingLeeg">Let op uw winkelwagen is momenteel leeg! Bekijk nu ons aanbod in de <a href="./Shop">Shop</a> </span>
             </div>
         </div>
         <div class="col Item_payment">

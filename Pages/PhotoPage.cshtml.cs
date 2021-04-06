@@ -115,6 +115,7 @@ namespace FotoShop.Pages
                 CookieOptions options = new CookieOptions();
                 options.Expires = DateTime.Now.AddMinutes(9999999);
                 Response.Cookies.Append("Order", NewOrder.Placed_order_id);
+                Response.Cookies.Append("ShoppingCard", PhotoId);
             }
             else
             {
@@ -124,6 +125,7 @@ namespace FotoShop.Pages
                 {
                     using OrderRepository repoAddN = new OrderRepository(DbUtils.GetDbConnection());
                     repoAddN.InsertPhoto(OrderCookie, PhotoId);
+                    Response.Cookies.Append("ShoppingCard", PhotoId);
                 }
             }
             return Redirect($"PhotoPage?Id={PhotoId}");
