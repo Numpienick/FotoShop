@@ -30,7 +30,7 @@ namespace FotoShop.Pages
             using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
             PagePhoto = repo.Get(id);
 
-            if(PagePhoto == null)
+            if (PagePhoto == null)
             {
                 return Redirect("Shop");
             }
@@ -54,7 +54,7 @@ namespace FotoShop.Pages
 
         public IActionResult OnPostDelete(string id)
         {
-            var imagesDir = new HardDriveUtils().GetImgDir();
+            var imagesDir = HardDriveUtils.GetImageDirectory();
 
             using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
             string photoPath = repo.GetFromPhoto("Photo_path", id);
@@ -62,11 +62,7 @@ namespace FotoShop.Pages
             using PhotoRepository delRepo = new PhotoRepository(DbUtils.GetDbConnection());
             delRepo.Delete(id);
 
-            var imagePath = Path.Combine(imagesDir, photoPath);
-            if (System.IO.File.Exists(imagePath))
-            {
-                System.IO.File.Delete(imagePath);
-            }
+            var deleted = HardDriveUtils.DeleteImage(imagesDir, photoPath);
             return Redirect("Shop");
         }
 
@@ -96,24 +92,28 @@ namespace FotoShop.Pages
             return string.Format("/Images/ProductImages/{0}", path);
         }
 
-        [BindProperty] public string PhotoId {get;set;}
+        [BindProperty] public string PhotoId { get; set; }
         public IActionResult OnPostSubmitWinkelwagen()
         {
+            var userId = Request.Cookies["UserLoggedIn"];
+            if (string.IsNullOrEmpty(userId))
+            {
+                return RedirectToPage("PhotoPage", new { id = PhotoId });
+            }
             using OrderRepository repo = new OrderRepository(DbUtils.GetDbConnection());
             var Cookie = Request.Cookies["ShoppingCartAdd"];
             if (Cookie == null)
             {
                 Response.Cookies.Append("ShoppingCartAdd", PhotoId);
             }
-            var Cookie1 = Request.Cookies["UserLoggedIn"];
             var OrderCookie = Request.Cookies["Order"];
             if (OrderCookie == null)
             {
                 using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
                 string downloadlink = "Randomlinkdit";
-                var NewOrder = repoAdd.Add(Cookie1, downloadlink, PhotoId);
+                var NewOrder = repoAdd.Add(userId, downloadlink, PhotoId);
                 CookieOptions options = new CookieOptions();
-                options.Expires = DateTime.Now.AddMinutes(9999999);  
+                options.Expires = DateTime.Now.AddMinutes(9999999);
                 Response.Cookies.Append("Order", NewOrder.Placed_order_id);
             }
             else
@@ -128,6 +128,6 @@ namespace FotoShop.Pages
             }
             return Redirect($"PhotoPage?Id={PhotoId}");
         }
-        
+
     }
 }
