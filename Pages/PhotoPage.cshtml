@@ -8,50 +8,50 @@
     <script src="~/js/photopage.js"></script>
 }
 <body>
-    <div class="container">
-        <div id="alert" class="justify-content-center mt-3"></div>
-        <div class="row">
-            <div class="col-lg-7">
-                <form method="post" asp-page-handler="Delete">
-                    <div class="my-2">
-                        <span> @Html.AntiForgeryToken()</span>
-                        <input id="photoId" type="hidden" name="id"
-                               value="@Model.PagePhoto.Photo_id" />
-                        <img class="img-fluid border border-dark" src="@Model.GetPhotoPath()" />
-                    </div>
-                    <h2 id="title" class="editable" contenteditable="false">@Model.PagePhoto.Title</h2>
-                    <p id="description" class="editable" contenteditable="false">@Model.PagePhoto.Description</p>
-                    <div @Model.Hidden id="adminSection"
-                         class="form-inline justify-content-between">
-                        <button id="editPage" type="button" class="btn btn-warning my-3">
-                            <img class="mr-2" src="~/images/wrenchIcon.svg" />
-                            Pas deze pagina aan
-                        </button>
+<div class="container">
+    <div id="alert" class="justify-content-center mt-3"></div>
+    <div class="row">
+        <div class="col-lg-7">
+            <form method="post" asp-page-handler="Delete">
+                <div class="my-2">
+                    <span> @Html.AntiForgeryToken()</span>
+                    <input id="photoId" type="hidden" name="id"
+                           value="@Model.PagePhoto.Photo_id"/>
+                    <img class="img-fluid border border-dark" src="@Model.GetPhotoPath()"/>
+                </div>
+                <h2 id="title" class="editable" contenteditable="false">@Model.PagePhoto.Title</h2>
+                <p id="description" class="editable" contenteditable="false">@Model.PagePhoto.Description</p>
+                <div @Model.Hidden id="adminSection"
+                                   class="form-inline justify-content-between">
+                    <button id="editPage" type="button" class="btn btn-warning my-3">
+                        <img class="mr-2" src="~/images/wrenchIcon.svg"/>
+                        Pas deze pagina aan
+                    </button>
 
-                        <a id="savePage" role="button" class="btn btn-success my-3" hidden>
-                            <img class="mr-2" src="~/images/saveIcon.svg" />
-                            Sla de pagina op
-                        </a>
+                    <a id="savePage" role="button" class="btn btn-success my-3" hidden>
+                        <img class="mr-2" src="~/images/saveIcon.svg"/>
+                        Sla de pagina op
+                    </a>
 
-                        <button id="deleteBtn" class="btn btn-outline-danger my-3" type="button">
-                            <img class="mr-2" src="~/images/delete_black_24dp.svg" />
-                            Verwijder deze pagina
-                        </button>
+                    <button id="deleteBtn" class="btn btn-outline-danger my-3" type="button">
+                        <img class="mr-2" src="~/images/delete_black_24dp.svg"/>
+                        Verwijder deze pagina
+                    </button>
 
-                        <button id="confirmDeleteBtn" class="btn btn-danger my-3" type="submit" hidden>
-                            <img class="mr-2" src="~/images/delete_black_24dp.svg" />
-                            Weet u het zeker?
-                        </button>
-                    </div>
-                </form>
-            </div>
+                    <button id="confirmDeleteBtn" class="btn btn-danger my-3" type="submit" hidden>
+                        <img class="mr-2" src="~/images/delete_black_24dp.svg"/>
+                        Weet u het zeker?
+                    </button>
+                </div>
+            </form>
+        </div>
 
-            <div class="col-lg-1"></div>
+        <div class="col-lg-1"></div>
 
-            <div class="col-lg-3">
-                <h4 class="pt-4">€<span id="price" class="editable" contenteditable="false">@Model.PagePhoto.Price.Replace('.', ',')</span></h4>
-                <button class="btn-sm btn-success text-nowrap" type="button"><img class="mr-2" src="~/images/addToShoppingCartIcon.svg" />Voeg toe aan winkelwagen</button>
-            </div>
+        <div class="col-lg-3">
+            <h4 class="pt-4">€<span id="price" class="editable" contenteditable="false">@Model.PagePhoto.Price.Replace('.', ',')</span></h4>
+            <button class="btn-sm btn-success text-nowrap mb-3" type="button"><img class="mr-2" src="~/images/addToShoppingCartIcon.svg"/>Voeg toe aan winkelwagen</button>
         </div>
     </div>
+</div>
 </body>

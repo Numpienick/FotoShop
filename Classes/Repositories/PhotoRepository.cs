@@ -41,10 +41,10 @@ namespace FotoShop.Classes.Repositories
         public Photo Add(Photo photo)
         {
             using var connection = _connection;
-            Photo newPhoto = connection.QuerySingle<Photo>(@"INSERT INTO photo(Photo_path, Price, Description, Category_name)
-            VALUES(@Photo_Path, @Price, @Description, @Category_name);
+            Photo newPhoto = connection.QuerySingle<Photo>(@"INSERT INTO photo(Title, Photo_path, Price, Description, Category_name)
+            VALUES(@Title, @Photo_Path, @Price, @Description, @Category_name);
             SELECT * FROM photo WHERE Photo_id = LAST_INSERT_ID()",
-            new { Photo_Path = photo.Photo_path, Price = photo.Price, Description = photo.Description, Category_name = photo.Category_name });
+            new { Title= photo.Title ,Photo_Path = photo.Photo_path, Price = photo.Price, Description = photo.Description, Category_name = photo.Category_name });
             return newPhoto;
         }
 

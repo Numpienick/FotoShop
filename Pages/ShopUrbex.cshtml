@@ -10,33 +10,52 @@
     <link href="/css/Shop.css" rel="stylesheet"/>
 }
 
-<body>
-<div>
+<div class="container-fluid Body_urbex">
+    <h1>Urbex Shop</h1>
     <div class="row shop_row">
-        <div class="col-lg-4 shop_column">
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex1.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex2.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex3.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex4.jpg"/>
+        <div class="col-lg-3 col-md-6 shop_column">
+            @for (int i = 0; i < @Model.AllPhotos.Count; i++)
+            {
+                if (i == 0 || i % 4 == 0)
+                {
+                    <a asp-route-id="@Model.AllPhotos[i].Photo_id" asp-page="PhotoPage">
+                        <img class="img" src="~/Images/ProductImages/@Model.AllPhotos[i].Photo_path"/>
+                    </a>
+                }
+            }
         </div>
-        <div class="col-lg-4 shop_column">
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex5.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex6.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex7.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex8.jpg"/>
+        <div class="col-lg-3 col-md-6 shop_column">
+            @for (int i = 0; i < @Model.AllPhotos.Count; i++)
+            {
+                if (i == 1 || i % 4 == 1)
+                {
+                    <a asp-route-id="@Model.AllPhotos[i].Photo_id" asp-page="PhotoPage">
+                        <img class="img" src="~/Images/ProductImages/@Model.AllPhotos[i].Photo_path"/>
+                    </a>
+                }
+            }
         </div>
-        <div class="col-lg-4 shop_column">
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex9.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex10.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex11.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex12.jpg"/>
+        <div class="col-lg-3 col-md-6 shop_column">
+            @for (int i = 0; i < @Model.AllPhotos.Count; i++)
+            {
+                if (i == 2 || i % 4 == 2)
+                {
+                    <a asp-route-id="@Model.AllPhotos[i].Photo_id" asp-page="PhotoPage">
+                        <img class="img" src="~/Images/ProductImages/@Model.AllPhotos[i].Photo_path"/>
+                    </a>
+                }
+            }
         </div>
-        <div class="col-lg-4 shop_column">
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex13.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex14.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex15.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex16.jpg"/>
+        <div class="col-lg-3 col-md-6 shop_column">
+            @for (int i = 0; i < @Model.AllPhotos.Count; i++)
+            {
+                if (i == 3 || i % 4 == 3)
+                {
+                    <a asp-route-id="@Model.AllPhotos[i].Photo_id" asp-page="PhotoPage">
+                        <img class="img" src="~/Images/ProductImages/@Model.AllPhotos[i].Photo_path"/>
+                    </a>
+                }
+            }
         </div>
     </div>
 </div>
-</body>

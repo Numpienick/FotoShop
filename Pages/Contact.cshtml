@@ -8,11 +8,15 @@
 
 @section Styles{
     <link rel="stylesheet" href="~/css/contact.css" />
-    <script src="~/js/ContactJS.js"></script>
 }
 
-<div class="container-fluid blauw">
+<div class="container mt-3" @Model.Hidden>
+    <div class="alert alert-success" role="alert">
+        <strong>Gelukt!</strong> Uw bericht is verzonden!
+    </div>
+</div>
 
+<div class="container-fluid blauw">
     <div class="titel d-flex justify-content-center">
         <h1>@ViewData["Title"]</h1>
     </div>
@@ -28,7 +32,6 @@
 
     <div class="row">
         <div class="col-lg-12 d-flex justify-content-center">
-
             <form class="ContactForm" method="post">
 
                 <div class="form-group mt-2">
@@ -64,7 +67,7 @@
                     <label for="Bericht">Bericht*</label> <br>
                     <span class="text-danger" asp-validation-for="GetDbContact.message"></span>
                     <textarea id="Bericht"
-                              class="form-control input-lg"
+                              class="form-control"
                               rows="7"
                               asp-for="GetDbContact.message">
                     </textarea>
@@ -78,16 +81,6 @@
                         Verzenden
                     </button>
                 </div>
-                <!--
-                if (Model.inputIsValid == true)
-                 {
-                     <script>
-                         function showAlert() {
-                             alert("Uw bericht is ontvangen!");
-                             }
-                     </script>
-                 }-->
-
             </form>
         </div>
     </div>

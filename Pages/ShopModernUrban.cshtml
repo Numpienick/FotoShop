@@ -1,4 +1,5 @@
 ﻿@page
+@using System.Xml.Linq
 @using FotoShop.Classes
 @model FotoShop.Pages.ModernUrban
 
@@ -11,46 +12,53 @@
     <link href="/css/Shop.css" rel="stylesheet"/>
 }
 
-<body>
-<div>
+<div class="container-fluid Body_urban">
+    <h1>Modern Urban Shop</h1>
     <div class="row shop_row">
-        <div class="col-lg shop_column">
-            <a asp-route-id="1" asp-page="PhotoPage">
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban1.jpg"/>
-            </a>
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban6.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban9.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban10.jpg"/>
+        <div class="col-lg-3 col-md-6 shop_column">
+            @for (int i = 0; i < @Model.AllPhotos.Count; i++)
+            {
+                if (i == 0 || i % 4 == 0)
+                {
+                    <a asp-route-id="@Model.AllPhotos[i].Photo_id" asp-page="PhotoPage">
+                        <img class="img" src="~/Images/ProductImages/@Model.AllPhotos[i].Photo_path"/>
+                    </a>
+                }
+            }
         </div>
-        <div class="col-lg shop_column">
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban2.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban7.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban11.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban12.jpg"/>
+        <div class="col-lg-3 col-md-6 shop_column">
+            @for (int i = 0; i < @Model.AllPhotos.Count; i++)
+            {
+                if (i == 1 || i % 4 == 1)
+                {
+                    <a asp-route-id="@Model.AllPhotos[i].Photo_id" asp-page="PhotoPage">
+                        <img class="img" src="~/Images/ProductImages/@Model.AllPhotos[i].Photo_path"/>
+                    </a>
+                }
+            }
         </div>
-        <div class="col-lg shop_column">
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban3.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban8.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban13.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban14.jpg"/>
+        <div class="col-lg-3 col-md-6 shop_column">
+            @for (int i = 0; i < @Model.AllPhotos.Count; i++)
+            {
+                if (i == 2 || i % 4 == 2)
+                {
+                    <a asp-route-id="@Model.AllPhotos[i].Photo_id" asp-page="PhotoPage">
+                        <img class="img" src="~/Images/ProductImages/@Model.AllPhotos[i].Photo_path"/>
+                    </a>
+                }
+            }
         </div>
-        <div class="col-lg shop_column">
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban4.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban9.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban15.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Modern Urban/Urban16.jpg"/>
+        <div class="col-lg-3 col-md-6 shop_column">
+            @for (int i = 0; i < @Model.AllPhotos.Count; i++)
+            {
+                if (i == 3 || i % 4 == 3)
+                {
+                    <a asp-route-id="@Model.AllPhotos[i].Photo_id" asp-page="PhotoPage">
+                        <img class="img" src="~/Images/ProductImages/@Model.AllPhotos[i].Photo_path"/>
+                    </a>
+                }
+            }
         </div>
-        <!--     @foreach (var photo in @Model.AllPhotos)
-                 {
-                     <div class="UserProduct">
-                         <img src="@photo.Photo_path"/>
-                         <label value="@photo.Price"></label>
-                     </div>
-                     //<div class="AdminProduct">
-                     //    <img/>
-                     //    <label value="@photo.Price"/>
-                     //</div>
-                 }!-->
     </div>
-</div>
-</body>
+</div>    
+ 
