@@ -29,32 +29,48 @@ namespace FotoShop.Pages
             using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
             PagePhoto = repo.Get(id);
 
-            if(PagePhoto == null)
+            if (PagePhoto == null)
             {
                 return Redirect("Shop");
             }
-            GetAccountType();
+
+            string account = GetAccountType();
+            if (account == "admin")
+            {
+                Hidden = "";
+            }
             return Page();
         }
 
         public JsonResult OnPostSavePhoto([FromBody] Photo photo)
         {
-            photo.Price = photo.Price.Replace(',', '.');
-            if (Regex.IsMatch(photo.Price, @"[\d]{1,3}([.][\d]{1,2})?"))
+            string account = GetAccountType();
+            if (account == "admin")
             {
-                using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
-                if (repo.UpdatePhoto(photo))
+                Hidden = "";
+                photo.Price = photo.Price.Replace(',', '.');
+                if (Regex.IsMatch(photo.Price, @"[\d]{1,3}([.][\d]{1,2})?"))
                 {
-                    return new JsonResult("success");
+                    using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
+                    if (repo.UpdatePhoto(photo))
+                    {
+                        return new JsonResult("success");
+                    }
                 }
+                return new JsonResult("failed");
             }
-            return new JsonResult("failed");
+            return new JsonResult("redirect");
         }
 
         public IActionResult OnPostDelete(string id)
         {
-            HardDriveUtils.DeleteImage(id);
-            return Redirect("Shop");
+            string account = GetAccountType();
+            if (account == "admin")
+            {
+                HardDriveUtils.DeleteImage(id);
+                return Redirect("Shop");
+            }
+            return RedirectToPage("PhotoPage", new { id = id });
         }
 
         public string GetAccountType()
@@ -65,13 +81,6 @@ namespace FotoShop.Pages
             {
                 using UserRepository repo = new UserRepository(DbUtils.GetDbConnection());
                 accType = repo.GetFromAccount("Account_type", accId);
-                if (!String.IsNullOrEmpty(accType))
-                {
-                    if (accType == "admin")
-                    {
-                        Hidden = "";
-                    }
-                }
             }
             return accType;
         }
