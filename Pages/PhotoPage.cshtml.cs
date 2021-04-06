@@ -34,55 +34,44 @@ namespace FotoShop.Pages
             {
                 return Redirect("Shop");
             }
-            GetAccountType();
+
+            string account = UserRepository.GetAccountType(Request.Cookies["UserLoggedIn"]);
+            if (account == "admin")
+            {
+                Hidden = "";
+            }
             return Page();
         }
 
         public JsonResult OnPostSavePhoto([FromBody] Photo photo)
         {
-            photo.Price = photo.Price.Replace(',', '.');
-            if (Regex.IsMatch(photo.Price, @"[\d]{1,3}([.][\d]{1,2})?"))
+            string account = UserRepository.GetAccountType(Request.Cookies["UserLoggedIn"]);
+            if (account == "admin")
             {
-                using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
-                if (repo.UpdatePhoto(photo))
+                Hidden = "";
+                photo.Price = photo.Price.Replace(',', '.');
+                if (Regex.IsMatch(photo.Price, @"[\d]{1,3}([.][\d]{1,2})?"))
                 {
-                    return new JsonResult("success");
+                    using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
+                    if (repo.UpdatePhoto(photo))
+                    {
+                        return new JsonResult("success");
+                    }
                 }
+                return new JsonResult("failed");
             }
-            return new JsonResult("failed");
+            return new JsonResult("redirect");
         }
 
         public IActionResult OnPostDelete(string id)
         {
-            var imagesDir = HardDriveUtils.GetImageDirectory();
-
-            using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
-            string photoPath = repo.GetFromPhoto("Photo_path", id);
-
-            using PhotoRepository delRepo = new PhotoRepository(DbUtils.GetDbConnection());
-            delRepo.Delete(id);
-
-            var deleted = HardDriveUtils.DeleteImage(imagesDir, photoPath);
-            return Redirect("Shop");
-        }
-
-        public string GetAccountType()
-        {
-            string accId = Request.Cookies["UserLoggedIn"];
-            string accType = "user";
-            if (!String.IsNullOrEmpty(accId))
+            string account = UserRepository.GetAccountType(Request.Cookies["UserLoggedIn"]);
+            if (account == "admin")
             {
-                using UserRepository repo = new UserRepository(DbUtils.GetDbConnection());
-                accType = repo.GetFromAccount("Account_type", accId);
-                if (!String.IsNullOrEmpty(accType))
-                {
-                    if (accType == "admin")
-                    {
-                        Hidden = "";
-                    }
-                }
+                HardDriveUtils.DeleteImage(id);
+                return Redirect("Shop");
             }
-            return accType;
+            return RedirectToPage("PhotoPage", new { id = id });
         }
 
         public string GetPhotoPath()

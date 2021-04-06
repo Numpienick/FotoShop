@@ -64,3 +64,7 @@ footer {
     width: 100%;
     height: 2.5rem;
 }
+
+.notLoggedIn .loggedIn {
+    display: none;
+}

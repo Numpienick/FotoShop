@@ -19,7 +19,7 @@ namespace FotoShop.Pages
 {
     public class UploadImage : PageModel
     {
-        [BindProperty, Required(ErrorMessage = "Gelieve een image toe te voegen!")]
+        [BindProperty, Required(ErrorMessage = "Gelieve een foto toe te voegen!")]
         public IFormFile ImageFile { get; set; }
         
         [BindProperty]
@@ -37,7 +37,7 @@ namespace FotoShop.Pages
                 if (float.TryParse(NewPhoto.Price, out float price ))
                 {
                     string file = HardDriveUtils.GetFilePath(ImageFile);
-                    string dirPath =  HardDriveUtils.GetDirectoryPath(ImageFile, NewPhoto.Category_name);
+                    string dirPath = HardDriveUtils.GetDirectoryPath(ImageFile, NewPhoto.Category_name);
                     NewPhoto.Photo_path = string.Format("{0}/{1}", NewPhoto.Category_name, file);
                     using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
                     repo.Add(NewPhoto);
