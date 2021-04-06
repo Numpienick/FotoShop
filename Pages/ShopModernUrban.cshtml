@@ -11,8 +11,9 @@
 @section Styles {
     <link href="/css/Shop.css" rel="stylesheet"/>
 }
+
 <div class="container-fluid">
-    <div class="row">
+    <div class="row iets">
         <div class="col-lg-3 col-md-6 shop_column">
             @for (int i = 0; i < @Model.AllPhotos.Count; i++)
             {
@@ -24,6 +25,7 @@
                 }
             }
         </div>
+        <div class="clearfix d-md-block"></div>
         <div class="col-lg-3 col-md-6 shop_column">
             @for (int i = 0; i < @Model.AllPhotos.Count; i++)
             {
@@ -35,6 +37,7 @@
                 }
             }
         </div>
+        <div class="clearfix"></div>
         <div class="col-lg-3 col-md-6 shop_column">
             @for (int i = 0; i < @Model.AllPhotos.Count; i++)
             {
@@ -46,6 +49,7 @@
                 }
             }
         </div>
+        <div class="clearfix"></div>
         <div class="col-lg-3 col-md-6 shop_column">
             @for (int i = 0; i < @Model.AllPhotos.Count; i++)
             {
@@ -57,6 +61,7 @@
                 }
             }
         </div>
+        <div class="clearfix"></div>
     </div>
-</div>    
+</div>
  

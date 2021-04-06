@@ -36,8 +36,8 @@ namespace FotoShop.Pages
                 NewPhoto.Price = NewPhoto.Price.Replace(',', '.');
                 if (float.TryParse(NewPhoto.Price, out float price ))
                 {
-                    string file = new HardDriveUtils().GetFilePath(ImageFile);
-                    string dirPath = new HardDriveUtils().GetDirPath(ImageFile, NewPhoto.Category_name);
+                    string file = HardDriveUtils.GetFilePath(ImageFile);
+                    string dirPath =  HardDriveUtils.GetDirectoryPath(ImageFile, NewPhoto.Category_name);
                     NewPhoto.Photo_path = string.Format("{0}/{1}", NewPhoto.Category_name, file);
                     using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
                     repo.Add(NewPhoto);

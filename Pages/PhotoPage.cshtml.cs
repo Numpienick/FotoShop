@@ -53,7 +53,7 @@ namespace FotoShop.Pages
 
         public IActionResult OnPostDelete(string id)
         {
-            var imagesDir = new HardDriveUtils().GetImgDir();
+            var imagesDir = HardDriveUtils.GetImageDirectory();
 
             using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
             string photoPath = repo.GetFromPhoto("Photo_path", id);
@@ -61,7 +61,7 @@ namespace FotoShop.Pages
             using PhotoRepository delRepo = new PhotoRepository(DbUtils.GetDbConnection());
             delRepo.Delete(id);
 
-            var deleted = new HardDriveUtils().DeleteImg(imagesDir, photoPath);
+            var deleted = HardDriveUtils.DeleteImage(imagesDir, photoPath);
             return Redirect("Shop");
         }
 
