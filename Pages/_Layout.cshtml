@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-
+﻿@using FotoShop.Classes.Repositories
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -65,16 +65,16 @@
                         <img src="images/shoppingCartIcon.svg" />
                     </a>
                 </li>
-                <li class="nav-item ml-3">
-                    <a class="nav-link notLoggedIn"
+                <li class="nav-item notLoggedIn ml-3">
+                    <a class="nav-link"
                        role="button"
                        data-toggle="ajax-modal"
                        data-url="@Url.Page("Ajax", "LogInModalPartial")">
                         <img src="images/personIcon.svg" />
                     </a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link loggedIn" href="#"
+                <li class="nav-item loggedIn ml-3 dropdown">
+                    <a class="nav-link" href="#"
                        role="button"
                        id="accountDropDown"
                        data-toggle="dropdown"
@@ -90,7 +90,20 @@
                             Log uit
                         </a>
                         <div class="dropdown-divider border-dark"></div>
-                        <a class="dropdown-item" asp-page="UploadImage">Account</a>
+                        @{
+                            string account = UserRepository.GetAccountType(Context.Request.Cookies["UserLoggedIn"]);
+                            string accPage = "Index";
+                            if (account == "admin")
+                            {
+                                accPage = "UploadImage";
+                            }
+                            else if (account == "user")
+                            {
+                                accPage = "UserAccount";
+                            }
+                        }
+                        <a class="dropdown-item"
+                           asp-page="@accPage">Account</a>
                     </div>
                 </li>
             </ul>

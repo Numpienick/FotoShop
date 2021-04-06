@@ -2,8 +2,10 @@
 	var user = GetCookie('UserLoggedIn');
 	if (user == "" || user == undefined) {
 		$(".loggedIn").hide();
+		$(".notLoggedIn").show();
 	} else {
 		$(".notLoggedIn").hide();
+		$(".loggedIn").show();
 	}
 	var width = $(window).width();
 	StyleDropdown();
@@ -45,7 +47,7 @@
 	$("#logOut").click(function () {
 		var url = $(this).data('url');
 		$.get(url).done(function () {
-			location.reload();
+			location.replace("Index");
 		});
 	});
 
