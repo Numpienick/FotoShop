@@ -27,7 +27,6 @@ namespace FotoShop.Pages
 
         public void OnGet()
         {
-
         }
 
         public async Task<IActionResult> OnPostUpload()

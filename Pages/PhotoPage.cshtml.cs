@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using FotoShop.Classes;
 using FotoShop.Classes.Repositories;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -79,5 +80,45 @@ namespace FotoShop.Pages
             string path = repo.GetFromPhoto("Photo_path", PagePhoto.Photo_id);
             return string.Format("/Images/ProductImages/{0}", path);
         }
+
+        [BindProperty] public string PhotoId { get; set; }
+        public IActionResult OnPostSubmitWinkelwagen()
+        {
+            var userId = Request.Cookies["UserLoggedIn"];
+            if (string.IsNullOrEmpty(userId))
+            {
+                return RedirectToPage("PhotoPage", new { id = PhotoId });
+            }
+            using OrderRepository repo = new OrderRepository(DbUtils.GetDbConnection());
+            var Cookie = Request.Cookies["ShoppingCartAdd"];
+            if (Cookie == null)
+            {
+                Response.Cookies.Append("ShoppingCartAdd", PhotoId);
+            }
+            var OrderCookie = Request.Cookies["Order"];
+            if (OrderCookie == null)
+            {
+                using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
+                string downloadlink = "Randomlinkdit";
+                var NewOrder = repoAdd.Add(userId, downloadlink, PhotoId);
+                CookieOptions options = new CookieOptions();
+                options.Expires = DateTime.Now.AddMinutes(9999999);
+                Response.Cookies.Append("Order", NewOrder.Placed_order_id);
+                Response.Cookies.Append("ShoppingCard", PhotoId);
+            }
+            else
+            {
+                using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
+                var Checkfoto = repoAdd.CheckFoto(OrderCookie, PhotoId);
+                if (Checkfoto == null)
+                {
+                    using OrderRepository repoAddN = new OrderRepository(DbUtils.GetDbConnection());
+                    repoAddN.InsertPhoto(OrderCookie, PhotoId);
+                    Response.Cookies.Append("ShoppingCard", PhotoId);
+                }
+            }
+            return Redirect($"PhotoPage?Id={PhotoId}");
+        }
+
     }
 }

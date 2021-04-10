@@ -1,0 +1,63 @@
+﻿@page
+@using FotoShop.Classes
+@model FotoShop.Pages.ShoppingCart
+
+@{
+    Layout = "_Layout";
+}
+
+@section Styles {
+    <link href="~/css/cart.css" rel="stylesheet"/>
+}
+
+<div class="container mt-3" @Model.Hidden>
+    <div class="alert alert-success" role="alert">
+        <strong>Gelukt</strong> Uw order is geplaatst en betaald!
+    </div>
+</div>
+
+<body>
+<div class="container">
+    <div class="col Main_col">
+        <h1 class="Header">Uw winkelwagen</h1>
+        <div class="row Photo_display">
+            <div class="row border-dark border-top-0 border-right-0 border-left-0 Item">
+                @foreach (var item in @Model.GetPhoto())
+                {
+                    <div class="col Item_img">
+                        <img class=" img" src="/Images/ProductImages/@item.Photo_path"/>
+                    </div>
+                    <div class="col Item_info">
+                        <div class="row Item_title">
+                            <span>@item.Title</span>
+                        </div>
+                        <div class="row Item_price">
+                            <span>€@item.Price.Replace('.', ',')</span>
+                        </div>
+                    </div>
+                    <div class="col Item_button">
+                        <form method="post">
+                            <input type="hidden" asp-for="ImgId" value="@item.Photo_id"/>
+                            <button class="btn btn-outline-danger delete" asp-page-handler="Delete" type="submit">
+                                <span>X</span>
+                            </button>
+                        </form>
+                    </div>
+                }
+                <span class="text-danger ShoppingLeeg">Let op uw winkelwagen is momenteel leeg! Bekijk nu ons aanbod in de <a href="./Shop">Shop</a> </span>
+            </div>
+        </div>
+        <div class="col Item_payment">
+            <div class="row Price_sum">
+                <span>Subtotaal: €@Model.TotalPrice()</span>
+            </div>
+            <div class="row mb-3 Pay_button">
+                <form method="post">
+                <button asp-page-handler="OrderSucces" class="btn btn-primary Pay_button">Afrekenen</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>

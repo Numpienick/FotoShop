@@ -3,40 +3,23 @@
 
 @{
     Layout = "_Layout";
-    ViewData["Title"] = "Shop";
+    ViewData["Title"] = "Urbex";
 }
 
 @section Styles {
-    <link href="/css/Shop.css" rel="stylesheet"/>
+    <link href="/css/Shop.css" rel="stylesheet" />
 }
 
-<body>
-<div>
-    <div class="row shop_row">
-        <div class="col-lg-4 shop_column">
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex1.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex2.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex3.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex4.jpg"/>
-        </div>
-        <div class="col-lg-4 shop_column">
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex5.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex6.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex7.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex8.jpg"/>
-        </div>
-        <div class="col-lg-4 shop_column">
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex9.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex10.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex11.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex12.jpg"/>
-        </div>
-        <div class="col-lg-4 shop_column">
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex13.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex14.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex15.jpg"/>
-            <img class="testimg" src="Images/ProductImages/Urbex/Urbex16.jpg"/>
-        </div>
+<div class="display-4 text-center py-3">Urbex</div>
+<div class="container-fluid">
+    <div class="card-columns">
+        @foreach (var photo in Model.AllPhotos)
+        {
+            <div class="card">
+                <a asp-route-id="@photo.Photo_id" asp-page="PhotoPage">
+                    <img class="card-img-top" src="~/Images/ProductImages/@photo.Photo_path" />
+                </a>
+            </div>
+        }
     </div>
 </div>
-</body>

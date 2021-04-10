@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\jelme\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\jelme\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FotoShop.1485108578.00" t="ExcludeRecursive" />
-    <e p="C:\Users\jelme\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\jelme\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\jelme\RiderProjects\FotoShop" t="IncludeRecursive">
+    <e p="C:\Users\Remco\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Remco\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FotoShop.-1740476221.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Remco\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Remco\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
+    <e p="D:\1 School\HBO-ICT\FotoShop" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
       <e p="_ViewImports.cshtml" t="Include" />
       <e p="appsettings.Development.json" t="Include" />
@@ -16,9 +16,11 @@
         <e p="DbUtils.cs" t="Include" />
         <e p="HardDriveUtils.cs" t="Include" />
         <e p="LogIn.cs" t="Include" />
+        <e p="Order.cs" t="Include" />
         <e p="Photo.cs" t="Include" />
         <e p="Repositories" t="Include">
           <e p="ContactRepository.cs" t="Include" />
+          <e p="OrderRepository.cs" t="Include" />
           <e p="PhotoRepository.cs" t="Include" />
           <e p="UserRepository.cs" t="Include" />
         </e>
@@ -38,6 +40,8 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="Pages" t="Include">
         <e p="_Layout.cshtml" t="Include" />
+        <e p="Ajax.cshtml" t="Include" />
+        <e p="Ajax.cshtml.cs" t="Include" />
         <e p="Contact.cshtml" t="Include" />
         <e p="Contact.cshtml.cs" t="Include" />
         <e p="Index.cshtml" t="Include" />
@@ -52,6 +56,8 @@
         <e p="Shop.cshtml.cs" t="Include" />
         <e p="ShopModernUrban.cshtml" t="Include" />
         <e p="ShopModernUrban.cshtml.cs" t="Include" />
+        <e p="ShoppingCart.cshtml" t="Include" />
+        <e p="ShoppingCart.cshtml.cs" t="Include" />
         <e p="ShopPop.cshtml" t="Include" />
         <e p="ShopPop.cshtml.cs" t="Include" />
         <e p="ShopUrbex.cshtml" t="Include" />
@@ -93,6 +99,7 @@
           </e>
         </e>
         <e p="css" t="Include">
+          <e p="cart.css" t="Include" />
           <e p="contact.css" t="Include" />
           <e p="index.css" t="Include" />
           <e p="shop.css" t="Include" />
@@ -122,6 +129,11 @@
           <e p="Pop-Afbeelding-Shop.jpg" t="Include" />
           <e p="ProductImages" t="Include">
             <e p="Modern Urban" t="Include">
+<<<<<<< HEAD
+              <e p="3840x2160a.jpg" t="Include" />
+=======
+              <e p="Inquisitive_Momo.png" t="Include" />
+>>>>>>> Jelmer
               <e p="Urban1.jpg" t="Include" />
               <e p="Urban10.jpg" t="Include" />
               <e p="Urban11.jpg" t="Include" />
@@ -317,7 +329,6 @@
           <e p="wrenchIcon.svg" t="Include" />
         </e>
         <e p="js" t="Include">
-          <e p="index.js" t="Include" />
           <e p="jquery-3.5.1.js" t="Include" />
           <e p="layout.js" t="Include" />
           <e p="photopage.js" t="Include" />
