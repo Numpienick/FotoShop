@@ -85,10 +85,6 @@ namespace FotoShop.Pages
         public IActionResult OnPostSubmitWinkelwagen()
         {
             var userId = Request.Cookies["UserLoggedIn"];
-            if (string.IsNullOrEmpty(userId))
-            {
-                return RedirectToPage("PhotoPage", new { id = PhotoId });
-            }
             using OrderRepository repo = new OrderRepository(DbUtils.GetDbConnection());
             var Cookie = Request.Cookies["ShoppingCartAdd"];
             if (Cookie == null)
