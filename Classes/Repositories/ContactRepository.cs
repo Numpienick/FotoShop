@@ -22,7 +22,7 @@ namespace FotoShop.Classes.Repositories
         {
             using var connection = _connection;
             var numRowEffected = connection.Execute(
-                @"INSERT INTO contact(Subject, Message, Name, Email)
+                @"INSERT INTO fotoshop.contact(Subject, Message, Name, Email)
                         VALUES (@paraSubject, @paraMessage, @paraName, @paraEmail)", 
                     new { paraSubject = dbContact.subject, 
                                 paraMessage = dbContact.message,

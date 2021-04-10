@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.IO;
 using System.Net;
 using System.Net.Mime;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using FotoShop.Classes;
 using FotoShop.Classes.Repositories;
@@ -17,43 +19,37 @@ namespace FotoShop.Pages
 {
     public class UploadImage : PageModel
     {
-        private readonly IWebHostEnvironment _hostEnvironment;
-        [NotMapped]
-        [DisplayName("Upload File")]
+        [BindProperty, Required(ErrorMessage = "Gelieve een foto toe te voegen!")]
         public IFormFile ImageFile { get; set; }
-
-        public UploadImage(IWebHostEnvironment hostEnvironment)
-        {
-            this._hostEnvironment = hostEnvironment;
-        }
+        
+        [BindProperty]
+        public Photo NewPhoto { get; set; }
 
         public void OnGet()
         {
-
         }
 
-        public async Task<IActionResult> OnPostUpload(string description, string categoryName, string price)
+        public async Task<IActionResult> OnPostUpload()
         {
             if (ModelState.IsValid)
             {
-                string rootPath = _hostEnvironment.WebRootPath;
-                string fileName = Path.GetFileNameWithoutExtension(ImageFile.FileName);
-                string extension = Path.GetExtension(ImageFile.FileName);
-                string path = Path.Combine(rootPath + "/images/" + fileName + extension);
-                using (var fileStream = new FileStream(path, FileMode.Create))
+                NewPhoto.Price = NewPhoto.Price.Replace(',', '.');
+                if (float.TryParse(NewPhoto.Price, out float price ))
                 {
-                    await ImageFile.CopyToAsync(fileStream);
+                    string file = HardDriveUtils.GetFilePath(ImageFile);
+                    string dirPath = HardDriveUtils.GetDirectoryPath(ImageFile, NewPhoto.Category_name);
+                    NewPhoto.Photo_path = string.Format("{0}/{1}", NewPhoto.Category_name, file);
+                    using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
+                    repo.Add(NewPhoto);
+                    await using (var fileStream = new FileStream(dirPath, FileMode.Create))
+                     {
+                         await ImageFile.CopyToAsync(fileStream);
+                     }
+                    ModelState.Clear();
+                    return Redirect("UploadImage"); 
                 }
-                Photo photo = new Photo();
-                photo.Photo_path = $"/images/{fileName + extension}";
-                photo.Price = price;
-                photo.Description = description;
-                photo.Category_name = categoryName;
-                using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
-                repo.Add(photo);
             }
-
-            return Redirect("/UploadImage");
+            return Page();
         }
     }
 }

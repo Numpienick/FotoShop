@@ -1,4 +1,4 @@
-.blauw{
+.blauw {
     background-color: #80E4F0;
 }
 
@@ -7,11 +7,16 @@
 }
 
 @media screen and (max-width: 576px) {
-    .ContactForm{
+    .ContactForm {
         width: 75%;
     }
 }
 
-.form-group{
+.form-group {
     width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    max-height: 40vh;
 }

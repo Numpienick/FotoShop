@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\thimo\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\thimo\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FotoShop.1168888656.00" t="ExcludeRecursive" />
-    <e p="C:\Users\thimo\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\thimo\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\thimo\RiderProjects\FotoShop" t="IncludeRecursive">
+    <e p="C:\Users\Remco\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Remco\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FotoShop.-1740476221.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Remco\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\Remco\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
+    <e p="D:\1 School\HBO-ICT\FotoShop" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
       <e p="_ViewImports.cshtml" t="Include" />
       <e p="appsettings.Development.json" t="Include" />
@@ -14,10 +14,13 @@
       <e p="Classes" t="Include">
         <e p="DBContact.cs" t="Include" />
         <e p="DbUtils.cs" t="Include" />
+        <e p="HardDriveUtils.cs" t="Include" />
         <e p="LogIn.cs" t="Include" />
+        <e p="Order.cs" t="Include" />
         <e p="Photo.cs" t="Include" />
         <e p="Repositories" t="Include">
           <e p="ContactRepository.cs" t="Include" />
+          <e p="OrderRepository.cs" t="Include" />
           <e p="PhotoRepository.cs" t="Include" />
           <e p="UserRepository.cs" t="Include" />
         </e>
@@ -37,11 +40,12 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="Pages" t="Include">
         <e p="_Layout.cshtml" t="Include" />
+        <e p="Ajax.cshtml" t="Include" />
+        <e p="Ajax.cshtml.cs" t="Include" />
         <e p="Contact.cshtml" t="Include" />
         <e p="Contact.cshtml.cs" t="Include" />
         <e p="Index.cshtml" t="Include" />
         <e p="Index.cshtml.cs" t="Include" />
-<<<<<<< HEAD
         <e p="Partials" t="Include">
           <e p="_LogInModalPartial.cshtml" t="Include" />
           <e p="_RegisterModalPartial.cshtml" t="Include" />
@@ -52,19 +56,14 @@
         <e p="Shop.cshtml.cs" t="Include" />
         <e p="ShopModernUrban.cshtml" t="Include" />
         <e p="ShopModernUrban.cshtml.cs" t="Include" />
-<<<<<<< HEAD
-=======
-        <e p="Shoppagina.cshtml" t="Include" />
-        <e p="Shoppagina.cshtml.cs" t="Include" />
-        <e p="UploadImage.cshtml" t="Include" />
-        <e p="UploadImage.cshtml.cs" t="Include" />
->>>>>>> Jelmer
-=======
+        <e p="ShoppingCart.cshtml" t="Include" />
+        <e p="ShoppingCart.cshtml.cs" t="Include" />
         <e p="ShopPop.cshtml" t="Include" />
         <e p="ShopPop.cshtml.cs" t="Include" />
         <e p="ShopUrbex.cshtml" t="Include" />
         <e p="ShopUrbex.cshtml.cs" t="Include" />
->>>>>>> Shoppagina-EJ
+        <e p="UploadImage.cshtml" t="Include" />
+        <e p="UploadImage.cshtml.cs" t="Include" />
       </e>
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
@@ -99,36 +98,19 @@
             <e p="bootstrap.min.js.map" t="Include" />
           </e>
         </e>
-<<<<<<< HEAD
-=======
-        <e p="Classes" t="Include">
-          <e p="Category.cs" t="Include" />
-          <e p="Photo.cs" t="Include" />
-          <e p="Repositories" t="Include">
-            <e p="CategoryRepository.cs" t="Include" />
-            <e p="PhotoRepository.cs" t="Include" />
-          </e>
-        </e>
->>>>>>> Jelmer
         <e p="css" t="Include">
+          <e p="cart.css" t="Include" />
           <e p="contact.css" t="Include" />
           <e p="index.css" t="Include" />
           <e p="shop.css" t="Include" />
           <e p="shoppagina.css" t="Include" />
           <e p="site.css" t="Include" />
           <e p="stylesheet-layout.css" t="Include" />
+          <e p="UploadImage.css" t="Include" />
         </e>
-<<<<<<< HEAD
-<<<<<<< HEAD
         <e p="images" t="Include">
-=======
-        <e p="Images" t="Include">
->>>>>>> Contact-Thimo
-          <e p="BannerV3.png" t="Include" />
-=======
-        <e p="Images" t="Include">
+          <e p="addToShoppingCartIcon.svg" t="Include" />
           <e p="BannerV3.jpg" t="Include" />
->>>>>>> Shoppagina-EJ
           <e p="build_black_24dp.svg" t="Include" />
           <e p="delete_black_24dp.svg" t="Include" />
           <e p="description_black_24dp.svg" t="Include" />
@@ -141,13 +123,17 @@
           <e p="mail.svg" t="Include" />
           <e p="Modern-Afbeelding-Shop.jpg" t="Include" />
           <e p="nameIcon.svg" t="Include" />
-          <e p="outline_person_black_24dp.png" t="Include" />
-          <e p="outline_shopping_cart_black_24dp.png" t="Include" />
           <e p="passwordIcon.svg" t="Include" />
           <e p="perm_identity_black_24dp.svg" t="Include" />
+          <e p="personIcon.svg" t="Include" />
           <e p="Pop-Afbeelding-Shop.jpg" t="Include" />
           <e p="ProductImages" t="Include">
             <e p="Modern Urban" t="Include">
+<<<<<<< HEAD
+              <e p="3840x2160a.jpg" t="Include" />
+=======
+              <e p="Inquisitive_Momo.png" t="Include" />
+>>>>>>> Jelmer
               <e p="Urban1.jpg" t="Include" />
               <e p="Urban10.jpg" t="Include" />
               <e p="Urban11.jpg" t="Include" />
@@ -336,19 +322,18 @@
               <e p="Urbex9.jpg" t="Include" />
             </e>
           </e>
-<<<<<<< HEAD
+          <e p="saveIcon.svg" t="Include" />
+          <e p="shoppingCartIcon.svg" t="Include" />
           <e p="title_black.svg" t="Include" />
-          <e p="Urbex Foto's" t="Include" />
-=======
->>>>>>> Shoppagina-EJ
           <e p="Urbex-Afbeelding-Shop.jpg" t="Include" />
+          <e p="wrenchIcon.svg" t="Include" />
         </e>
         <e p="js" t="Include">
-          <e p="ContactJS.js" t="Include" />
-          <e p="index.js" t="Include" />
           <e p="jquery-3.5.1.js" t="Include" />
           <e p="layout.js" t="Include" />
+          <e p="photopage.js" t="Include" />
           <e p="popper.min.js" t="Include" />
+          <e p="UploadImage.js" t="Include" />
         </e>
       </e>
     </e>

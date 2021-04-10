@@ -5,7 +5,7 @@
          id="modalRegisterForm"
          tabindex="-1"
          role="dialog"
-         aria-labelledby="myModalLabel"
+         aria-labelledby="RegisterModal"
          aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content modal-md">
@@ -20,15 +20,15 @@
                     <form asp-page-handler="RegisterModalPartial">
                         <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
                         <div class="input-group mt-2">
-                            <span class="p-2"><img src="images/mail.svg" /></span>
+                            <span class="mr-2 mt-1 mb-1"><img src="images/mail.svg" /></span>
                             <input type="email" asp-for="Email"
                                    class="form-control border-top-0 border-left-0 border-right-0 my-auto"
                                    placeholder="Uw e-mail adres..." />
                         </div>
                         <span asp-validation-for="Email" class="text-danger"></span>
 
-                        <div class="input-group mt-2">
-                            <span class="p-2"><img src="images/nameIcon.svg" /></span>
+                        <div class="input-group inline mt-2">
+                            <span class="mr-2 mt-1 mb-1"><img src="images/nameIcon.svg" /></span>
                             <input type="text" asp-for="First_name"
                                    class="form-control border-top-0 border-left-0 border-right-0 my-auto"
                                    placeholder="Uw voornaam..." />
@@ -42,7 +42,7 @@
                         <span asp-validation-for="Last_name" class="text-danger"></span>
 
                         <div class="input-group mt-3">
-                            <span class="p-2">
+                            <span class="mr-2 mt-1 mb-1">
                                 <img src="images/passwordIcon.svg" />
                             </span>
                             <input type="password" asp-for="User_Password"
@@ -51,8 +51,8 @@
                         </div>
                         <span asp-validation-for="User_Password" class="text-danger"></span>
 
-                        <div class="input-group mt-1">
-                            <span class="p-2">
+                        <div class="input-group mt-2">
+                            <span class="mr-2 mt-1 mb-1">
                                 <img src="images/passwordIcon.svg" />
                             </span>
                             <input type="password" asp-for="User_PassConfirm"

@@ -2,24 +2,58 @@
 @model FotoShop.Pages.UploadImage
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Admin page";
+    Layout = "_Layout";
 }
 
-<div class="container">
-    <div>
+@section Styles {
+    <link href="~/css/UploadImage.css" rel="stylesheet" type="text/css" />
+}
+
+@section JavaScript {
+    <script src="~/js/UploadImage.js"></script>
+}
+
+<div class="container-fluid">
+
+    <div class="d-flex justify-content-center display-4 mt-3">
+        Voeg hier een foto toe
+    </div>
+
+    <div class="col-md-6 offset-md-3 mt-5">
         <form method="post" enctype="multipart/form-data">
-            <label>Description</label><br>
-            <input type="text" name="Description"/><br>
-            <label>Category Name</label><br>
-            <input type="text" name="categoryName"/><br>
-            <label>Price</label><br>
-            <input type="text" name="price"/><br>
-            <label asp-for="ImageFile" class="">Image File</label><br>
-            <input asp-for="ImageFile" accept="image/png, image/jpeg, image/jpg"/><br>
-            <button type="submit" asp-page-handler="Upload">Submit</button>
-        </form>
-        <form method="post">
-            <button type="submit" asp-page-handler="Delete">Delete</button>
+            <div class="form-group">
+                <label>Titel</label><br>
+                <input type="text" asp-for="NewPhoto.Title" class="form-control" />
+                <span class="text-danger" asp-validation-for="NewPhoto.Title"></span>
+            </div>
+            <div class="form-group">
+                <label>Categorie</label><br>
+                <select asp-for="NewPhoto.Category_name" class="form-control ">
+                    <option value="Modern Urban">Modern Urban</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Urbex">Urbex</option>
+                </select>
+                <span class="text-danger" asp-validation-for="NewPhoto.Category_name"></span>
+            </div>
+            <div class="form-group">
+                <label>Prijs</label><br>
+                <input type="text" asp-for="NewPhoto.Price" class="form-control" />
+                <span class="text-danger" asp-validation-for="NewPhoto.Price"></span>
+            </div>
+            <div class="form-group">
+                <label>Beschrijving</label><br>
+                <textarea class="form-control" rows="7" asp-for="NewPhoto.Description"></textarea>
+                <span class="text-danger" asp-validation-for="NewPhoto.Description"></span>
+            </div>
+            <div class="form-group custom-file">
+                <input asp-for="ImageFile" type="file" class="custom-file-input form-control" id="customFile" accept="image/png, image/jpeg" />
+                <label class="custom-file-label" for="customFile">Kies een foto</label>
+                <span class="text-danger mt-1" asp-validation-for="ImageFile"></span>
+            </div>
+            <div class="form-group mt-3 mb-3">
+                <button class="btn btn-primary form-control" type="submit" asp-page-handler="Upload">Submit</button>
+            </div>
         </form>
     </div>
 </div>
