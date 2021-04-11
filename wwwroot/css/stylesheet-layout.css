@@ -2,7 +2,6 @@
     background-color: #f2f2f2 !important;
     color: #1e2c2e;
     font-family: 'Poppins', sans-serif;
-    padding-bottom: 70px;
     position: relative;
     min-height: 100vh;
     padding-bottom: 2.5rem;
@@ -46,7 +45,7 @@ h6 {
 }
 
 .dropdown-item:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.1) !important;
 }
 
 .padding {

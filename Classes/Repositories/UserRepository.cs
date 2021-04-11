@@ -23,12 +23,10 @@ namespace FotoShop.Classes.Repositories
 
         public bool Create(User user)
         {
-            int numRowsAffected = 0;
-
-            using var connection = _connection;
+            int numRowsAffected = 0;                       
             try
             {
-                numRowsAffected = connection.Execute(@"INSERT INTO account (Email, Password, First_name, Last_name) 
+                numRowsAffected = _connection.Execute(@"INSERT INTO account (Email, Password, First_name, Last_name) 
              VALUES(@Email, @User_Password, @First_name, @Last_name)", user);
             }
             catch (Exception)
@@ -39,35 +37,55 @@ namespace FotoShop.Classes.Repositories
         }
 
         public string LogIn(string email, string password)
-        {
-            using var connection = _connection;
-            string id = connection.QuerySingleOrDefault<string>(@"SELECT Account_id FROM account 
+        {            
+            string id = _connection.QuerySingleOrDefault<string>(@"SELECT Account_id FROM account 
                 WHERE Email = @Email AND Password = @Password",
                 new { Email = email, Password = password });
             return id;
         }
 
         /// <summary>
-        /// Accesses the account table to retrieve the value of the designated column
+        /// Accesses the account table to retrieve the value(s) of the designated column
         /// </summary>
-        /// <param name="toGet">Name of the column that holds the wanted value</param>
-        /// <param name="id">Id of the user</param>
+        /// <param name="toGet">Name of the column(s) that holds the wanted value</param>
+        /// <param name="id">Id of the account</param>
         /// <returns></returns>
-        public string GetFromAccount(string toGet, string id)
+        public User GetFromAccount(string toGet, string id)
         {
-            string userValue = "";
-            using var connection = _connection;
+            User user = new User();            
             try
             {
-                userValue = connection.ExecuteScalar<string>(@$"SELECT {toGet} FROM account 
+                user = _connection.QuerySingleOrDefault<User>(@$"SELECT {toGet} FROM account 
                 WHERE Account_id = @Id", new { Id = id });
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
-                return userValue;
+                return user;
             }
-            return userValue;
+            return user;
+        }
+
+        /// <summary>
+        /// Updates the designated value(s) of the account with the corresponding id
+        /// </summary>
+        /// <param name="toUpdate">Use the following format:
+        /// "ColumnName1='Value1', ColumnName2='Value2'"</param>
+        /// <param name="id">Id of the account</param>
+        public bool Update(string toUpdate, string id)
+        {
+            int numRowsAffected = 0;
+            try
+            {
+                numRowsAffected = _connection.Execute(@$"UPDATE account SET {toUpdate}
+                WHERE Account_id = @Id", new { Id = id });
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return numRowsAffected == 1;
+            }
+            return numRowsAffected == 1;
         }
 
         public static string GetAccountType(string id)
@@ -76,7 +94,7 @@ namespace FotoShop.Classes.Repositories
             if (!String.IsNullOrEmpty(id))
             {
                 using UserRepository repo = new UserRepository(DbUtils.GetDbConnection());
-                accType = repo.GetFromAccount("Account_type", id);
+                accType = repo.GetFromAccount("Account_type", id).Account_type;
             }
             return accType;
         }

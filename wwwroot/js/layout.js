@@ -11,7 +11,7 @@
 	if (user == "" || user == undefined) {
 		$(".Afrekenen").hide();
 		$(".Subtot").hide();
-	} 
+	}
 	else {
 		$(".ShoppingLeeg").hide();
 	}
@@ -90,8 +90,8 @@
 
 	//Uitzetten rechtermuisknop -> gebruikt om afbeelding niet te laten copiëren
 	//Credits to https://stackoverflow.com/questions/24020321/how-to-disable-save-image-as-option-on-right-click/
-	$("body").on("contextmenu", "img", function(e) {
+	$("body").on("contextmenu", "img", function (e) {
 		return false;
 	});
-	
+
 });

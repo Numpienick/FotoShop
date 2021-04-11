@@ -4,4 +4,46 @@
     Layout = "_Layout";
 }
 
-<h1 class="display-1">TODO: USER ACCOUNT PAGE</h1>
+@section Styles{
+    <link href="~/css/useraccount.css" rel="stylesheet" />
+}
+
+@section JavaScript
+{
+    <script src="~/js/useraccount.js"></script>
+}
+
+<div id="wrapper" class="d-flex align-items-stretch overflow-hidden">
+    <nav id="sidebar" class="navbar-light background">
+        <div class="sidebar-header pl-2 pt-3">
+            <h3>@String.Format("{0} {1}", Model.UserName.First_name, Model.UserName.Last_name)</h3>
+        </div>
+
+        <ul class="navbar-nav pt-2">
+            <li class="nav-item">
+                <a id="updateUserInfo" class="dropdown-item nav-link pl-2"
+                   role="button"
+                   data-url="@Url.Page("UserAccount", "UpdateUserInfoPartial")">
+                    Mijn gegevens
+                </a>
+            </li>
+            <li>
+                <a id="updateUserInfo" class="dropdown-item nav-link pl-2"
+                   role="button"
+                   data-url="@Url.Page("UserAccount", "OrdersPartial")">
+                    Mijn bestellingen
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid content-wrapper pt-3">
+        <div class="row">
+            <button id="toggleSidebar" class="navbar-toggler">
+                <img src="~/images/sidebarIcon.svg" />
+            </button>
+        </div>
+        <div class="content">
+        </div>
+    </div>
+</div>
