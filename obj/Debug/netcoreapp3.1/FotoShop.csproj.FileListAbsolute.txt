@@ -1,31 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\appsettings.Development.json
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\appsettings.json
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.exe
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.deps.json
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.runtimeconfig.json
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.runtimeconfig.dev.json
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.pdb
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.Views.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.Views.pdb
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\Dapper.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.BrowserLink.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\MySql.Data.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\MySqlConnector.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
-D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.csprojAssemblyReference.cache
 D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.AssemblyInfoInputs.cache
 D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.AssemblyInfo.cs
@@ -55,187 +27,39 @@ D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\_Layout.cshtml.
 D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\Razor\_ViewImports.cshtml.g.cs
 D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.RazorTargetAssemblyInfo.cache
 D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.RazorTargetAssemblyInfo.cs
-D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.Views.pdb
-D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.csproj.CopyComplete
 D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.dll
 D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.pdb
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\appsettings.json
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.exe
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.deps.json
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.runtimeconfig.json
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.runtimeconfig.dev.json
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.pdb
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.Views.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.Views.pdb
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\Dapper.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.BrowserLink.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\MySql.Data.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.Views.pdb
+D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.csproj.CopyComplete
 D:\1 School\HBO-ICT\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.genruntimeconfig.cache
-=======
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.exe
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.deps.json
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.runtimeconfig.json
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.runtimeconfig.dev.json
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.pdb
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.Views.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.Views.pdb
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\Dapper.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.BrowserLink.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\MySql.Data.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\MySqlConnector.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
-C:\Users\jelme\RiderProjects\FotoShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.csprojAssemblyReference.cache
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.AssemblyInfoInputs.cache
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.AssemblyInfo.cs
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.csproj.CoreCompileInputs.cache
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.RazorAssemblyInfo.cache
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.RazorAssemblyInfo.cs
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\staticwebassets\FotoShop.StaticWebAssets.Manifest.cache
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\staticwebassets\FotoShop.StaticWebAssets.xml
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\scopedcss\bundle\FotoShop.styles.css
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.TagHelpers.input.cache
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.TagHelpers.output.cache
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.RazorCoreGenerate.cache
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Contact.cshtml.g.cs
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Partials\_LogInModalPartial.cshtml.g.cs
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Partials\_RegisterModalPartial.cshtml.g.cs
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\PhotoPage.cshtml.g.cs
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Shop.cshtml.g.cs
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopModernUrban.cshtml.g.cs
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopPop.cshtml.g.cs
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopUrbex.cshtml.g.cs
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\UploadImage.cshtml.g.cs
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\_Layout.cshtml.g.cs
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\Razor\_ViewImports.cshtml.g.cs
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.RazorTargetAssemblyInfo.cache
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.RazorTargetAssemblyInfo.cs
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.Views.pdb
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.csproj.CopyComplete
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.dll
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.pdb
-C:\Users\jelme\RiderProjects\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.genruntimeconfig.cache
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.exe
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.deps.json
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.runtimeconfig.json
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.runtimeconfig.dev.json
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.pdb
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.Views.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\FotoShop.Views.pdb
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\Dapper.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.BrowserLink.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\MySql.Data.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\MySqlConnector.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.csprojAssemblyReference.cache
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.AssemblyInfoInputs.cache
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.AssemblyInfo.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.csproj.CoreCompileInputs.cache
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.RazorAssemblyInfo.cache
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.RazorAssemblyInfo.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\staticwebassets\FotoShop.StaticWebAssets.Manifest.cache
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\staticwebassets\FotoShop.StaticWebAssets.xml
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\scopedcss\bundle\FotoShop.styles.css
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.TagHelpers.input.cache
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.TagHelpers.output.cache
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.RazorCoreGenerate.cache
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Contact.cshtml.g.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Partials\_LogInModalPartial.cshtml.g.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Partials\_RegisterModalPartial.cshtml.g.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\PhotoPage.cshtml.g.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\Shop.cshtml.g.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopModernUrban.cshtml.g.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\ShoppingCart.cshtml.g.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopPop.cshtml.g.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopUrbex.cshtml.g.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\UploadImage.cshtml.g.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\Pages\_Layout.cshtml.g.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\Razor\_ViewImports.cshtml.g.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.RazorTargetAssemblyInfo.cache
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.RazorTargetAssemblyInfo.cs
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.Views.pdb
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.csproj.CopyComplete
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.dll
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.pdb
-C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop\obj\Debug\netcoreapp3.1\FotoShop.genruntimeconfig.cache
->>>>>>> EelcoJ
-=======
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\FotoShop.exe
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\FotoShop.deps.json
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\FotoShop.runtimeconfig.json
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\FotoShop.runtimeconfig.dev.json
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\FotoShop.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\FotoShop.pdb
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\FotoShop.Views.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\FotoShop.Views.pdb
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\Dapper.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.BrowserLink.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\MySql.Data.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\MySqlConnector.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.AssemblyInfoInputs.cache
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.AssemblyInfo.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.csproj.CoreCompileInputs.cache
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.RazorAssemblyInfo.cache
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.RazorAssemblyInfo.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\staticwebassets\FotoShop.StaticWebAssets.Manifest.cache
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\staticwebassets\FotoShop.StaticWebAssets.xml
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\scopedcss\bundle\FotoShop.styles.css
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.TagHelpers.input.cache
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.TagHelpers.output.cache
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.RazorCoreGenerate.cache
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Ajax.cshtml.g.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Contact.cshtml.g.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Partials\_LogInModalPartial.cshtml.g.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Partials\_RegisterModalPartial.cshtml.g.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\PhotoPage.cshtml.g.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\Shop.cshtml.g.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopModernUrban.cshtml.g.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopPop.cshtml.g.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\ShopUrbex.cshtml.g.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\UploadImage.cshtml.g.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\Pages\_Layout.cshtml.g.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\Razor\_ViewImports.cshtml.g.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.RazorTargetAssemblyInfo.cache
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.RazorTargetAssemblyInfo.cs
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.Views.pdb
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.csproj.CopyComplete
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.dll
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.pdb
-C:\Users\nickn\Documents\NHLStenden\Webdevelopment\Fotoshop\obj\Debug\netcoreapp3.1\FotoShop.genruntimeconfig.cache
->>>>>>> NickN
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\1 School\HBO-ICT\FotoShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
