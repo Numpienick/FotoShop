@@ -15,7 +15,7 @@ namespace FotoShop.Pages
         {
             using UserRepository repo = new UserRepository(DbUtils.GetDbConnection());
             var user = repo.GetFromAccount("*", Request.Cookies["UserLoggedIn"]);
-            if (user == null || user.Account_type != "user")
+            if (user == null || string.IsNullOrEmpty(user.Account_type))
             {
                 return Redirect("Index");
             }

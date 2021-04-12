@@ -108,6 +108,10 @@ namespace FotoShop.Pages
                     repoAddN.InsertPhoto(OrderCookie, PhotoId);
                     Response.Cookies.Append("ShoppingCartAdd", PhotoId);
                 }
+
+                using OrderRepository repoAdd2 = new OrderRepository(DbUtils.GetDbConnection());
+                var Count = repoAdd2.GetPhoto(OrderCookie).Count().ToString();
+                Response.Cookies.Append("ShoppingCartI", Count);
             }
             return Redirect($"PhotoPage?Id={PhotoId}");
         }

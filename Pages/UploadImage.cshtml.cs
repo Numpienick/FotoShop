@@ -21,7 +21,7 @@ namespace FotoShop.Pages
 {
     public class UploadImage : PageModel
     {
-        [BindProperty, Required(ErrorMessage = "Gelieve een image toe te voegen!")]
+        [BindProperty, Required(ErrorMessage = "Gelieve een .png of .jpg bestand toe te voegen!")]
         public IFormFile ImageFile { get; set; }
 
         [BindProperty]
@@ -50,36 +50,45 @@ namespace FotoShop.Pages
             var dirPath = HardDriveUtils.GetDirectoryPath(ImageFile, NewPhoto.Category_name);
 
             NewPhoto.Photo_path = $"{NewPhoto.Category_name}/{file}";
-            await using (var memoryStream = new MemoryStream())
+
+            try
             {
-                await ImageFile.CopyToAsync(memoryStream);
-
-                // Add watermark
-                var watermarkedStream = new MemoryStream();
-                using (var img = Image.FromStream(memoryStream))
+                await using (var memoryStream = new MemoryStream())
                 {
-                    using (var graphic = Graphics.FromImage(img))
+                    await ImageFile.CopyToAsync(memoryStream);
+
+                    // Add watermark
+                    var watermarkedStream = new MemoryStream();
+                    using (var img = Image.FromStream(memoryStream))
                     {
-                        var font = new Font(FontFamily.GenericSansSerif, (img.Width / 10), FontStyle.Bold, GraphicsUnit.Pixel);
-                        var color = Color.FromArgb(155, 255, 255, 255);
-                        var brush = new SolidBrush(color);
-                        var point = new Point(0, img.Height - (img.Height / 2));
-
-                        graphic.DrawString("  Hoekstra Fotografie", font, brush, point);
-                        img.Save(watermarkedStream, ImageFormat.Jpeg);
-
-                        await using (var fileStream = new FileStream(dirPath, FileMode.Create))
+                        using (var graphic = Graphics.FromImage(img))
                         {
-                            watermarkedStream.WriteTo(fileStream);
+                            var font = new Font(FontFamily.GenericSansSerif, (img.Width / 10), FontStyle.Bold, GraphicsUnit.Pixel);
+                            var color = Color.FromArgb(155, 255, 255, 255);
+                            var brush = new SolidBrush(color);
+                            var point = new Point(0, img.Height - (img.Height / 2));
+
+                            graphic.DrawString("  Hoekstra Fotografie", font, brush, point);
+                            img.Save(watermarkedStream, ImageFormat.Jpeg);
+
+                            await using (var fileStream = new FileStream(dirPath, FileMode.Create))
+                            {
+                                watermarkedStream.WriteTo(fileStream);
+                            }
                         }
                     }
                 }
-            }
-            using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
-            repo.Add(NewPhoto);
+                using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
+                repo.Add(NewPhoto);
 
-            ModelState.Clear();
-            return Redirect("UploadImage");
+                ModelState.Clear();
+                return Redirect("UploadImage");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return Page();
+            }
         }
         //https://edi.wang/post/2018/10/12/add-watermark-to-uploaded-image-aspnet-core
     }

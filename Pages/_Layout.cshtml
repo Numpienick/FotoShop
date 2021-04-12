@@ -41,9 +41,14 @@
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle caret" href="#" id="shopDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
-                    <div class="dropdown-menu" style="background-color: #f2f2f2" aria-labelledby="shopDropDown">
+                <li class="nav-item dropdown btn-group d-table py-2">
+                    <a class="nav-link d-inline pr-0" asp-page="Shop">Shop</a>
+                    <a class="nav-link d-inline pl-0 dropdown-toggle dropdown-toggle-split"
+                       id="shopDropDown" href="#" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="shopDropDown">
                         <a class="dropdown-item" asp-page="ShopModernUrban">Modern Urban</a>
                         <div class="dropdown-divider border-dark"></div>
                         <a class="dropdown-item" asp-page="ShopUrbex">Urbex</a>
@@ -58,7 +63,7 @@
             <ul class="navbar-nav ml-auto list-group-horizontal">
                 <li class="nav-item loggedIn">
                     <a class="nav-link" asp-page="ShoppingCart">
-                        <img src="images/shoppingCartIcon.svg" />
+                        <img src="images/shoppingCartIcon.svg" /><span class="badge badge-light" id="cartBadge"></span>
                     </a>
                 </li>
                 <li class="nav-item notLoggedIn">
