@@ -104,7 +104,6 @@
           <e p="index.css" t="Include" />
           <e p="shop.css" t="Include" />
           <e p="shoppagina.css" t="Include" />
-          <e p="site.css" t="Include" />
           <e p="stylesheet-layout.css" t="Include" />
           <e p="UploadImage.css" t="Include" />
         </e>
@@ -129,8 +128,7 @@
           <e p="Pop-Afbeelding-Shop.jpg" t="Include" />
           <e p="ProductImages" t="Include">
             <e p="Modern Urban" t="Include">
-              <e p="Caféterras bij nacht.jpg" t="Include" />
-              <e p="Mona Lisa.jpg" t="Include" />
+              <e p="Urban1.jpg" t="Include" />
               <e p="Urban10.jpg" t="Include" />
               <e p="Urban11.jpg" t="Include" />
               <e p="Urban12.jpg" t="Include" />
