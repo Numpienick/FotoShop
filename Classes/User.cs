@@ -9,9 +9,10 @@ namespace FotoShop.Classes
 {
     public class User
     {
+        //public string UserId { get; set; } // might not be needed
+
         [Required(ErrorMessage = "U moet een e-mail adres invullen"),
             MinLength(4, ErrorMessage = "Uw e-mail moet uit minimaal 4 karakters bestaan"),
-            DataType(DataType.EmailAddress),
             MaxLength(100)]
         public string Email { get; set; }
 

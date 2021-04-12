@@ -30,48 +30,64 @@ namespace FotoShop.Pages
             using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
             PagePhoto = repo.Get(id);
 
-            if (PagePhoto == null)
+            if(PagePhoto == null)
             {
                 return Redirect("Shop");
             }
-
-            string account = UserRepository.GetAccountType(Request.Cookies["UserLoggedIn"]);
-            if (account == "admin")
-            {
-                Hidden = "";
-            }
+            GetAccountType();
             return Page();
         }
 
         public JsonResult OnPostSavePhoto([FromBody] Photo photo)
         {
-            string account = UserRepository.GetAccountType(Request.Cookies["UserLoggedIn"]);
-            if (account == "admin")
+            photo.Price = photo.Price.Replace(',', '.');
+            if (Regex.IsMatch(photo.Price, @"[\d]{1,3}([.][\d]{1,2})?"))
             {
-                Hidden = "";
-                photo.Price = photo.Price.Replace(',', '.');
-                if (Regex.IsMatch(photo.Price, @"[\d]{1,3}([.][\d]{1,2})?"))
+                using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
+                if (repo.UpdatePhoto(photo))
                 {
-                    using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
-                    if (repo.UpdatePhoto(photo))
-                    {
-                        return new JsonResult("success");
-                    }
+                    return new JsonResult("success");
                 }
-                return new JsonResult("failed");
             }
-            return new JsonResult("redirect");
+            return new JsonResult("failed");
         }
 
         public IActionResult OnPostDelete(string id)
         {
-            string account = UserRepository.GetAccountType(Request.Cookies["UserLoggedIn"]);
-            if (account == "admin")
+            var imagesDir = Path.Combine(new DirectoryInfo(
+                Directory.GetCurrentDirectory()).FullName, "wwwroot", "Images", "ProductImages");
+
+            using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
+            repo.GetFromPhoto("Photo_path", id);
+
+            using PhotoRepository delRepo = new PhotoRepository(DbUtils.GetDbConnection());
+            delRepo.Delete(id);
+
+            var imagePath = Path.Combine(imagesDir, "Photo_path");
+            if (System.IO.File.Exists(imagePath))
             {
-                HardDriveUtils.DeleteImage(id);
-                return Redirect("Shop");
+                System.IO.File.Delete(imagePath);
             }
-            return RedirectToPage("PhotoPage", new { id = id });
+            return Redirect("Shop");
+        }
+
+        public string GetAccountType()
+        {
+            string accId = Request.Cookies["UserLoggedIn"];
+            string accType = "user";
+            if (!String.IsNullOrEmpty(accId))
+            {
+                using UserRepository repo = new UserRepository(DbUtils.GetDbConnection());
+                accType = repo.GetFromAccount("Account_type", accId);
+                if (!String.IsNullOrEmpty(accType))
+                {
+                    if (accType == "admin")
+                    {
+                        Hidden = "";
+                    }
+                }
+            }
+            return accType;
         }
 
         public string GetPhotoPath()
@@ -81,44 +97,34 @@ namespace FotoShop.Pages
             return string.Format("/Images/ProductImages/{0}", path);
         }
 
-        [BindProperty] public string PhotoId { get; set; }
+        [BindProperty] public string PhotoId {get;set;}
         public IActionResult OnPostSubmitWinkelwagen()
         {
-            var userId = Request.Cookies["UserLoggedIn"];
-            if (string.IsNullOrEmpty(userId))
-            {
-                return RedirectToPage("PhotoPage", new { id = PhotoId });
-            }
             using OrderRepository repo = new OrderRepository(DbUtils.GetDbConnection());
             var Cookie = Request.Cookies["ShoppingCartAdd"];
             if (Cookie == null)
             {
                 Response.Cookies.Append("ShoppingCartAdd", PhotoId);
             }
+            var Cookie1 = Request.Cookies["UserLoggedIn"];
             var OrderCookie = Request.Cookies["Order"];
             if (OrderCookie == null)
             {
                 using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
                 string downloadlink = "Randomlinkdit";
-                var NewOrder = repoAdd.Add(userId, downloadlink, PhotoId);
+                var NewOrder = repoAdd.Add(Cookie1, downloadlink, PhotoId);
                 CookieOptions options = new CookieOptions();
-                options.Expires = DateTime.Now.AddMinutes(9999999);
+                options.Expires = DateTime.Now.AddMinutes(9999999);  
                 Response.Cookies.Append("Order", NewOrder.Placed_order_id);
-                Response.Cookies.Append("ShoppingCard", PhotoId);
             }
             else
             {
                 using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
-                var Checkfoto = repoAdd.CheckFoto(OrderCookie, PhotoId);
-                if (Checkfoto == null)
-                {
-                    using OrderRepository repoAddN = new OrderRepository(DbUtils.GetDbConnection());
-                    repoAddN.InsertPhoto(OrderCookie, PhotoId);
-                    Response.Cookies.Append("ShoppingCard", PhotoId);
-                }
+                repoAdd.InsertPhoto(OrderCookie, PhotoId);
+               
             }
             return Redirect($"PhotoPage?Id={PhotoId}");
         }
-
+        
     }
 }

@@ -8,7 +8,7 @@
         
         public string Date_order_placed { get; set; }
         
-        public string Date_order_paidP { get; set; }
+        public string Date_order_paid { get; set; }
         
         public string Download_link { get; set; }
     }

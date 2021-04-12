@@ -19,7 +19,7 @@ namespace FotoShop.Pages
 {
     public class UploadImage : PageModel
     {
-        [BindProperty, Required(ErrorMessage = "Gelieve een foto toe te voegen!")]
+        [BindProperty, Required(ErrorMessage = "Gelieve een image toe te voegen!")]
         public IFormFile ImageFile { get; set; }
         
         [BindProperty]
@@ -36,15 +36,19 @@ namespace FotoShop.Pages
                 NewPhoto.Price = NewPhoto.Price.Replace(',', '.');
                 if (float.TryParse(NewPhoto.Price, out float price ))
                 {
-                    string file = HardDriveUtils.GetFilePath(ImageFile);
-                    string dirPath = HardDriveUtils.GetDirectoryPath(ImageFile, NewPhoto.Category_name);
-                    NewPhoto.Photo_path = string.Format("{0}/{1}", NewPhoto.Category_name, file);
+                    string imagesDir = Path.Combine(new DirectoryInfo(
+                        Directory.GetCurrentDirectory()).FullName, "wwwroot", "Images", "ProductImages");
+                    string fileName = Path.GetFileNameWithoutExtension(ImageFile.FileName);
+                    string extension = Path.GetExtension(ImageFile.FileName); 
+                    string file = fileName + extension;
+                    string path = Path.Combine(imagesDir,NewPhoto.Category_name, file);
+                    NewPhoto.Photo_path = string.Format("{0}/{1}{2}", NewPhoto.Category_name, fileName, extension);
                     using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
                     repo.Add(NewPhoto);
-                    await using (var fileStream = new FileStream(dirPath, FileMode.Create))
-                     {
-                         await ImageFile.CopyToAsync(fileStream);
-                     }
+                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    {
+                        await ImageFile.CopyToAsync(fileStream);
+                    }
                     ModelState.Clear();
                     return Redirect("UploadImage"); 
                 }

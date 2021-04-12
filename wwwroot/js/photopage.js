@@ -27,19 +27,14 @@
 			},
 			data: JSON.stringify(myData),
 			success: function (data) {
-				switch (data) {
-					case "success":
-						location.reload();
-						break;
-					case "failed":
-						$("#alert").html($(
-							`<div class="alert alert-danger text-center" role="alert">
+				if (data == "success") {
+					location.reload();
+				}
+				if (data == "failed") {
+					$("#alert").html($(
+						`<div class="alert alert-danger text-center" role="alert">
                         <strong>Oeps!</strong> Er is iets misgegaan, zorg ervoor dat u de prijs goed heeft ingevuld (XXX.XX).
                     </div>`));
-						break;
-					default:
-						location.reload();
-						break;
 				}
 			}
 		});

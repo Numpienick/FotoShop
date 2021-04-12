@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Net;
 using FotoShop.Classes;
 using FotoShop.Classes.Repositories;
 using Microsoft.AspNetCore.Mvc;
@@ -10,8 +9,10 @@ namespace FotoShop.Pages
 {
     public class ShoppingCart : PageModel
     {
+        
         public void OnGet()
         {
+            
         }
 
         public List<int> GetAllPhoto()
@@ -31,19 +32,9 @@ namespace FotoShop.Pages
                 var photo = repoAdd.Get(photoId.ToString());
                 photoList.Add(photo);
             }
-            if (photoList.Count == 0)
-            {
-                Response.Cookies.Append("EmptyShoppingCard", "Empty");
-            }
-            else
-            {
-                Response.Cookies.Delete("EmptyShoppingCard");
-            }
             return photoList;
         }
-
-        [BindProperty] public string ImgId { get; set; }
-        public string Hidden { get; set; } = "hidden";
+        [BindProperty] public int ImgId { get; set; }
 
         public void OnPostDelete()
         {
@@ -52,16 +43,6 @@ namespace FotoShop.Pages
             repoAdd.DeletePhoto(ImgId, OrderCookie);
         }
         
-
-        public void OnPostOrderSucces()
-        {
-            var OrderCookie = Request.Cookies["Order"];
-            using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
-            repoAdd.OrderSucces(OrderCookie);
-            Response.Cookies.Delete("Order");
-            Hidden = "";
-        }
-
         public decimal TotalPrice()
         {
             decimal totPrice = 0;
@@ -69,7 +50,7 @@ namespace FotoShop.Pages
             {
                 using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
                 decimal price = repo.GetPrice(photoid);
-                TotPrice += price;
+                totPrice += price;
 
             }
             return totPrice;

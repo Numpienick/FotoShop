@@ -9,8 +9,7 @@
 @section Styles {
     <link href="~/css/cart.css" rel="stylesheet"/>
 }
-<script src="~/js/layout.js"></script>
-<span class="LeegS">Let op uw shoppingcard is momenteel leeg! Bekijk onze foto's<a href="Shop"> hier</a>of bekijk uw recenter orders hier</span>
+
 <body>
 <div class="container">
     <div class="col Main_col">
@@ -45,9 +44,9 @@
             <div class="row Price_sum">
                 <span>Subtotaal: €@Model.TotalPrice()</span>
             </div>
-            <form method="post">
-                <button asp-page-handler="OrderSucces" class="btn-primary Pay_button Afrekenen mb-3">Afrekenen</button>
-            </form>
+            <div class="row mb-3 Pay_button">
+                <button class="btn btn-primary Pay_button">Afrekenen</button>
+            </div>
         </div>
     </div>
 

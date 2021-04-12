@@ -1,5 +1,4 @@
-﻿
-@page
+﻿@page
 @model FotoShop.Pages.IndexModel
 
 @{
@@ -7,68 +6,35 @@
     ViewData["Title"] = "Homepagina";
 }
 
-@section Styles{
-  <link href="~/css/index.css" rel="stylesheet" />
+@section JavaScript{
+    <script src="~/js/index.js"></script>
 }
 
-<div class="container-fluid">
-  <div class="row d-flex justify-content-center background">
-    <div class="col-md-12 Bovengedeelte">
-      <h1 class="font-weight-bold">FOTOGRAAF</h1>
-      <h1 class="font-italic">Hoekstra</h1>
-      
-      <div class="d-flex justify-content-sm-around">
-        <a asp-page=""        class=" home-button">Knopje</a>
-        <a asp-page="Shop"    class=" home-button">Shop</a>
-        <a asp-page=""        class=" home-button">knopje</a>
-        <a asp-page="Contact" class=" home-button">Contact</a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="row d-flex justify-content-center homecollage">
-    <div id="img-col-urban" class="col-sm-4">
-      <a asp-page="ShopModernUrban">
-        <div class="container position-relative text-center">
-          <img class="w-100" id="urban1" src="~/images/ProductImages/Modern Urban/Urban1.jpg" />
-          <div class="position-absolute centeredText">Urban</div>
-        </div>
-      </a>
-    </div>
+@section Styles{
+    <link href="~/css/index.css" rel="stylesheet" />
+}
 
-    <div id="img-col-urbex" class="col-sm-4 d-flex justify-content-center">
-      <a asp-page="ShopUrbex">
-        <div class="container position-relative text-center">
-          <img class="w-100" id="urbex1" src="~/images/ProductImages/Urbex/Urbex11.jpg" />
-          <div class="position-absolute centeredText">Urbex</div>
+<body>
+    <div class="container-fluid">
+        <div class="titel">
+            <h1>@ViewData["Title"]</h1>
         </div>
-      </a>
-    </div>
-    
-    <div id="img-col-pop" class="col-sm-4 d-flex justify-content-center">
-      <a asp-page="ShopPop">
-        <div class="container position-relative text-center">
-          <img class="w-100" id="pop1" src="~/images/ProductImages/Pop/Pop1.jpg" />
-          <div class="position-absolute centeredText">Pop</div>
+        <div class="row">
+            <div class="col-md-6 linker">
+                <h2 class="LI">Gecatogoriseerd in drie genres</h2>
+                <img class="w-100" src="Images/HomeCollage.png" alt="logo" />
+            </div>
+            <div class="col-md-6 rechter">
+                <div class="Rechterkant">
+                    <h2>Over de fotograaf</h2>
+                    <img class="logo-size1" src="Images/Foto.jpg" alt="logo" /><br><br><br>
+                    <span class="NormaleT">
+                        Nog te verwerken Informatie/Nog te verwerken Informatie <br>Nog te verwerken InformatieNog te verwerken Informatie
+                        Nog te verwerken InformatieNog te verwerken Informatie<br>Nog te verwerken Informatie
+                    </span>
+                </div><br><br><br>
+            </div>
         </div>
-      </a>
+        <div id="modal-placeholder"></div>
     </div>
-  </div>
-
-  <div class="row d-flex justify-content-center background over">
-    <div class="col-md-6">
-      <h2>Over de Fotograaf</h2>
-      <ul>
-        <li>Hij bestaat</li>
-        <li>Misschien ook niet</li>
-        <li>Hij maakt foto's</li>
-        <li>Misschien ook niet</li>
-      </ul>
-    </div>
-    
-    <div class="col-md-6 d-flex justify-content-center camera">
-      <img id="camera" src="images/Foto.jpg">
-    </div>
-  </div>
-  
-</div>
+</body>

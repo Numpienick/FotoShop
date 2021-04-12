@@ -106,5 +106,4 @@ namespace FotoShop.Classes.Repositories
             return photoPrice;
         }
     }
-    
 }

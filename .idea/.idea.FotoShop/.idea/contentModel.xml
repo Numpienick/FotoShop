@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Remco\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Remco\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FotoShop.-1740476221.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Remco\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
-    <e p="C:\Users\Remco\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
-    <e p="D:\1 School\HBO-ICT\FotoShop" t="IncludeRecursive">
+    <e p="C:\Users\eelco_b0keash\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\eelco_b0keash\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_FotoShop.1792216265.00" t="ExcludeRecursive" />
+    <e p="C:\Users\eelco_b0keash\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\eelco_b0keash\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\eelco_b0keash\OneDrive\Documenten\Week 3\FotoShop" t="IncludeRecursive">
       <e p=".gitignore" t="Include" />
       <e p="_ViewImports.cshtml" t="Include" />
       <e p="appsettings.Development.json" t="Include" />
@@ -14,7 +14,6 @@
       <e p="Classes" t="Include">
         <e p="DBContact.cs" t="Include" />
         <e p="DbUtils.cs" t="Include" />
-        <e p="HardDriveUtils.cs" t="Include" />
         <e p="LogIn.cs" t="Include" />
         <e p="Order.cs" t="Include" />
         <e p="Photo.cs" t="Include" />
@@ -40,8 +39,6 @@
       <e p="packages" t="ExcludeRecursive" />
       <e p="Pages" t="Include">
         <e p="_Layout.cshtml" t="Include" />
-        <e p="Ajax.cshtml" t="Include" />
-        <e p="Ajax.cshtml.cs" t="Include" />
         <e p="Contact.cshtml" t="Include" />
         <e p="Contact.cshtml.cs" t="Include" />
         <e p="Index.cshtml" t="Include" />
@@ -129,11 +126,7 @@
           <e p="Pop-Afbeelding-Shop.jpg" t="Include" />
           <e p="ProductImages" t="Include">
             <e p="Modern Urban" t="Include">
-<<<<<<< HEAD
               <e p="3840x2160a.jpg" t="Include" />
-=======
-              <e p="Inquisitive_Momo.png" t="Include" />
->>>>>>> Jelmer
               <e p="Urban1.jpg" t="Include" />
               <e p="Urban10.jpg" t="Include" />
               <e p="Urban11.jpg" t="Include" />
@@ -329,6 +322,7 @@
           <e p="wrenchIcon.svg" t="Include" />
         </e>
         <e p="js" t="Include">
+          <e p="index.js" t="Include" />
           <e p="jquery-3.5.1.js" t="Include" />
           <e p="layout.js" t="Include" />
           <e p="photopage.js" t="Include" />
