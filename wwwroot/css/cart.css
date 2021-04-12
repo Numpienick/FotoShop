@@ -50,31 +50,31 @@ h1 {
     margin-bottom: 1vw;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .Price_sum, .Item_title, .Item_price {
         font-size: 4vw;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .img{
         width: 50vw;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     h1{
        font-size: 8vw;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .delete {
         width: 8vw;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .Pay_button{
         font-size: 4vw;
     }
