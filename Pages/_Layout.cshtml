@@ -1,4 +1,5 @@
-﻿@using FotoShop.Classes.Repositories
+﻿@using FotoShop.Classes
+@using FotoShop.Classes.Repositories
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,15 +92,20 @@
                         </a>
                         <div class="dropdown-divider border-dark"></div>
                         @{
-                            string account = UserRepository.GetAccountType(Context.Request.Cookies["UserLoggedIn"]);
                             string accPage = "Index";
-                            if (account == "admin")
+                            using UserRepository repo = new UserRepository(DbUtils.GetDbConnection());
+                            string userId = Context.Request.Cookies["UserLoggedIn"];
+                            if (!string.IsNullOrEmpty(userId))
                             {
-                                accPage = "UploadImage";
-                            }
-                            else if (account == "user")
-                            {
-                                accPage = "UserAccount";
+                                string accType = repo.GetFromAccount("Account_type", userId).Account_type;
+                                if (accType == "admin")
+                                {
+                                    accPage = "UploadImage";
+                                }
+                                else if (accType == "user")
+                                {
+                                    accPage = "UserAccount";
+                                }
                             }
                         }
                         <a class="dropdown-item"

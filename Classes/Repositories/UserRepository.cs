@@ -87,16 +87,5 @@ namespace FotoShop.Classes.Repositories
             }
             return numRowsAffected == 1;
         }
-
-        public static string GetAccountType(string id)
-        {
-            string accType = "user";
-            if (!String.IsNullOrEmpty(id))
-            {
-                using UserRepository repo = new UserRepository(DbUtils.GetDbConnection());
-                accType = repo.GetFromAccount("Account_type", id).Account_type;
-            }
-            return accType;
-        }
     }
 }

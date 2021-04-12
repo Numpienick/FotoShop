@@ -13,10 +13,16 @@ namespace FotoShop.Pages
     public class UserAccountModel : PageModel
     {
         public User UserName { get; set; }
-        public void OnGet()
+        public IActionResult OnGet()
         {
             using UserRepository repo = new UserRepository(DbUtils.GetDbConnection());
             UserName = repo.GetFromAccount("*", Request.Cookies["UserLoggedIn"]);
+            if (UserName.Account_type != "user")
+            {
+                return Redirect("Index");
+            }
+
+            return Page();
         }
 
         public PartialViewResult OnGetUpdateUserInfoPartial()

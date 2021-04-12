@@ -82,9 +82,10 @@ namespace FotoShop.Pages
             };
         }
 
-        public void OnGetLogOut()
+        public IActionResult OnGetLogOut()
         {
             Response.Cookies.Delete("UserLoggedIn");
+            return Redirect("Index");
         }
     }
 }

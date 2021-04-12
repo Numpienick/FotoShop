@@ -35,8 +35,9 @@ namespace FotoShop.Pages
                 return Redirect("Shop");
             }
 
-            string account = UserRepository.GetAccountType(Request.Cookies["UserLoggedIn"]);
-            if (account == "admin")
+            using UserRepository userRepo = new UserRepository(DbUtils.GetDbConnection());
+            string accType = userRepo.GetFromAccount("Account_type", Request.Cookies["UserLoggedIn"]).Account_type;
+            if (accType == "admin")
             {
                 Hidden = "";
             }
@@ -45,8 +46,9 @@ namespace FotoShop.Pages
 
         public JsonResult OnPostSavePhoto([FromBody] Photo photo)
         {
-            string account = UserRepository.GetAccountType(Request.Cookies["UserLoggedIn"]);
-            if (account == "admin")
+            using UserRepository userRepo = new UserRepository(DbUtils.GetDbConnection());
+            string accType = userRepo.GetFromAccount("Account_type", Request.Cookies["UserLoggedIn"]).Account_type;
+            if (accType == "admin")
             {
                 Hidden = "";
                 photo.Price = photo.Price.Replace(',', '.');
@@ -65,8 +67,9 @@ namespace FotoShop.Pages
 
         public IActionResult OnPostDelete(string id)
         {
-            string account = UserRepository.GetAccountType(Request.Cookies["UserLoggedIn"]);
-            if (account == "admin")
+            using UserRepository userRepo = new UserRepository(DbUtils.GetDbConnection());
+            string accType = userRepo.GetFromAccount("Account_type", Request.Cookies["UserLoggedIn"]).Account_type;
+            if (accType == "admin")
             {
                 HardDriveUtils.DeleteImage(id);
                 return Redirect("Shop");
