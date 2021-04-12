@@ -67,12 +67,22 @@
                     <a class="nav-link loggedIn" asp-page="UploadImage">
                         <img src="images/personIcon.svg" />
                     </a>
+                    </li>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="accountDropDown">
+                        <a class="dropdown-item"
+                           role="button"
+                           id="logOut"
+                           data-url="@Url.Page("Ajax", "LogOut")">
+                            Log uit
+                        </a>
+                        <div class="dropdown-divider border-dark"></div>
+                        <a class="dropdown-item" asp-page="UploadImage">Account</a>
+                    </div>                
                 </li>
                 <li class="nav-item ml-4">
                     <a class="nav-link" asp-page="ShoppingCart">
                         <img src="images/shoppingCartIcon.svg" />
                     </a>
-                </li>
             </ul>
         </div>
     </nav>

@@ -54,20 +54,7 @@ namespace FotoShop.Pages
 
         public IActionResult OnPostDelete(string id)
         {
-            var imagesDir = Path.Combine(new DirectoryInfo(
-                Directory.GetCurrentDirectory()).FullName, "wwwroot", "Images", "ProductImages");
-
-            using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
-            repo.GetFromPhoto("Photo_path", id);
-
-            using PhotoRepository delRepo = new PhotoRepository(DbUtils.GetDbConnection());
-            delRepo.Delete(id);
-
-            var imagePath = Path.Combine(imagesDir, "Photo_path");
-            if (System.IO.File.Exists(imagePath))
-            {
-                System.IO.File.Delete(imagePath);
-            }
+            HardDriveUtils.DeleteImage(id);
             return Redirect("Shop");
         }
 
@@ -120,8 +107,7 @@ namespace FotoShop.Pages
             else
             {
                 using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
-                repoAdd.InsertPhoto(OrderCookie, PhotoId);
-               
+                repoAdd.InsertPhoto(OrderCookie, PhotoId);               
             }
             return Redirect($"PhotoPage?Id={PhotoId}");
         }

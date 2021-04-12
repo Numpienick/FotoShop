@@ -9,10 +9,10 @@ namespace FotoShop.Pages
 {
     public class ShoppingCart : PageModel
     {
-        
+
         public void OnGet()
         {
-            
+
         }
 
         public List<int> GetAllPhoto()
@@ -42,7 +42,7 @@ namespace FotoShop.Pages
             using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
             repoAdd.DeletePhoto(ImgId, OrderCookie);
         }
-        
+
         public decimal TotalPrice()
         {
             decimal totPrice = 0;
@@ -51,7 +51,6 @@ namespace FotoShop.Pages
                 using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
                 decimal price = repo.GetPrice(photoid);
                 totPrice += price;
-
             }
             return totPrice;
         }

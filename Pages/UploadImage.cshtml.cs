@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Net;
 using System.Net.Mime;
@@ -21,7 +23,7 @@ namespace FotoShop.Pages
     {
         [BindProperty, Required(ErrorMessage = "Gelieve een image toe te voegen!")]
         public IFormFile ImageFile { get; set; }
-        
+
         [BindProperty]
         public Photo NewPhoto { get; set; }
 
@@ -31,29 +33,47 @@ namespace FotoShop.Pages
 
         public async Task<IActionResult> OnPostUpload()
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid) return Page();
+
+            NewPhoto.Price = NewPhoto.Price.Replace(',', '.');
+
+            if (!float.TryParse(NewPhoto.Price, out var price)) return Page();
+
+            var file = HardDriveUtils.GetFilePath(ImageFile);
+            var dirPath = HardDriveUtils.GetDirectoryPath(ImageFile, NewPhoto.Category_name);
+
+            NewPhoto.Photo_path = $"{NewPhoto.Category_name}/{file}";
+            await using (var memoryStream = new MemoryStream())
             {
-                NewPhoto.Price = NewPhoto.Price.Replace(',', '.');
-                if (float.TryParse(NewPhoto.Price, out float price ))
+                await ImageFile.CopyToAsync(memoryStream);
+
+                // Add watermark
+                var watermarkedStream = new MemoryStream();
+                using (var img = Image.FromStream(memoryStream))
                 {
-                    string imagesDir = Path.Combine(new DirectoryInfo(
-                        Directory.GetCurrentDirectory()).FullName, "wwwroot", "Images", "ProductImages");
-                    string fileName = Path.GetFileNameWithoutExtension(ImageFile.FileName);
-                    string extension = Path.GetExtension(ImageFile.FileName); 
-                    string file = fileName + extension;
-                    string path = Path.Combine(imagesDir,NewPhoto.Category_name, file);
-                    NewPhoto.Photo_path = string.Format("{0}/{1}{2}", NewPhoto.Category_name, fileName, extension);
-                    using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
-                    repo.Add(NewPhoto);
-                    using (var fileStream = new FileStream(path, FileMode.Create))
+                    using (var graphic = Graphics.FromImage(img))
                     {
-                        await ImageFile.CopyToAsync(fileStream);
+                        var font = new Font(FontFamily.GenericSansSerif, (img.Width / 10), FontStyle.Bold, GraphicsUnit.Pixel);
+                        var color = Color.FromArgb(155, 255, 255, 255);
+                        var brush = new SolidBrush(color);
+                        var point = new Point(0, img.Height - (img.Height / 2));
+
+                        graphic.DrawString("  Hoekstra Fotografie", font, brush, point);
+                        img.Save(watermarkedStream, ImageFormat.Jpeg);
+
+                        await using (var fileStream = new FileStream(dirPath, FileMode.Create))
+                        {
+                            watermarkedStream.WriteTo(fileStream);
+                        }
                     }
-                    ModelState.Clear();
-                    return Redirect("UploadImage"); 
                 }
             }
-            return Page();
+            using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
+            repo.Add(NewPhoto);
+
+            ModelState.Clear();
+            return Redirect("UploadImage");
         }
+        //https://edi.wang/post/2018/10/12/add-watermark-to-uploaded-image-aspnet-core
     }
 }
