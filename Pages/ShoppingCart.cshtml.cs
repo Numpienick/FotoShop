@@ -9,17 +9,24 @@ namespace FotoShop.Pages
 {
     public class ShoppingCart : PageModel
     {
+        public string Hidden { get; set; } = "Hidden";
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
-
+            using UserRepository repo = new UserRepository(DbUtils.GetDbConnection());
+            var user = repo.GetFromAccount("*", Request.Cookies["UserLoggedIn"]);
+            if (user == null || user.Account_type != "user")
+            {
+                return Redirect("Index");
+            }
+            return Page();
         }
 
         public List<int> GetAllPhoto()
         {
             var OrderCookie = Request.Cookies["Order"];
             using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
-            var AllPhoto = repoAdd.GetPhoto(Convert.ToInt32(OrderCookie));
+            var AllPhoto = repoAdd.GetPhoto(OrderCookie);
             return AllPhoto;
         }
 
@@ -32,8 +39,19 @@ namespace FotoShop.Pages
                 var photo = repoAdd.Get(photoId.ToString());
                 photoList.Add(photo);
             }
+            if (photoList.Count == 0)
+            {
+                Response.Cookies.Append("EmptyShoppingCard", "Empty");
+                Response.Cookies.Delete("ShoppingCartI");
+            }
+            else
+            {
+                var items = photoList.Count;
+                Response.Cookies.Delete("EmptyShoppingCard");
+            }
             return photoList;
         }
+
         [BindProperty] public string ImgId { get; set; }
 
         public void OnPostDelete()
@@ -41,18 +59,30 @@ namespace FotoShop.Pages
             var OrderCookie = Request.Cookies["Order"];
             using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
             repoAdd.DeletePhoto(ImgId, OrderCookie);
+            using OrderRepository repoAdd2 = new OrderRepository(DbUtils.GetDbConnection());
+            var MaxItems = repoAdd2.GetPhoto(OrderCookie).Count.ToString();
+            Response.Cookies.Append("ShoppingCartI", MaxItems);
+        }
+
+        public void OnPostOrderSucces()
+        {
+            var OrderCookie = Request.Cookies["Order"];
+            using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
+            repoAdd.OrderSucces(OrderCookie);
+            Response.Cookies.Delete("Order");
+            Hidden = "";
         }
 
         public decimal TotalPrice()
         {
-            decimal totPrice = 0;
+            decimal TotPrice = 0;
             foreach (var photoid in GetAllPhoto())
             {
                 using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
                 decimal price = repo.GetPrice(photoid);
-                totPrice += price;
+                TotPrice += price;
             }
-            return totPrice;
+            return TotPrice;
         }
     }
 }

@@ -14,6 +14,12 @@
     <script src="~/js/cart.js"></script>
 }
 
+<div class="container justify-content-center mt-3" @Model.Hidden>
+    <div class="alert alert-success" role="alert">
+        <strong>Gelukt</strong> Uw order is geplaatst en betaald!
+    </div>
+</div>
+
 <div class="container mt-3">
     <h1 id="emptyCart" class="display-4">Let op uw winkelwagen is momenteel leeg! Bekijk onze foto's <a href="Shop">hier</a>!</h1>
     <div class="col Main_col">
@@ -48,9 +54,9 @@
             <div class="row Price_sum">
                 <span>Subtotaal: €@Model.TotalPrice()</span>
             </div>
-            <div class="row mb-3 Pay_button">
-                <button class="btn btn-primary Pay_button">Afrekenen</button>
-            </div>
+            <form method="post" class="row mb-3 Pay_button">
+                <button asp-page-handler="OrderSucces" class="btn btn-primary Pay_button">Afrekenen</button>
+            </form>
         </div>
     </div>
 </div>

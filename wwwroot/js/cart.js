@@ -1,12 +1,12 @@
 ﻿$(document).ready(function () {
-	var user = GetCookie('ShoppingCartAdd');
-	if (user == "" || user == undefined) {
-		$(".Main_col").hide();
-		$("#emptyCart").show();
-	}
-	else {
+	var cart = GetCookie('EmptyShoppingCard');
+	if (cart == "" || cart == undefined) {
 		$("#emptyCart").hide();
 		$(".Main_col").show();
+	}
+	else {
+		$(".Main_col").hide();
+		$("#emptyCart").show();
 	}
 
 	// Credits to https://www.w3schools.com/js/js_cookies.asp

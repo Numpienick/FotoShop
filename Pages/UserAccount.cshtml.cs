@@ -21,7 +21,6 @@ namespace FotoShop.Pages
             {
                 return Redirect("Index");
             }
-
             return Page();
         }
 

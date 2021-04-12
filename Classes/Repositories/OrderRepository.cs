@@ -56,7 +56,7 @@ namespace FotoShop.Classes.Repositories
             return order;
         }
 
-        public List<int> GetPhoto(int Order_id)
+        public List<int> GetPhoto(string Order_id)
         {
             List<int> AllPhoto =
                 _connection.Query<int>(@"SELECT Photo_id FROM placed_order_photo WHERE Placed_order_id = @Order_id",
@@ -66,7 +66,8 @@ namespace FotoShop.Classes.Repositories
 
         public void OrderSucces(string OrderCookie)
         {
-            var OrderSucces = _connection.Execute(@"DELETE FROM placed_order_photo WHERE Placed_order_id = @OrderCookie",
+            var OrderSucces = _connection.Execute(@"UPDATE placed_order SET Date_order_paid = CURRENT_TIMESTAMP WHERE Placed_order_id = @OrderCookie;
+                DELETE FROM placed_order_photo WHERE Placed_order_id = @OrderCookie;",
                 new { OrderCookie = OrderCookie });
         }
 

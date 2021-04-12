@@ -74,7 +74,7 @@ namespace FotoShop
 
             sql += @"
             INSERT INTO placed_order(Account_id, Download_link)
-            VALUES(2, 'https://downloadhieruwfotos.nl');
+            VALUES(2, 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
             INSERT INTO placed_order_photo(Placed_order_id, Photo_id)
             VALUES(1, 3);";
             connection.Execute(dbSetupScript + sql);

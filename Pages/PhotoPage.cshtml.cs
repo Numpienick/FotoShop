@@ -91,7 +91,7 @@ namespace FotoShop.Pages
             if (OrderCookie == null)
             {
                 using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
-                string downloadlink = "Randomlinkdit";
+                string downloadlink = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
                 var NewOrder = repoAdd.Add(userId, downloadlink, PhotoId);
                 CookieOptions options = new CookieOptions();
                 options.Expires = DateTime.Now.AddMinutes(9999999);
