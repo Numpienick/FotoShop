@@ -67,3 +67,8 @@ footer {
 .notLoggedIn .loggedIn {
     display: none;
 }
+
+.validation-summary-errors ul {
+    list-style-type: none;
+    margin-left: -40px
+}
