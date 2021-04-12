@@ -92,14 +92,18 @@
                             string userId = Context.Request.Cookies["UserLoggedIn"];
                             if (!string.IsNullOrEmpty(userId))
                             {
-                                string accType = repo.GetFromAccount("Account_type", userId).Account_type;
-                                if (accType == "admin")
+                                var acc = repo.GetFromAccount("Account_type", userId);
+
+                                if (acc != null)
                                 {
-                                    accPage = "UploadImage";
-                                }
-                                else if (accType == "user")
-                                {
-                                    accPage = "UserAccount";
+                                    if (acc.Account_type == "admin")
+                                    {
+                                        accPage = "UploadImage";
+                                    }
+                                    else if (acc.Account_type == "user")
+                                    {
+                                        accPage = "UserAccount";
+                                    }
                                 }
                             }
                         }

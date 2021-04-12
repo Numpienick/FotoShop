@@ -30,8 +30,8 @@ namespace FotoShop.Pages
         public IActionResult OnGet()
         {
             using UserRepository repo = new UserRepository(DbUtils.GetDbConnection());
-            string accType = repo.GetFromAccount("Account_type", Request.Cookies["UserLoggedIn"]).Account_type;
-            if(accType != "admin")
+            var acc = repo.GetFromAccount("Account_type", Request.Cookies["UserLoggedIn"]);
+            if (acc == null || acc.Account_type != "admin")
             {
                 return Redirect("Index");
             }

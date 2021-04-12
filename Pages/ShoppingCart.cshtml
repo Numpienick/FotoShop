@@ -7,18 +7,18 @@
 }
 
 @section Styles {
-    <link href="~/css/cart.css" rel="stylesheet"/>
+    <link href="~/css/cart.css" rel="stylesheet" />
 }
-<body>
+
 <div class="container">
-    <div class="col Main_col background">
+    <div class="col Main_col">
         <h1 class="Header">Uw winkelwagen</h1>
         <div class="row Photo_display">
             <div class="row border-dark border-top-0 border-right-0 border-left-0 Item">
                 @foreach (var item in @Model.GetPhoto())
                 {
                     <div class="col Item_img">
-                        <img class=" img" src="/Images/ProductImages/@item.Photo_path"/>
+                        <img class=" img" src="/Images/ProductImages/@item.Photo_path" />
                     </div>
                     <div class="col Item_info">
                         <div class="row Item_title">
@@ -30,7 +30,7 @@
                     </div>
                     <div class="col Item_button">
                         <form method="post">
-                            <input type="hidden" asp-for="ImgId" value="@item.Photo_id"/>
+                            <input type="hidden" asp-for="ImgId" value="@item.Photo_id" />
                             <button class="btn btn-outline-danger delete" asp-page-handler="Delete" type="submit">
                                 <span>X</span>
                             </button>
@@ -44,11 +44,8 @@
                 <span>Subtotaal: €@Model.TotalPrice()</span>
             </div>
             <div class="row mb-3 Pay_button">
-                <button class="btn-primary Pay_button">Afrekenen</button>
->>>>>>>>> Temporary merge branch 2
+                <button class="btn btn-primary Pay_button">Afrekenen</button>
             </div>
         </div>
     </div>
-
 </div>
-</body>
