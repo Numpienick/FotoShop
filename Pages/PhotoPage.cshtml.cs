@@ -34,14 +34,21 @@ namespace FotoShop.Pages
             {
                 return Redirect("Shop");
             }
-            GetAccountType();
+
+            using UserRepository userRepo = new UserRepository(DbUtils.GetDbConnection());
+            string accType = userRepo.GetFromAccount("Account_type", Request.Cookies["UserLoggedIn"]).Account_type;
+            if (accType == "admin")
+            {
+                Hidden = "";
+            }
             return Page();
         }
 
         public JsonResult OnPostSavePhoto([FromBody] Photo photo)
         {
-            photo.Price = photo.Price.Replace(',', '.');
-            if (Regex.IsMatch(photo.Price, @"[\d]{1,3}([.][\d]{1,2})?"))
+            using UserRepository userRepo = new UserRepository(DbUtils.GetDbConnection());
+            string accType = userRepo.GetFromAccount("Account_type", Request.Cookies["UserLoggedIn"]).Account_type;
+            if (accType == "admin")
             {
                 using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
                 if (repo.UpdatePhoto(photo))
@@ -54,27 +61,14 @@ namespace FotoShop.Pages
 
         public IActionResult OnPostDelete(string id)
         {
-            HardDriveUtils.DeleteImage(id);
-            return Redirect("Shop");
-        }
-
-        public string GetAccountType()
-        {
-            string accId = Request.Cookies["UserLoggedIn"];
-            string accType = "user";
-            if (!String.IsNullOrEmpty(accId))
+            using UserRepository userRepo = new UserRepository(DbUtils.GetDbConnection());
+            string accType = userRepo.GetFromAccount("Account_type", Request.Cookies["UserLoggedIn"]).Account_type;
+            if (accType == "admin")
             {
-                using UserRepository repo = new UserRepository(DbUtils.GetDbConnection());
-                accType = repo.GetFromAccount("Account_type", accId);
-                if (!String.IsNullOrEmpty(accType))
-                {
-                    if (accType == "admin")
-                    {
-                        Hidden = "";
-                    }
-                }
+                HardDriveUtils.DeleteImage(id);
+                return Redirect("Shop");
             }
-            return accType;
+            return RedirectToPage("PhotoPage", new { id = id });
         }
 
         public string GetPhotoPath()
@@ -87,6 +81,11 @@ namespace FotoShop.Pages
         [BindProperty] public string PhotoId {get;set;}
         public IActionResult OnPostSubmitWinkelwagen()
         {
+            var userId = Request.Cookies["UserLoggedIn"];
+            if (string.IsNullOrEmpty(userId))
+            {
+                return RedirectToPage("PhotoPage", new { id = PhotoId });
+            }
             using OrderRepository repo = new OrderRepository(DbUtils.GetDbConnection());
             var Cookie = Request.Cookies["ShoppingCartAdd"];
             if (Cookie == null)

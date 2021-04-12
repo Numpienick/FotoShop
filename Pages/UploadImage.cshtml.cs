@@ -27,8 +27,15 @@ namespace FotoShop.Pages
         [BindProperty]
         public Photo NewPhoto { get; set; }
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
+            using UserRepository repo = new UserRepository(DbUtils.GetDbConnection());
+            string accType = repo.GetFromAccount("Account_type", Request.Cookies["UserLoggedIn"]).Account_type;
+            if(accType != "admin")
+            {
+                return Redirect("Index");
+            }
+            return Page();
         }
 
         public async Task<IActionResult> OnPostUpload()

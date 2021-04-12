@@ -20,8 +20,7 @@ namespace FotoShop.Classes.Repositories
 
         public bool InsertNewContact(DBContact dbContact)
         {
-            using var connection = _connection;
-            var numRowEffected = connection.Execute(
+            var numRowEffected = _connection.Execute(
                 @"INSERT INTO fotoshop.contact(Subject, Message, Name, Email)
                         VALUES (@paraSubject, @paraMessage, @paraName, @paraEmail)", 
                     new { paraSubject = dbContact.subject, 
