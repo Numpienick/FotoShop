@@ -1,5 +1,5 @@
 ﻿h1,
-h2{
+h2 {
     display: flex;
     justify-content: center;
 }
@@ -7,29 +7,28 @@ h2{
 .Bovengedeelte,
 .homecollage,
 .over,
-.camera{
+.camera {
     margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
 
-.Bovengedeelte{
+.Bovengedeelte {
     width: 100%;
 }
 
-.home-button{
+.home-button {
     display: inline-block;
     text-align: center;
     padding: 8px 16px;
     border: 1px solid #1e2c2e;
-
     border-radius: 15px;
-
     color: #f2f2f2;
     background-color: #1e2c2e;
 }
-.home-button:hover{
-    background-color: #87E5B3;
-}
+
+    .home-button:hover {
+        background-color: #87E5B3;
+    }
 
 .centeredText {
     color: #f2f2f2;
@@ -40,32 +39,31 @@ h2{
 }
 
 @media screen and (max-width: 576px) {
-    .col-sm-4{
+    .col-sm-4 {
         margin-top: 2rem;
     }
 }
 
 /* images and backgrounds*/
-
 #img-col-urban,
 #img-col-urbex,
-#img-col-pop{
+#img-col-pop {
     opacity: 0.67;
 }
 
-#img-col-urban:hover,
-#img-col-urbex:hover,
-#img-col-pop:hover{
-    opacity: 1;
-}
+    #img-col-urban:hover,
+    #img-col-urbex:hover,
+    #img-col-pop:hover {
+        opacity: 1;
+    }
 
 #urban1,
 #urbex1,
-#pop1{
+#pop1 {
     width: 100%;
 }
 
-#camera{
+#camera {
     width: 70%;
     opacity: 0.9;
 }

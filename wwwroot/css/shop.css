@@ -2,8 +2,10 @@
     transform: scale(1.01);
 }
 
-.shop_column {
-    padding: 0 0.125vw;
+@media screen and (min-width: 576px) and (max-width: 768.98px) {
+    .card-columns {
+        column-count: 2;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Net;
 using System.Net.Mime;
@@ -19,37 +21,75 @@ namespace FotoShop.Pages
 {
     public class UploadImage : PageModel
     {
-        [BindProperty, Required(ErrorMessage = "Gelieve een foto toe te voegen!")]
+        [BindProperty, Required(ErrorMessage = "Gelieve een .png of .jpg bestand toe te voegen!")]
         public IFormFile ImageFile { get; set; }
-        
+
         [BindProperty]
         public Photo NewPhoto { get; set; }
 
-        public void OnGet()
+        public IActionResult OnGet()
         {
+            using UserRepository repo = new UserRepository(DbUtils.GetDbConnection());
+            var acc = repo.GetFromAccount("Account_type", Request.Cookies["UserLoggedIn"]);
+            if (acc == null || acc.Account_type != "admin")
+            {
+                return Redirect("Index");
+            }
+            return Page();
         }
 
         public async Task<IActionResult> OnPostUpload()
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid) return Page();
+
+            NewPhoto.Price = NewPhoto.Price.Replace(',', '.');
+
+            if (!float.TryParse(NewPhoto.Price, out var price)) return Page();
+
+            var file = HardDriveUtils.GetFilePath(ImageFile);
+            var dirPath = HardDriveUtils.GetDirectoryPath(ImageFile, NewPhoto.Category_name);
+
+            NewPhoto.Photo_path = $"{NewPhoto.Category_name}/{file}";
+
+            try
             {
-                NewPhoto.Price = NewPhoto.Price.Replace(',', '.');
-                if (float.TryParse(NewPhoto.Price, out float price ))
+                await using (var memoryStream = new MemoryStream())
                 {
-                    string file = HardDriveUtils.GetFilePath(ImageFile);
-                    string dirPath = HardDriveUtils.GetDirectoryPath(ImageFile, NewPhoto.Category_name);
-                    NewPhoto.Photo_path = string.Format("{0}/{1}", NewPhoto.Category_name, file);
-                    using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
-                    repo.Add(NewPhoto);
-                    await using (var fileStream = new FileStream(dirPath, FileMode.Create))
-                     {
-                         await ImageFile.CopyToAsync(fileStream);
-                     }
-                    ModelState.Clear();
-                    return Redirect("UploadImage"); 
+                    await ImageFile.CopyToAsync(memoryStream);
+
+                    // Add watermark
+                    var watermarkedStream = new MemoryStream();
+                    using (var img = Image.FromStream(memoryStream))
+                    {
+                        using (var graphic = Graphics.FromImage(img))
+                        {
+                            var font = new Font(FontFamily.GenericSansSerif, (img.Width / 10), FontStyle.Bold, GraphicsUnit.Pixel);
+                            var color = Color.FromArgb(155, 255, 255, 255);
+                            var brush = new SolidBrush(color);
+                            var point = new Point(0, img.Height - (img.Height / 2));
+
+                            graphic.DrawString("  Hoekstra Fotografie", font, brush, point);
+                            img.Save(watermarkedStream, ImageFormat.Jpeg);
+
+                            await using (var fileStream = new FileStream(dirPath, FileMode.Create))
+                            {
+                                watermarkedStream.WriteTo(fileStream);
+                            }
+                        }
+                    }
                 }
+                using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
+                repo.Add(NewPhoto);
+
+                ModelState.Clear();
+                return Redirect("UploadImage");
             }
-            return Page();
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return Page();
+            }
         }
+        //https://edi.wang/post/2018/10/12/add-watermark-to-uploaded-image-aspnet-core
     }
 }

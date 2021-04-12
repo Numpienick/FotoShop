@@ -1,4 +1,5 @@
-﻿@using FotoShop.Classes.Repositories
+﻿@using FotoShop.Classes
+@using FotoShop.Classes.Repositories
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +12,10 @@
     <script src="~/js/popper.min.js"></script>
     <script src="~/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
     <script src="~/js/layout.js"></script>
-
-    <!-- Global css files -->
-    <link href="css/stylesheet-layout.css" rel="stylesheet" type="text/css" />
-    <link href="css/site.css" rel="stylesheet" type="text/css" />
     <link href="~/bootstrap-4.5.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- CSS files from root folder -->
+    <link href="css/stylesheet-layout.css" rel="stylesheet" type="text/css" />
 
     <!-- Stylesheets from googlefonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,6 +28,7 @@
 </head>
 
 <body>
+    <div id="modal-placeholder"></div>
     <nav class="navbar navbar-expand-sm navbar-light navbar-style sticky-top">
         <a class="navbar-brand" asp-page="Index">
             <img class="img-fluid" src="images/LogoV4.png" alt="logo">
@@ -60,12 +61,12 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto list-group-horizontal">
-                <li class="nav-item">
+                <li class="nav-item loggedIn">
                     <a class="nav-link" asp-page="ShoppingCart">
-                        <img src="images/shoppingCartIcon.svg" />
+                        <img src="images/shoppingCartIcon.svg" /><span class="badge badge-light" id="cartBadge"></span>
                     </a>
                 </li>
-                <li class="nav-item notLoggedIn ml-3">
+                <li class="nav-item notLoggedIn">
                     <a class="nav-link"
                        role="button"
                        data-toggle="ajax-modal"
@@ -91,15 +92,24 @@
                         </a>
                         <div class="dropdown-divider border-dark"></div>
                         @{
-                            string account = UserRepository.GetAccountType(Context.Request.Cookies["UserLoggedIn"]);
                             string accPage = "Index";
-                            if (account == "admin")
+                            using UserRepository repo = new UserRepository(DbUtils.GetDbConnection());
+                            string userId = Context.Request.Cookies["UserLoggedIn"];
+                            if (!string.IsNullOrEmpty(userId))
                             {
-                                accPage = "UploadImage";
-                            }
-                            else if (account == "user")
-                            {
-                                accPage = "UserAccount";
+                                var acc = repo.GetFromAccount("Account_type", userId);
+
+                                if (acc != null)
+                                {
+                                    if (acc.Account_type == "admin")
+                                    {
+                                        accPage = "UploadImage";
+                                    }
+                                    else if (acc.Account_type == "user")
+                                    {
+                                        accPage = "UserAccount";
+                                    }
+                                }
                             }
                         }
                         <a class="dropdown-item"
@@ -110,7 +120,6 @@
         </div>
     </nav>
     @RenderBody()
-    <div id="modal-placeholder"></div>
     <footer class="mt-auto text-center align-items-center">
         <p class="text-muted pt-2">
             &copy; 2021 Hoekstra's Fotografie <a asp-page="Contact">Contact</a>

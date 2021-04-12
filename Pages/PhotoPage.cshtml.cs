@@ -35,8 +35,9 @@ namespace FotoShop.Pages
                 return Redirect("Shop");
             }
 
-            string account = UserRepository.GetAccountType(Request.Cookies["UserLoggedIn"]);
-            if (account == "admin")
+            using UserRepository userRepo = new UserRepository(DbUtils.GetDbConnection());
+            var acc = userRepo.GetFromAccount("Account_type", Request.Cookies["UserLoggedIn"]);
+            if (acc != null && acc.Account_type == "admin")
             {
                 Hidden = "";
             }
@@ -45,28 +46,24 @@ namespace FotoShop.Pages
 
         public JsonResult OnPostSavePhoto([FromBody] Photo photo)
         {
-            string account = UserRepository.GetAccountType(Request.Cookies["UserLoggedIn"]);
-            if (account == "admin")
+            using UserRepository userRepo = new UserRepository(DbUtils.GetDbConnection());
+            var acc = userRepo.GetFromAccount("Account_type", Request.Cookies["UserLoggedIn"]);
+            if (acc != null && acc.Account_type == "admin")
             {
-                Hidden = "";
-                photo.Price = photo.Price.Replace(',', '.');
-                if (Regex.IsMatch(photo.Price, @"[\d]{1,3}([.][\d]{1,2})?"))
+                using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
+                if (repo.UpdatePhoto(photo))
                 {
-                    using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
-                    if (repo.UpdatePhoto(photo))
-                    {
-                        return new JsonResult("success");
-                    }
+                    return new JsonResult("success");
                 }
-                return new JsonResult("failed");
             }
-            return new JsonResult("redirect");
+            return new JsonResult("failed");
         }
 
         public IActionResult OnPostDelete(string id)
         {
-            string account = UserRepository.GetAccountType(Request.Cookies["UserLoggedIn"]);
-            if (account == "admin")
+            using UserRepository userRepo = new UserRepository(DbUtils.GetDbConnection());
+            var acc = userRepo.GetFromAccount("Account_type", Request.Cookies["UserLoggedIn"]);
+            if (acc != null && acc.Account_type == "admin")
             {
                 HardDriveUtils.DeleteImage(id);
                 return Redirect("Shop");
@@ -90,21 +87,16 @@ namespace FotoShop.Pages
                 return RedirectToPage("PhotoPage", new { id = PhotoId });
             }
             using OrderRepository repo = new OrderRepository(DbUtils.GetDbConnection());
-            var Cookie = Request.Cookies["ShoppingCartAdd"];
-            if (Cookie == null)
-            {
-                Response.Cookies.Append("ShoppingCartAdd", PhotoId);
-            }
             var OrderCookie = Request.Cookies["Order"];
             if (OrderCookie == null)
             {
                 using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
-                string downloadlink = "Randomlinkdit";
+                string downloadlink = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
                 var NewOrder = repoAdd.Add(userId, downloadlink, PhotoId);
                 CookieOptions options = new CookieOptions();
                 options.Expires = DateTime.Now.AddMinutes(9999999);
                 Response.Cookies.Append("Order", NewOrder.Placed_order_id);
-                Response.Cookies.Append("ShoppingCard", PhotoId);
+                Response.Cookies.Append("ShoppingCartAdd", PhotoId);
             }
             else
             {
@@ -114,11 +106,14 @@ namespace FotoShop.Pages
                 {
                     using OrderRepository repoAddN = new OrderRepository(DbUtils.GetDbConnection());
                     repoAddN.InsertPhoto(OrderCookie, PhotoId);
-                    Response.Cookies.Append("ShoppingCard", PhotoId);
+                    Response.Cookies.Append("ShoppingCartAdd", PhotoId);
                 }
+
+                using OrderRepository repoAdd2 = new OrderRepository(DbUtils.GetDbConnection());
+                var Count = repoAdd2.GetPhoto(OrderCookie).Count().ToString();
+                Response.Cookies.Append("ShoppingCartI", Count);
             }
             return Redirect($"PhotoPage?Id={PhotoId}");
         }
-
     }
 }

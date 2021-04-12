@@ -1,0 +1,55 @@
+﻿@model FotoShop.Classes.UpdateUserInfo
+<div class="container">
+    <div class="display-4 text-center pb-5">
+        Pas uw gegevens aan
+    </div>
+    <div id="alert"></div>
+    <form asp-page-handler="UpdateUserInfoPartial">
+        <div id="validationSum" asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input name="IsValid" type="hidden" value="@ViewData.ModelState.IsValid.ToString()" />
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="firstName">Voornaam</label>
+                <input id="firstName" type="text" asp-for="First_name"
+                       class="form-control border-top-0 border-left-0 border-right-0 my-auto" />
+                <span asp-validation-for="First_name" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lastName">Achternaam</label>
+                <input id="lastName" type="text" asp-for="Last_name"
+                       class="form-control border-top-0 border-left-0 border-right-0 my-auto" />
+                <span asp-validation-for="Last_name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input id="email" type="email" asp-for="Email"
+                   class="form-control border-top-0 border-left-0 border-right-0 my-auto" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="oldPass">Uw huidige wachtwoord</label>
+                <input id="oldPass" type="password" asp-for="OldPassword"
+                       class="form-control border-top-0 border-left-0 border-right-0 my-auto" />
+                <span asp-validation-for="OldPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="password">Uw nieuwe wachtwoord</label>
+                <input id="password" type="password" asp-for="Password"
+                       class="form-control border-top-0 border-left-0 border-right-0 my-auto" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="passConfirm">Bevestig uw nieuwe wachtwoord</label>
+            <input id="passConfirm" type="password" asp-for="PassConfirm"
+                   class="form-control border-top-0 border-left-0 border-right-0 my-auto" />
+            <span asp-validation-for="PassConfirm" class="text-danger"></span>
+        </div>
+        <button id="submitUser" type="submit"
+                class="btn btn-primary mb-3">
+            Verander gegevens
+        </button>
+    </form>
+</div>

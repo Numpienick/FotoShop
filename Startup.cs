@@ -18,13 +18,13 @@ namespace FotoShop
     {
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-        
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
             services.AddRazorPages();
 #if DEBUG
-            //SetupDatabase();
+            SetupDatabase();
 #endif
         }
 
@@ -50,6 +50,9 @@ namespace FotoShop
             });
         }
 
+        /// <summary>
+        /// Resets database to its default values
+        /// </summary>
         private void SetupDatabase()
         {
             var dbSetupPath = Path.Combine(new DirectoryInfo(Directory.GetCurrentDirectory()).FullName, "SetupDatabase.sql");
@@ -71,7 +74,7 @@ namespace FotoShop
 
             sql += @"
             INSERT INTO placed_order(Account_id, Download_link)
-            VALUES(2, 'https://downloadhieruwfotos.nl');
+            VALUES(2, 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
             INSERT INTO placed_order_photo(Placed_order_id, Photo_id)
             VALUES(1, 3);";
             connection.Execute(dbSetupScript + sql);

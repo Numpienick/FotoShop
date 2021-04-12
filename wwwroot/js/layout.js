@@ -7,14 +7,7 @@
 		$(".notLoggedIn").hide();
 		$(".loggedIn").show();
 	}
-	var user = GetCookie('ShoppingCard');
-	if (user == "" || user == undefined) {
-		$(".Afrekenen").hide();
-		$(".Subtot").hide();
-	} 
-	else {
-		$(".ShoppingLeeg").hide();
-	}
+	
 	var width = $(window).width();
 	StyleDropdown();
 
@@ -59,6 +52,19 @@
 		});
 	});
 
+	var span = document.getElementById('cartBadge');
+	var count = GetCookie('ShoppingCartI');
+	while (span.firstChild) {
+		span.removeChild(span.firstChild);
+	}
+
+	if (count == "" || count == undefined) {
+		$("#cartBadge").hide();
+	}
+	else {
+		span.appendChild(document.createTextNode(GetCookie('ShoppingCartI')));
+	}
+
 	function StyleDropdown() {
 		if (width >= 575) {
 			var dropdown = $(".dropdown-menu");
@@ -90,8 +96,7 @@
 
 	//Uitzetten rechtermuisknop -> gebruikt om afbeelding niet te laten copiëren
 	//Credits to https://stackoverflow.com/questions/24020321/how-to-disable-save-image-as-option-on-right-click/
-	$("body").on("contextmenu", "img", function(e) {
+	$("body").on("contextmenu", "img", function (e) {
 		return false;
 	});
-	
 });
