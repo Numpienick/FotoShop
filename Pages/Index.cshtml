@@ -14,10 +14,20 @@
     <link href="~/css/index.css" rel="stylesheet" />
 }
 
-<body>
-    <div class="container-fluid">
-        <div class="titel">
-            <h1>@ViewData["Title"]</h1>
+<div class="container-fluid">
+  <div class="row d-flex justify-content-center background">
+    <div class="col-md-12 Bovengedeelte">
+      <h1 class="font-weight-bold">FOTOGRAAF</h1>
+      <h1 class="font-italic">Hoekstra</h1>
+    </div>
+  </div>
+  
+  <div class="row d-flex justify-content-center homecollage">
+    <div id="img-col-urban" class="col-sm-4">
+      <a asp-page="ShopModernUrban">
+        <div class="container position-relative text-center">
+          <img class="w-100" id="urban1" src="~/images/ProductImages/Modern Urban/Urban1.jpg" />
+          <div class="position-absolute centeredText">Urban</div>
         </div>
         <div class="row">
             <div class="col-md-6 linker">
@@ -37,4 +47,31 @@
         </div>
         <div id="modal-placeholder"></div>
     </div>
-</body>
+  </div>  
+    
+    <div id="img-col-pop" class="col-sm-4 d-flex justify-content-center">
+      <a asp-page="ShopPop">
+        <div class="container position-relative text-center">
+          <img class="w-100" id="pop1" src="~/images/ProductImages/Pop/Pop1.jpg" />
+          <div class="position-absolute centeredText">Pop</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="row d-flex justify-content-center background over">
+    <div class="col-md-6">
+      <h2>Over de Fotograaf</h2>
+      <ul>
+        <li>Lorum Ipsum</li>
+        <li>Lorum Ipsum</li>
+        <li>Lorum Ipsum</li>
+        <li>Lorum Ipsum</li>
+      </ul>
+    </div>
+    
+    <div class="col-md-6 d-flex justify-content-center camera">
+      <img id="camera" src="images/Foto.jpg">
+    </div>
+  </div>  
+</div>
