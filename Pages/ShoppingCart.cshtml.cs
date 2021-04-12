@@ -18,7 +18,7 @@ namespace FotoShop.Pages
         {
             var OrderCookie = Request.Cookies["Order"];
             using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
-            var AllPhoto = repoAdd.GetPhoto(Convert.ToInt32(OrderCookie));
+            var AllPhoto = repoAdd.GetPhoto(OrderCookie);
             return AllPhoto;
         }
 
@@ -39,8 +39,6 @@ namespace FotoShop.Pages
             else
             {
                 var items = photoList.Count;
-                var items2 = items.ToString();
-                Response.Cookies.Append("ShoppingCartI", items2);
                 Response.Cookies.Delete("EmptyShoppingCard");
             }
             return photoList;
@@ -54,6 +52,9 @@ namespace FotoShop.Pages
             var OrderCookie = Request.Cookies["Order"];
             using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
             repoAdd.DeletePhoto(ImgId, OrderCookie);
+            using OrderRepository repoAdd2 = new OrderRepository(DbUtils.GetDbConnection());
+            var MaxItems = repoAdd2.GetPhoto(OrderCookie).Count.ToString();
+            Response.Cookies.Append("ShoppingCartI", MaxItems);
         }
 
         public void OnPostOrderSucces()

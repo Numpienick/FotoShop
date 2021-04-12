@@ -58,7 +58,7 @@ namespace FotoShop.Classes.Repositories
             return order;
         }
         
-        public List<int> GetPhoto(int Order_id)
+        public List<int> GetPhoto(string Order_id)
         {
             using var connection = _connection;
             List<int> AllPhoto =
