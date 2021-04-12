@@ -34,9 +34,13 @@ namespace FotoShop.Pages
             if (photoList.Count == 0)
             {
                 Response.Cookies.Append("EmptyShoppingCard", "Empty");
+                Response.Cookies.Delete("ShoppingCartI");
             }
             else
             {
+                var items = photoList.Count;
+                var items2 = items.ToString();
+                Response.Cookies.Append("ShoppingCartI", items2);
                 Response.Cookies.Delete("EmptyShoppingCard");
             }
             return photoList;

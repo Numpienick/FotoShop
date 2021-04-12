@@ -20,6 +20,19 @@
 		StyleDropdown();
 	});
 
+	var span = document.getElementById('someID');
+	var count = GetCookie('ShoppingCartI');
+	while( span.firstChild ) {
+		span.removeChild( span.firstChild );
+	}
+
+	if (count == "" || count == undefined){
+		$("#someID").hide();
+	}
+	else{
+		span.appendChild( document.createTextNode(GetCookie('ShoppingCartI')) );
+	}
+
 	function StyleDropdown() {
 		if (width >= 575) {
 			var dropdown = $(".dropdown-menu");

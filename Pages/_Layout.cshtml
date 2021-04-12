@@ -1,6 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using FotoShop.Classes
+@using FotoShop.Classes.Repositories
+@using FotoShop.Pages
+<!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,6 +28,7 @@
 
     @await RenderSectionAsync("Styles", false)
     @await RenderSectionAsync("JavaScript", false)
+    
 </head>
 
 <body>
@@ -70,7 +74,7 @@
                 </li>
                 <li class="nav-item ml-4">
                     <a class="nav-link" asp-page="ShoppingCart">
-                        <img src="images/shoppingCartIcon.svg" />
+                        <img src="images/shoppingCartIcon.svg"><span class="badge badge-light" id="someID"></span></img>
                     </a>
                 </li>
             </ul>
