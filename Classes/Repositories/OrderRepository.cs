@@ -70,7 +70,7 @@ namespace FotoShop.Classes.Repositories
                 new { OrderCookie = OrderCookie });
         }
 
-        public void DeletePhoto(int Photo_id, string OrderCookie)
+        public void DeletePhoto(string Photo_id, string OrderCookie)
         {
             var DeletePhoto = _connection.Execute("DELETE FROM placed_order_photo WHERE Photo_id = @Photo_id AND Placed_order_id = @OrderCookie",
                 new { Photo_id = Photo_id, OrderCookie = OrderCookie });

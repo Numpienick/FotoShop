@@ -24,7 +24,7 @@ namespace FotoShop
             services.AddMvc();
             services.AddRazorPages();
 #if DEBUG
-            SetupDatabase();
+            //SetupDatabase();
 #endif
         }
 
@@ -50,6 +50,9 @@ namespace FotoShop
             });
         }
 
+        /// <summary>
+        /// Resets database to its default values
+        /// </summary>
         private void SetupDatabase()
         {
             var dbSetupPath = Path.Combine(new DirectoryInfo(Directory.GetCurrentDirectory()).FullName, "SetupDatabase.sql");

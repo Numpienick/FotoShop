@@ -34,7 +34,7 @@ namespace FotoShop.Pages
             }
             return photoList;
         }
-        [BindProperty] public int ImgId { get; set; }
+        [BindProperty] public string ImgId { get; set; }
 
         public void OnPostDelete()
         {

@@ -87,11 +87,6 @@ namespace FotoShop.Pages
                 return RedirectToPage("PhotoPage", new { id = PhotoId });
             }
             using OrderRepository repo = new OrderRepository(DbUtils.GetDbConnection());
-            var Cookie = Request.Cookies["ShoppingCartAdd"];
-            if (Cookie == null)
-            {
-                Response.Cookies.Append("ShoppingCartAdd", PhotoId);
-            }
             var OrderCookie = Request.Cookies["Order"];
             if (OrderCookie == null)
             {
@@ -101,11 +96,18 @@ namespace FotoShop.Pages
                 CookieOptions options = new CookieOptions();
                 options.Expires = DateTime.Now.AddMinutes(9999999);
                 Response.Cookies.Append("Order", NewOrder.Placed_order_id);
+                Response.Cookies.Append("ShoppingCartAdd", PhotoId);
             }
             else
             {
                 using OrderRepository repoAdd = new OrderRepository(DbUtils.GetDbConnection());
-                repoAdd.InsertPhoto(OrderCookie, PhotoId);
+                var Checkfoto = repoAdd.CheckFoto(OrderCookie, PhotoId);
+                if (Checkfoto == null)
+                {
+                    using OrderRepository repoAddN = new OrderRepository(DbUtils.GetDbConnection());
+                    repoAddN.InsertPhoto(OrderCookie, PhotoId);
+                    Response.Cookies.Append("ShoppingCartAdd", PhotoId);
+                }
             }
             return Redirect($"PhotoPage?Id={PhotoId}");
         }
