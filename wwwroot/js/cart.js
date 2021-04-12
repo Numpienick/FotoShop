@@ -7,7 +7,6 @@
 	else {
 		$("#emptyCart").hide();
 		$(".Main_col").show();
-		console.log("asd");
 	}
 
 	// Credits to https://www.w3schools.com/js/js_cookies.asp
