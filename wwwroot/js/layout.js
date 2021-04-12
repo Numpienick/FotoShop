@@ -7,13 +7,12 @@
 		$(".notLoggedIn").hide();
 		$(".loggedIn").show();
 	}
-	var user = GetCookie('ShoppingCard');
-	if (user == "" || user == undefined) {
-		$(".Afrekenen").hide();
-		$(".Subtot").hide();
+	var user1 = GetCookie('EmptyShoppingCard');
+	if (user1 == "" || user1 == undefined) {
+	 $(".LeegS").hide();
 	} 
 	else {
-		$(".ShoppingLeeg").hide();
+		$(".Item_payment").hide();
 	}
 	var width = $(window).width();
 	StyleDropdown();
