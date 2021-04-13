@@ -24,7 +24,7 @@ namespace FotoShop
             services.AddMvc();
             services.AddRazorPages();
 #if DEBUG
-            //SetupDatabase();
+            SetupDatabase();
 #endif
         }
 
@@ -63,14 +63,17 @@ namespace FotoShop
             DirectoryInfo pathToProducts = new DirectoryInfo(Path.Combine(new DirectoryInfo(Directory.GetCurrentDirectory()).FullName,
                 "wwwroot", "Images", "ProductImages"));
             var files = pathToProducts.GetFiles("*.jpg", SearchOption.AllDirectories);
-            //foreach (var photo in files)
-            //{
-            //    string path = Path.Combine(photo.Directory.Name, photo.Name);
-            //    path = path.Replace("\\", @"/");
-            //    sql += String.Format(@" INSERT INTO fotoshop.photo (Photo_path, Price, Title, Description, Category_name)
-            //        VALUES('{0}', '12.99', 'Foto!', 'Dit is een mooie foto', '{1}');",
-            //       path, photo.Directory.Name);
-            //}
+            foreach (var photo in files)
+            {
+                string path = Path.Combine(photo.Directory.Name, photo.Name);
+                path = path.Replace("\\", @"/");
+                sql += String.Format(@" INSERT INTO fotoshop.photo (Photo_path, Price, Title, Description, Category_name)
+                    VALUES('{0}', '12.99', 'Mooie foto', 'Voluptua sit consequat vel nonummy dolor at lorem ipsum feugait
+                dignissim nobis illum imperdiet erat consetetur erat ipsum kasd vel et nulla sanctus erat lorem sit dolor sit
+                amet eirmod accumsan voluptua doming sit sit facilisis dolor in tempor gubergren ut ipsum ut et eirmod
+                justo et dolores dolore vel ipsum ea sit tation nulla stet sed justo in justo', '{1}');",
+                   path, photo.Directory.Name);
+            }
 
             //sql += @"
             //INSERT INTO placed_order(Account_id, Download_link)
