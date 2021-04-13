@@ -29,8 +29,8 @@
                 <span class="text-danger" asp-validation-for="NewPhoto.Category_name"></span>
                 <select asp-for="NewPhoto.Category_name" class="form-control ">
                     <option value="Modern Urban">Modern Urban</option>
-                    <option value="Pop">Pop</option>
                     <option value="Urbex">Urbex</option>
+                    <option value="Pop">Pop</option>
                 </select>
             </div>
             <div class="form-group">
@@ -44,7 +44,7 @@
                 <textarea class="form-control" rows="7" asp-for="NewPhoto.Description"></textarea>
             </div>
             <div class="form-group mt-3 custom-file">
-                <input asp-for="ImageFile" type="file" class="custom-file-input form-control" id="customFile" accept="image/png, image/jpeg" />
+                <input asp-for="ImageFile" type="file" class="custom-file-input form-control" id="customFile" accept="image/png, image/jpeg" multiple />
                 <label class="custom-file-label" for="customFile">Choose file</label>
                 <span class="text-danger" asp-validation-for="ImageFile"></span>
             </div>

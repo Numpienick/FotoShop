@@ -24,7 +24,7 @@ namespace FotoShop
             services.AddMvc();
             services.AddRazorPages();
 #if DEBUG
-            SetupDatabase();
+            //SetupDatabase();
 #endif
         }
 
@@ -63,20 +63,20 @@ namespace FotoShop
             DirectoryInfo pathToProducts = new DirectoryInfo(Path.Combine(new DirectoryInfo(Directory.GetCurrentDirectory()).FullName,
                 "wwwroot", "Images", "ProductImages"));
             var files = pathToProducts.GetFiles("*.jpg", SearchOption.AllDirectories);
-            foreach (var photo in files)
-            {
-                string path = Path.Combine(photo.Directory.Name, photo.Name);
-                path = path.Replace("\\", @"/");
-                sql += String.Format(@" INSERT INTO fotoshop.photo (Photo_path, Price, Title, Description, Category_name)
-                    VALUES('{0}', '12.99', 'Foto!', 'Dit is een mooie foto', '{1}');",
-                    path, photo.Directory.Name);
-            }
+            //foreach (var photo in files)
+            //{
+            //    string path = Path.Combine(photo.Directory.Name, photo.Name);
+            //    path = path.Replace("\\", @"/");
+            //    sql += String.Format(@" INSERT INTO fotoshop.photo (Photo_path, Price, Title, Description, Category_name)
+            //        VALUES('{0}', '12.99', 'Foto!', 'Dit is een mooie foto', '{1}');",
+            //       path, photo.Directory.Name);
+            //}
 
-            sql += @"
-            INSERT INTO placed_order(Account_id, Download_link)
-            VALUES(2, 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
-            INSERT INTO placed_order_photo(Placed_order_id, Photo_id)
-            VALUES(1, 3);";
+            //sql += @"
+            //INSERT INTO placed_order(Account_id, Download_link)
+            //VALUES(2, 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+            //INSERT INTO placed_order_photo(Placed_order_id, Photo_id)
+            //VALUES(1, 3);";
             connection.Execute(dbSetupScript + sql);
         }
     }

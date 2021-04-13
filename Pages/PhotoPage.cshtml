@@ -55,7 +55,7 @@
                     <input type="hidden" asp-for="PhotoId" value="@Model.PagePhoto.Photo_id" />
                     @if (String.IsNullOrEmpty(HttpContext.Request.Cookies["UserLoggedIn"]))
                     {
-                        <a class="btn btn-success text-nowrap"
+                        <a class="btn btn-success text-nowrap mb-3"
                            role="button"
                            data-toggle="ajax-modal"
                            data-url="@Url.Page("Ajax", "LogInModalPartial")">
@@ -65,7 +65,7 @@
                     }
                     else
                     {
-                        <button asp-page-handler="SubmitWinkelwagen" class="btn btn-success text-nowrap" type="submit">
+                        <button asp-page-handler="SubmitWinkelwagen" class="btn btn-success text-nowrap mb-3" type="submit">
                             <img class="mr-2" src="~/images/addToShoppingCartIcon.svg" />
                             Voeg toe aan winkelwagen
                         </button>
