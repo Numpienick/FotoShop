@@ -50,6 +50,7 @@ namespace FotoShop.Pages
             var acc = userRepo.GetFromAccount("Account_type", Request.Cookies["UserLoggedIn"]);
             if (acc != null && acc.Account_type == "admin")
             {
+                photo.Price = photo.Price.Replace(',', '.');
                 using PhotoRepository repo = new PhotoRepository(DbUtils.GetDbConnection());
                 if (repo.UpdatePhoto(photo))
                 {

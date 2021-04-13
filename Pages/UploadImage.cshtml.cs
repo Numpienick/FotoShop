@@ -21,7 +21,7 @@ namespace FotoShop.Pages
 {
     public class UploadImage : PageModel
     {
-        [BindProperty, Required(ErrorMessage = "Gelieve een .png of .jpg bestand toe te voegen!")]
+        [BindProperty, Required(ErrorMessage = "Gelieve een .png of .jpg bestand toe te voegen!"), MinLength(1, ErrorMessage = "Gelieve een .png of .jpg bestand toe te voegen!")]
         public List<IFormFile> ImageFile { get; set; }
 
         [BindProperty]
