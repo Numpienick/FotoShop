@@ -97,7 +97,12 @@ namespace FotoShop.Pages
                 CookieOptions options = new CookieOptions();
                 options.Expires = DateTime.Now.AddMinutes(9999999);
                 Response.Cookies.Append("Order", NewOrder.Placed_order_id);
-                Response.Cookies.Append("ShoppingCartAdd", PhotoId);
+                using OrderRepository repoAdd2 = new OrderRepository(DbUtils.GetDbConnection());
+                var Count = repoAdd2.GetPhoto(OrderCookie).Count().ToString();
+                var repcount = Convert.ToInt32(Count) + 1;
+                var finalcount = repcount.ToString();
+                Response.Cookies.Delete("ShoppingCartI");
+                Response.Cookies.Append("ShoppingCartI", finalcount);
             }
             else
             {
@@ -107,12 +112,11 @@ namespace FotoShop.Pages
                 {
                     using OrderRepository repoAddN = new OrderRepository(DbUtils.GetDbConnection());
                     repoAddN.InsertPhoto(OrderCookie, PhotoId);
-                    Response.Cookies.Append("ShoppingCartAdd", PhotoId);
+                    using OrderRepository repoAdd2 = new OrderRepository(DbUtils.GetDbConnection());
+                    var Count = repoAdd2.GetPhoto(OrderCookie).Count().ToString();
+                    Response.Cookies.Delete("ShoppingCartI");
+                    Response.Cookies.Append("ShoppingCartI", Count);
                 }
-
-                using OrderRepository repoAdd2 = new OrderRepository(DbUtils.GetDbConnection());
-                var Count = repoAdd2.GetPhoto(OrderCookie).Count().ToString();
-                Response.Cookies.Append("ShoppingCartI", Count);
             }
             return Redirect($"PhotoPage?Id={PhotoId}");
         }
